@@ -135,7 +135,7 @@
     width: 286px;
     border: 1px solid #007AFF;
     border-radius: 2px;
-    padding: 15px;
+    padding: 14px;
     font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
     font-size: 15px;
     font-style: normal;
@@ -173,10 +173,8 @@
 }
 .reviews-advice__close {
     position: absolute;
-    top: 13px;
-    right: 13px;
-    width: 13px;
-    height: 13px;
+    top: 8px;
+    right: 10px;
 }
 
 /* Состояния */
