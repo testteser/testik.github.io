@@ -48,6 +48,7 @@
     letter-spacing: 0;
     color: #333333;
     border-radius: 2px;
+    user-select: none;
 }
 .search-form__label {
     position: absolute;
