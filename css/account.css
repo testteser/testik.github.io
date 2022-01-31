@@ -1,0 +1,45 @@
+.account-control__title {
+    margin-bottom: 14px;
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 26px;
+    letter-spacing: 0;
+    color: #0B192C;
+}
+.account-control__name {
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0;
+    color: #0B192C;
+}
+.account-control__picture {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: rgba(0, 122, 255, 0.05);
+    margin-right: 12px;
+}
+.account-control__item {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+}
+.account-control__item:last-child {
+    margin-bottom: 0;
+}
+.account-control__list {
+    margin: 0 -15px;
+    background: #FFFFFF;
+    border: 1px solid #ECECEC;
+}
+.account-control {
+    padding-top: 28px;
+}

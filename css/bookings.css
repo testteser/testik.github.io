@@ -1,0 +1,207 @@
+.bookings-table__item {
+    display: flex;
+    align-items: center;
+    background: #FFFFFF;
+    border-radius: 2px;
+    margin-bottom: 12px;
+    position: relative;
+    overflow: hidden;
+    padding-left: 89px;
+}
+.bookings-table__item:last-child {
+    margin-bottom: 0;
+}
+.bookings-table__list {
+    margin: 0 -8px;
+}
+.bookings-table__cell-title {
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0;
+    color: #0B192C;
+}
+.bookings-table__cell-date {
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0;
+    color: #0B192C;
+}
+.bookings-table__cell-info {
+    margin-bottom: 12px;
+}
+.bookings-table__cell {
+    margin-bottom: 24px;
+}
+.bookings-table__title {
+    margin-bottom: 4px;
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 0;
+    color: #0B192C;
+}
+.bookings-table__find {
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0;
+    color: #1785ED;
+}
+.bookings-table__info {
+    margin-bottom: 24px;
+}
+.bookings-table__item-name {
+    margin-bottom: 2px;
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 17px;
+    letter-spacing: -0.33764711022377014px;
+    color: #0B192C;
+}
+.bookings-table__content {
+    margin-bottom: 24px;
+}
+.bookings-table {
+    margin: 28px 0;
+}
+.bookings-table__item-date,
+.bookings-table__item-price {
+    color: #858D97;
+    margin-bottom: 2px;
+}
+.bookings-table__item-date,
+.bookings-table__item-price,
+.bookings-table__item-status {
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0;
+}
+.bookings-table__item-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 89px;
+    object-fit: cover;
+}
+.bookings-table__item-content {
+    width: 100%;
+}
+.bookings-table__item-more {
+    top: 11px;
+    right: 8px;
+}
+.bookings-table__item-info {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 12px;
+}
+.bookings-table__class {
+    position: relative;
+    border-top: 1px solid #ECECEC;
+    padding: 6px 0;
+    padding-left: 12px;
+}
+.bookings-table__show {
+    width: 100%;
+    padding: 15px;
+}
+.bookings-table__class-close {
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    width: 13px;
+    height: 13px;
+}
+.bookings-table__class-desc {
+    display: inline-block;
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 15px;
+    letter-spacing: 0;
+    color: #1785ED;
+}
+.bookings-delete {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 991;
+    background: #FFFFFF;
+    border-radius: 2px;
+    width: 343px;
+    padding: 16px 12px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.2s ease-out;
+}
+.bookings-delete__title {
+    margin-bottom: 8px;
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 26px;
+    letter-spacing: 0;
+    color: #0B192C;
+}
+.bookings-delete__desc {
+    margin-bottom: 20px;
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0;
+    color: #0B192C;
+}
+.bookings-delete__group {
+    display: flex;
+}
+.bookings-delete__btn {
+    margin-right: 12px;
+    padding: 9px;
+    width: 100px;
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: 0;
+    text-align: center;
+}
+.bookings-delete__btn:last-child {
+    margin-right: 0;
+}
+
+.bookings-delete__close {
+    position: absolute;
+    top: 13px;
+    right: 13px;
+}
+
+/* Состояния */
+
+.bookings-delete.js-active {
+    opacity: 1;
+    visibility: visible;
+}

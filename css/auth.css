@@ -1,0 +1,275 @@
+.auth__header {
+    position: relative;
+    margin: 0 -15px;
+    padding: 20px 0;
+    background: #F8F9FA;
+}
+
+.auth-back {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+}
+
+.header-settings {
+    padding-top: 0;
+}
+
+.auth {
+    background: #fff;
+    padding-bottom: 32px;
+}
+.auth__title {
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 21px;
+    letter-spacing: 0;
+    text-align: center;
+    color: #0B192C;
+    text-transform: uppercase;
+}
+.auth-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 -15px;
+    margin-bottom: 24px;
+}
+.auth-tabs__tab {
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 8px;
+    width: 50%;
+    border-bottom: 0.5px solid #485F7E;
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0;
+    text-align: center;
+    background: #fff;
+    text-transform: uppercase;
+}
+.auth-tabs__tab::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: #485F7E;
+    transition: 0.1s ease-out;
+    opacity: 0;
+}
+.auth__form {
+    margin-bottom: 16px;
+}
+.auth__form-input {
+    display: block;
+    width: 100%;
+    border: 0.5px solid #858D97;
+    border-radius: 2px;
+    padding: 14.5px 12px;
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0;
+    text-align: left;
+    color: #767676;
+}
+.auth__content-options {
+    margin-bottom: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.auth__content-option {
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0;
+    color: #007AFF;
+}
+.auth__form-submit {
+    width: 100%;
+    padding: 15px;
+    background: #007AFF;
+    border-radius: 2px;
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: 0;
+    text-align: center;
+    color: #fff;
+}
+.auth__form-label {
+    display: inline-block;
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0;
+    color: #0B192C;
+}
+.auth__form-item {
+    position: relative;
+    width: 100%;
+    margin-bottom: 16px;
+}
+.auth__form-item:last-child {
+    margin-bottom: 0;
+}
+.auth-tabs__tab.js-active::before {
+    background: #007AFF;
+    bottom: -2px;
+    opacity: 1;
+}
+.auth-tabs__tab.js-active {
+    font-weight: 700;
+    color: #007AFF;
+}
+.auth__join-table {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.auth__join-platform:first-child {
+    width: 100%;
+    margin-bottom: 12px;
+}
+.auth__form-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 4px;
+}
+.auth__form-show {
+    background: none;
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0;
+    color: #007AFF;
+}
+.auth__join-title {
+    margin-bottom: 12px;
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0;
+    text-align: center;
+    color: #0B192C;
+}
+.auth-mobile__row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.auth-mobile__item:first-child {
+    width: 28%;
+}
+.auth-mobile__item {
+    width: 68%;
+}
+.auth__notify {
+    margin: 0 -15px;
+    padding: 15px;
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0;
+    text-align: center;
+    color: #0B192C;
+    background: #EEC60A;
+}
+.auth--reset .auth__content-item {
+    display: block;
+}
+.auth--reset .auth__form {
+    padding-top: 24px;
+    margin-bottom: 0;
+}
+.auth__info {
+    margin-bottom: 21px;
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0;
+}
+.auth__join-name {
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: 0;
+    text-align: center;
+    color: #007AFF;
+}
+.auth__join-platform {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12.5px;
+    width: 48%;
+    border: 1px solid #007AFF;
+    border-radius: 2px;
+    background: #fff;
+}
+.auth__join {
+    margin-bottom: 24px;
+}
+.auth__join:last-child {
+    margin-bottom: 0;
+}
+.auth__content-item {
+    display: none;
+}
+.auth__content-item.js-active {
+    display: block;
+}
+.auth__join-enter {
+    margin-bottom: 13px;
+    padding: 13px;
+    width: 100%;
+    border: 1px solid #007AFF;
+    border-radius: 2px;
+    text-align: center;
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: 0;
+    color: #007AFF;
+    background: #fff;
+}
+.auth__join-enter:last-child {
+    margin-bottom: 0;
+}
+.auth__join-icon {
+    margin-right: 9px;
+}

@@ -1,0 +1,741 @@
+/* Стили для формы поиска - $search */
+
+.search {
+    margin-bottom: 31px;
+    padding: 25px 0;
+    background: #0B192C;
+}
+.search__title {
+    margin-bottom: 20px;
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: 0;
+    color: #F0C806;
+    text-transform: uppercase;
+}
+.search-modal--cities {
+    padding-top: 58px;
+}
+.search-form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.search-form__field {
+    position: relative;
+    width: 100%;
+    margin-bottom: 16px;
+}
+.search-form__field:last-child {
+    margin-bottom: 0;
+}
+.search-form__field--date {
+    width: 48%;
+}
+.search-form__input {
+    padding: 15px 13px;
+    padding-right: 50px;
+    width: 100%;
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: 0;
+    color: #333333;
+    border-radius: 2px;
+}
+.search-form__label {
+    position: absolute;
+    top: 50%;
+    left: 13px;
+    transform: translateY(-50%);
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0;
+    text-align: left;
+    color: #767676;
+}
+.search-form__icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 17px;
+}
+.search-form__resident-label {
+    display: flex;
+    align-items: center;
+}
+.search-form__resident-label input:checked ~ .search-form__resident-box svg {
+    opacity: 1;
+    visibility: visible;
+}
+.search-form__resident-desc {
+    margin-left: 6px;
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0;
+    color: #FFFFFF;
+}
+.search-form__btn {
+    padding: 15px;
+    width: 100%;
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: 0;
+    text-align: center;
+    background: #007AFF;
+    border-radius: 2px;
+    color: #FFFFFF;
+}
+.search-form__resident {
+    margin-bottom: 32px;
+}
+.search-form__resident-box {
+    position: relative;
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    border: 1px solid #FFFFFF;
+}
+.search-form__resident-box svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.2s ease-out;
+}
+.search-form__field--count {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    padding: 15px 11px;
+    border-radius: 2px;
+}
+.search-form__field-item {
+    position: relative;
+    flex: 1;
+    text-align: center;
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: 0;
+    color: #333333;
+}
+.search-form__field-item::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -5px;
+    transform: translateY(-50%);
+    width: 6px;
+    height: 6px;
+    background: #0B192C;
+    border-radius: 50%;
+}
+.search-form__field-item:first-child {
+    text-align: left;
+}
+.search-form__field-item:last-child::before {
+    display: none;
+}
+
+/* Стили для карточек предложений - $offers */
+
+.offers {
+    margin-bottom: 10px;
+}
+.offers__item {
+    margin-bottom: 8px;
+    padding: 26px 17px;
+    padding-right: 25px;
+    position: relative;
+    background: #FFFFFF;
+    border-radius: 2px;
+}
+.offers__content {
+    max-width: 90%;
+    position: relative;
+    z-index: 5;
+}
+.offers__item--auth::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background: #0B192C;
+    opacity: .95;
+}
+.offers__item:last-child {
+    margin-bottom: 0;
+}
+.offers__item--auth {
+    margin-bottom: 14px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.offers__item--auth .offers__title,
+.offers__item--auth .offers__desc {
+    color: #fff;
+}
+.offers__pic {
+    position: absolute;
+    top: 50%;
+    right: 62px;
+    transform: translateY(-50%);
+    opacity: 0.2;
+}
+.offers__item--auth .offers__btn {
+    border: none;
+}
+.offers__item--registration {
+    background: #007AFF;
+}
+.offers__item--registration .offers__title,
+.offers__item--registration .offers__row-desc,
+.offers__item--registration .offers__row-btn {
+    color: #fff;
+}
+.offers__item--registration .offers__close::before,
+.offers__item--registration .offers__close::after {
+    background: #fff;
+}
+.offers__title {
+    margin-bottom: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0;
+    color: #0B192C;
+}
+.offers__item--attention .offers__desc {
+    max-width: 70%;
+}
+.offers__desc {
+    margin-bottom: 16px;
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0;
+}
+.offers__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.offers__btn {
+    display: inline-block;
+    padding: 9px 16px;
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #007AFF;
+    border: 1px solid #007AFF;
+    border-radius: 2px;
+    background: #fff;
+}
+.offers__row-btn {
+    background: transparent;
+    border: 1px solid #FFFFFF;
+    border-radius: 2px;
+}
+.offers__row-content {
+    margin-left: 28px;
+}
+.offers__desc-sum {
+    color: #4CD964;
+}
+.offers__close,
+.offers__item-next {
+    top: 13px;
+    right: 13px;
+}
+.offers .container {
+    padding: 0 8px;
+}
+.offers__item--attention {
+    margin: 0 -8px;
+    margin-bottom: 6px;
+}
+
+/* Стили для перехода скачивания шапки - $search-modal */
+
+.search-modal {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 901;
+    height: 100vh;
+    background: #fff;
+    transition: 0.3s ease-out;
+    visibility: hidden;
+    padding-bottom: 20px;
+    overflow: auto;
+    transform: translateY(100%);
+}
+.search-modal__confirm {
+    padding: 15px;
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: 0;
+    text-align: center;
+    color: #FFFFFF;
+    background: #007AFF;
+    border-radius: 2px;
+    width: 100%;
+}
+.search-modal--count,
+.search-modal--date {
+    padding: 13px 0;
+    padding-top: 67px;
+    height: auto;
+}
+.search-modal--date {
+    padding-top: 22px;
+}
+.search-modal--count .search-modal__close,
+.search-modal--date .search-modal__close {
+    top: 13px;
+    right: 13px;
+    transform: none;
+}
+.search-modal--date .search-modal__title {
+    margin-top: 0;
+    margin-bottom: 5px;
+    text-align: center;
+}
+.search-modal__settings-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 18px;
+}
+.search-modal__settings-name,
+.search-modal__settings-value {
+    display: inline-block;
+    width: 25px;
+    margin: 0 10px;
+    text-align: center;
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0;
+    color: #222222;
+}
+.search-modal__settings {
+    padding: 0 10px;
+    margin-bottom: 40px;
+}
+.search-modal__settings-item:last-child {
+    margin-bottom: 0;
+}
+.search-modal__title {
+    margin-top: 24px;
+    margin-bottom: 29px;
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0;
+    color: #0B192C;
+}
+.search-modal__field {
+    position: relative;
+    margin: 0 -15px;
+}
+.search-modal__field::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #E3E3E3;
+    transition: 0.2s ease-out;
+}
+.search-modal__top {
+    position: relative;
+    padding-right: 35px;
+}
+.search-modal__close {
+    width: 13px;
+    height: 13px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    background: none;
+}
+.search-modal__location-marker {
+    margin-right: 8px;
+}
+.search-modal__location-btn {
+    margin-bottom: 19px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 15px 0;
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0;
+    color: #0B192C;
+    background: none;
+    border-bottom: 1px solid #E3E3E3;
+}
+.search-modal__location-title {
+    margin-bottom: 22px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 0;
+    color: #0B192C;
+}
+.search-modal__location-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    text-align: left;
+    width: 100%;
+    background: none;
+    padding: 0;
+}
+.search-modal__location-item:last-child {
+    margin-bottom: 0;
+}
+.search-modal__location-icon {
+    margin-right: 11px;
+}
+.search-modal__close::before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    transform: rotate(45deg);
+    background: #637280;
+}
+.search-modal__close::after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    transform: rotate(-45deg);
+    background: #637280;
+    border-radius: 2px;
+}
+.search-modal__field::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #E3E3E3;
+    transition: 0.2s ease-out;
+}
+.search-modal__pic {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+}
+.search-modal__clear {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0;
+    color: #007AFF;
+    background: transparent;
+    visibility: visible;
+    opacity: 0;
+    transition: 0.2s ease-out;
+}
+.search-modal__item {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: left;
+    background: none;
+    padding: 0;
+}
+.search-modal__item:last-child {
+    margin-bottom: 0;
+}
+.search-modal__value,
+.search-modal__location-value {
+    display: block;
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 0;
+    color: #0B192C;
+}
+.search-modal__sub-value,
+.search-modal__location-sub-value {
+    display: block;
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0;
+    color: #767676;
+}
+.search-modal__table {
+    display: none;
+}
+.search-modal__type {
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0;
+    text-align: right;
+    color: #767676;
+}
+.search-modal__input {
+    padding: 17px 0px;
+    padding-left: 35px;
+    width: 100%;
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 17px;
+    letter-spacing: 0;
+    text-align: left;
+    color: #0B192C;
+    padding-right: 90px;
+}
+.search-modal__label {
+    position: absolute;
+    top: 50%;
+    left: 40px;
+    transform: translateY(-50%);
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0;
+    color: #767676;
+}
+.search-modal__img {
+    margin-right: 9px;
+}
+.search-modal__info {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.search-modal__settings-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 28px;
+    letter-spacing: 0;
+    height: 28px;
+    width: 28px;
+    border: 1px solid #1785ED;
+    border-radius: 2px;
+    color: #1785ED;
+    background: none;
+    transition: 0.1s ease-in-out;
+}
+.search-modal__settings-btn:active {
+    background: rgba(2, 24, 45, 0.8) !important;
+    border-color: rgba(2, 24, 45, 1);
+    color: #FFFFFF !important;
+}
+.search-modal__settings-btn:hover {
+    background: rgba(23, 133, 237, 0.1);
+    border-color: #1785ED;
+    color: #1785ED;
+}
+
+.litepicker .container__months,
+.litepicker .container__months .month-item {
+    width: 100% !important;
+}
+
+.litepicker .container__days div {
+    width: 14.22%;
+}
+
+.litepicker .container__months .month-item-header div {
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0;
+    text-align: center;
+    color: #0B192C;
+}
+
+.search-modal__calendar-row {
+    max-width: 320px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5px;
+}
+
+.month-item-weekdays-row {
+    display: none !important;
+}
+
+.search-modal__calendar-item {
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0;
+    text-align: center;
+    color: #B7B8BC;
+    width: 44px;
+    padding: 5px 0;
+}
+
+.search-modal__calendar {
+    margin-bottom: 26px;
+    padding-bottom: 10px;
+    border-top: 1px solid #E3E3E3;
+    border-bottom: 1px solid #E3E3E3;
+}
+
+.search-modal__calendar-datepicker {
+    max-width: 320px;
+    height: 260px;
+    margin: 0 auto;
+    overflow: auto;
+}
+
+.search-modal__date {
+    margin: 0 auto;
+    margin-bottom: 15px;
+    display: block;
+    text-align: center;
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 17px;
+    letter-spacing: 0;
+    color: #0B192C;
+}
+
+/* Состояния */
+
+.search-modal__label.js-active {
+    display: none;
+}
+.search-modal__field.js-active::before {
+    opacity: 0;
+}
+.search-modal__field.js-active::after {
+    height: 1px;
+}
+.search-modal.js-active {
+    transform: translateY(0);
+    visibility: visible;
+}
+.search-modal__location.js-active {
+    display: none;
+}
+.search-modal__form.js-active {
+    margin-bottom: 23px;
+}
+.search-modal__table.js-active {
+    display: block;
+}
+.search-modal__clear.js-active {
+    opacity: 1;
+    visibility: visible;
+}
+.offers__item.js-active {
+    display: none;
+}
+.search-form__field--date.js-active .search-form__label {
+    top: 30%;
+}
+.search-form__field--date.js-active .search-form__input {
+    padding-bottom: 5px;
+    padding-top: 20px;
+}
+
+
+/* Слайдер последних гостиниц $recent-hotels */
+
+.recent-hotels .container {
+    padding: 0 8px;
+}
+
+.header {
+    margin-top: 58px;
+}

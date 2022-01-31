@@ -1,0 +1,160 @@
+.saved {
+    padding-top: 28px;
+}
+.saved__title {
+    margin-bottom: 5px;
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 0;
+    color: #0B192C;
+}
+.saved__desc {
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0;
+    color: #0B192C;
+}
+.saved__intro {
+    margin-bottom: 24px;
+}
+.saved__list {
+    margin: 0 -15px;
+    margin-bottom: 12px;
+    background: #FFFFFF;
+    border-top: 1px solid #ECECEC;
+    border-bottom: 1px solid #ECECEC;
+    border-radius: 2px;
+}
+.saved__list-item {
+    border-bottom: 1px solid #ECECEC;
+}
+.saved__list-item:last-child {
+    border-bottom: none;
+}
+.saved__list-link {
+    display: inline-block;
+    padding: 13px 15px;
+    width: 100%;
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0;
+    color: #1785ED;
+}
+
+.saved__bottom {
+    margin: 0 -8px;
+}
+.saved__bottom-name {
+    margin-bottom: 4px;
+}
+.saved__bottom-price {
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0;
+    color: #007AFF;
+}
+.saved__bottom-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 89px;
+    height: 100%;
+}
+.saved__bottom-arrow {
+    top: 50%;
+    right: 13px;
+    width: 12px;
+    height: 7px;
+    transform: translateY(-50%);
+}
+
+.saved__table {
+    margin: 0 -8px;
+    margin-bottom: 12px;
+}
+.saved__table-name {
+    margin-bottom: 8px;
+}
+.saved__table-text {
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0;
+    color: #858D97;
+}
+.saved__table-option {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+.saved__table-icon {
+    margin-right: 7px;
+}
+.saved__table-heart {
+    position: absolute;
+    top: 13px;
+    right: 12px;
+}
+
+/* Общие стили */
+.saved__table-item,
+.saved__bottom-item {
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    padding-left: 89px;
+    background: #FFFFFF;
+    border-radius: 2px;
+    overflow: hidden;
+    margin-bottom: 11px;
+}
+
+.saved__bottom-item:last-child,
+.saved__table-item:last-child,
+.saved__table-option:last-child {
+    margin-bottom: 0;
+}
+
+.saved__bottom-name,
+.saved__table-name {
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 17px;
+    letter-spacing: -0.33764711022377014px;
+    color: #0B192C;
+}
+
+.saved__bottom-img,
+.saved__table-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 89px;
+    height: 100%;
+}
+
+.saved__bottom-content,
+.saved__table-content {
+    position: relative;
+    padding: 15px 12px;
+    padding-right: 40px;
+    width: 100%;
+}

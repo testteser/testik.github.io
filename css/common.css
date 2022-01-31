@@ -1,0 +1,600 @@
+/* Системные */
+
+body {
+    background: #F8F9FA;
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+}
+.container {
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Стили для скачивания приложения */
+
+.app-download {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 13px 0;
+    background: #0B192C;
+    z-index: 902;
+    width: 100%;
+    transition: 0.3s ease-out;
+}
+.app-download__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.app-download__item {
+    display: flex;
+    align-items: center;
+}
+.app-download__desc {
+    margin-left: 9px;
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 17px;
+    letter-spacing: 0em;
+    color: #FFFFFF;
+}
+.app-download__link {
+    padding: 5px 12px;
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #0B192C;
+    background: #F0C806;
+    border-radius: 12px;
+    text-transform: uppercase;
+}
+
+/* Стили для шапки */
+
+.header {
+    padding: 10px 0;
+    border-bottom: 0.5px solid #485F7E;
+    border-top: 0.5px solid #485F7E;
+    background: #0B192C;
+}
+.header__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.header__option {
+    display: inherit;
+    margin-right: 13px;
+}
+.header__item--row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__option:last-child {
+    margin-right: 0;
+}
+.header__logo {
+    display: block;
+}
+
+/* Стили для меню аккаунта */
+.account-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    padding-top: 39px;
+    z-index: 991;
+    transition: 0.3s ease-out;
+    visibility: hidden;
+    transform: translateY(100%);
+}
+.account-menu__close {
+    top: 23px;
+    right: 18px;
+    width: 17px;
+    height: 17px;
+}
+.account-menu__status {
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0;
+    color: #007AFF;
+}
+.account-menu__header {
+    margin-bottom: 35px;
+}
+.account-menu__item {
+    border-bottom: 1px solid #E3E3E3;
+    border-radius: 2px;
+}
+.account-menu__link {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    padding: 12px 8px;
+}
+.account-menu__next {
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+.account-menu__name {
+    margin-bottom: 3px;
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 19px;
+    letter-spacing: 0;
+    color: #0B192C;
+}
+.account-menu__title {
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0;
+    color: #0B192C;
+}
+
+/* Стили для меню */
+
+.header-settings {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    z-index: 901;
+    overflow: auto;
+    padding-top: 58px;
+    padding-bottom: 25px;
+    transform: translateY(100%);
+    visibility: hidden;
+    transition: 0.3s ease-out;
+}
+.header-settings__title {
+    margin-top: 24px;
+    margin-bottom: 25px;
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0;
+    text-align: center;
+}
+.header-settings__item {
+    margin-bottom: 40px;
+}
+.header-settings__close {
+    top: 70px;
+    right: 15px;
+    width: 13px;
+    height: 13px;
+}
+.header-settings__item-link {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid #E3E3E3;
+    border-radius: 2px;
+}
+.header-settings__item:last-child {
+    margin-bottom: 0;
+}
+.header-settings__item-option:last-child {
+    margin-bottom: 0;
+}
+.header-settings__item-icon {
+    width: 14px;
+    margin-right: 12px;
+}
+.header-settings__item-value {
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0;
+    text-align: left;
+    color: #0B192C;
+}
+
+/* Стили для календаря */
+
+.litepicker .container__days .day-item.is-start-date {
+    background: #007AFF;
+    border-radius: 2px;
+}
+.litepicker .container__days .day-item.is-range-date {
+    background: rgba(0, 122, 255, 0.1);
+    border-radius: 2px;
+}
+.litepicker .container__days .day-item {
+    margin-bottom: 2px;
+}
+.litepicker .container__months {
+    box-shadow: none;
+}
+.litepicker .container__months .month-item-header {
+    margin-bottom: 8px;
+    padding: 0;
+}
+.litepicker .container__days .day-item {
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0;
+    color: #0B192C;
+}
+.litepicker .container__days .day-item.is-end-date {
+    background: #007AFF;
+    outline: 2px solid rgba(0, 122, 255, 0.38);
+    border-radius: 2px;
+}
+.litepicker .container__days .day-item.is-today {
+    color: #007AFF;
+}
+.litepicker .container__days .day-item.is-today.is-start-date {
+    color: #fff;
+}
+.litepicker .container__months .month-item:last-child .button-next-month,
+.litepicker .container__months .month-item:first-child .button-previous-month {
+    visibility: hidden;
+}
+
+/* Стили для плашки закрытия */
+
+.body-closer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 900;
+    width: 100%;
+    height: 100%;
+    background: #1E1E1E;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s ease-out;
+}
+
+/* Состояния  */
+
+.header-settings.js-active,
+.account-menu.js-active {
+    transform: translateY(0);
+    visibility: visible;
+}
+.body-closer.js-active {
+    opacity: 0.8;
+    visibility: visible;
+}
+.app-download.js-active {
+    position: fixed;
+}
+.is-disabled {
+    border: 1px solid #A1A9AF !important;
+    color: #A1A9AF !important;
+    background: #fff !important;
+}
+.status-is-completed {
+    color: #5ADC70;
+}
+.status-is-cancelled {
+    color: #DE2B21;
+}
+
+/* Страница - Турист */
+
+.tourist-big-title {
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0;
+}
+.tourist-small-title {
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0;
+}
+.tourist-desc {
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0;
+}
+
+/* БЛОК ПОДПИСКИ */
+
+.subscribe {
+    background: #0B192C;
+    padding-top: 15px;
+    padding-bottom: 32px;
+}
+.subscribe__title {
+    margin-bottom: 8px;
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0;
+    color: #F8F9FA;
+}
+.subscribe__desc {
+    max-width: 260px;
+    margin-bottom: 26px;
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0;
+    color: #F8F9FA;
+}
+.subscribe__form-input {
+    margin-bottom: 15px;
+    padding: 15px 12px;
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0;
+    background: #fff;
+    color: #767676;
+    width: 100%;
+}
+.subscribe__form-submit {
+    width: 100%;
+    padding: 15px;
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: 0;
+    text-align: center;
+    background: #007AFF;
+    border-radius: 2px;
+    color: #fff;
+}
+
+/* БЛОК НЕДАВНИХ ПРОСМОТРЕННЫХ */
+
+.recent-hotels {
+    margin-bottom: 24px;
+}
+.recent-hotels__title {
+    margin-bottom: 9px;
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0;
+}
+.recent-hotels__img {
+    margin-bottom: 12px;
+}
+.recent-hotels__info-bottom,
+.recent-hotels__info-top {
+    display: flex;
+    align-items: center;
+}
+.recent-hotels__info-top {
+    margin-bottom: 6px;
+}
+.recent-hotels__slider {
+    margin-right: -8px;
+}
+.recent-hotels__name {
+    margin-right: 7px;
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0;
+    color: #0B192C;
+}
+.recent-hotels__rating {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.recent-hotels__rating-item {
+    margin-right: 4px;
+}
+.recent-hotels__rating-item:last-child {
+    margin-right: 0;
+}
+.recent-hotels__info-total,
+.recent-hotels__info-service {
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0;
+    color: #484848;
+}
+.recent-hotels__info-total {
+    position: relative;
+    padding-right: 10px;
+    margin-right: 6px;
+}
+.recent-hotels__info-total::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    height: 3px;
+    width: 3px;
+    background: #484848;
+    border-radius: 50%;
+}
+.recent-hotels__item {
+    width: 250px;
+    margin-right: 8px;
+}
+.recent-hotels__item:last-child {
+    margin-right: 0;
+}
+
+/* Элемент - кнопка сплошная (синия) */
+.site-btn {
+    display: inline-block;
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: 0;
+    text-align: center;
+    color: #fff;
+    background: #007AFF;
+    border-radius: 2px;
+}
+
+/* Элемент - кнопка рамка (синия) */
+.site-btn-border {
+    display: inline-block;
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: 0;
+    text-align: center;
+    color: #007AFF;
+    background: #FFFFFF;
+    border-radius: 2px;
+    border: 1px solid #007AFF;
+}
+
+/* Элемент - закрытия (крестик) */
+.site-close {
+    position: absolute;
+    background: none;
+    padding: 5px;
+}
+.site-close::before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    transform: rotate(45deg);
+    background: #637280;
+}
+.site-close::after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    transform: rotate(-45deg);
+    background: #637280;
+    border-radius: 2px;
+}
+
+/* Элемент - показать больше (троеточие) */
+.site-more {
+    position: absolute;
+    width: 18px;
+    height: 4px;
+    background: none;
+}
+.site-more::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: #0B192C;
+}
+.site-more::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: #0B192C;
+}
+.site-more span {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: #0B192C;
+}
+
+/* Элементы - перейти дальше (стрелка) */
+.site-next {
+    position: absolute;
+    background: none;
+    padding: 5px;
+}
+.site-next::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 2px;
+    transform: rotate(45deg);
+    background: #858D97;
+}
+.site-next::after {
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: 0;
+    width: 10px;
+    height: 2px;
+    transform: rotate(-45deg);
+    background: #858D97;
+}
