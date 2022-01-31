@@ -75,7 +75,7 @@
             </h1>
             <form action="№!" class="search-form" id="search-main-form">
                 <div class="search-form__field">
-                    <input type="text" name="city" value="Ташкент" placeholder="Введите направление" class="search-form__input" id="search-form-way" autocomplete="off">
+                    <input type="text" name="city" value="Ташкент" placeholder="Введите направление" class="search-form__input" id="search-form-way" readonly autocomplete="off">
                     <svg class="search-form__icon" width="13" height="13" viewBox="0 0 13 13" fill="none"
                          xmlns="http://www.w3.org/2000/svg">
                         <path d="M12.8361 12.0687L9.10626 8.3361C9.84158 7.45425 10.2838 6.32729 10.2838 5.09643C10.2838 2.28835 7.9793 0.00512695 5.14458 0.00512695C2.30987 0.00512695 0 2.29102 0 5.09909C0 7.90717 2.30454 10.1904 5.13926 10.1904C6.34348 10.1904 7.45179 9.77744 8.33098 9.08741L12.0742 12.8306C12.2927 13.0491 12.6177 13.0491 12.8361 12.8306C13.0546 12.6122 13.0546 12.2871 12.8361 12.0687ZM1.09232 5.09909C1.09232 2.89313 2.90931 1.10012 5.13926 1.10012C7.3692 1.10012 9.18619 2.89313 9.18619 5.09909C9.18619 7.30505 7.3692 9.09807 5.13926 9.09807C2.90931 9.09807 1.09232 7.30239 1.09232 5.09909Z"
@@ -86,13 +86,13 @@
                     <label for="search-form-checkin" class="search-form__label">
                         Заезд
                     </label>
-                    <input type="text" class="search-form__input" name="checkin" id="search-form-checkin" autocomplete="off">
+                    <input type="text" class="search-form__input" name="checkin" id="search-form-checkin" readonly autocomplete="off">
                 </div>
                 <div class="search-form__field search-form__field--date js-active">
                     <label for="search-form-checkout" class="search-form__label">
                         Дата выезда
                     </label>
-                    <input type="text" class="search-form__input" name="checkout" id="search-form-checkout" autocomplete="off">
+                    <input type="text" class="search-form__input" name="checkout" id="search-form-checkout" readonly autocomplete="off">
                 </div>
                 <div class="search-form__field search-form__field--count" id="search-form-count">
                     <div class="search-form__field-item search-form__field-item--adults">
@@ -444,7 +444,7 @@
                 <svg class="search-modal__pic" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M12.8361 12.0687L9.10626 8.3361C9.84158 7.45425 10.2838 6.32729 10.2838 5.09643C10.2838 2.28835 7.9793 0.00512695 5.14458 0.00512695C2.30987 0.00512695 0 2.29102 0 5.09909C0 7.90717 2.30454 10.1904 5.13926 10.1904C6.34348 10.1904 7.45179 9.77744 8.33098 9.08741L12.0742 12.8306C12.2927 13.0491 12.6177 13.0491 12.8361 12.8306C13.0546 12.6122 13.0546 12.2871 12.8361 12.0687ZM1.09232 5.09909C1.09232 2.89313 2.90931 1.10012 5.13926 1.10012C7.3692 1.10012 9.18619 2.89313 9.18619 5.09909C9.18619 7.30505 7.3692 9.09807 5.13926 9.09807C2.90931 9.09807 1.09232 7.30239 1.09232 5.09909Z" fill="#B5BAC0"/>
                 </svg>
-                <input type="text" class="search-modal__input" placeholder="Введите направление" id="search-input" autocomplete="off">
+                <input type="text" class="search-modal__input" placeholder="Введите направление" id="search-input" autocomplete="off" readonly>
                 <button class="search-modal__clear" id="clear-btn">
                     Очистить
                 </button>
