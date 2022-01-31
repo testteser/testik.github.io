@@ -19,7 +19,6 @@ body {
     background: #0B192C;
     z-index: 901;
     width: 100%;
-    transition: 0.3s ease-out;
 }
 .app-download__wrapper {
     display: flex;
