@@ -274,16 +274,12 @@ $(function () {
 
     /* Функция для включения скролла */
     function enableScroll() {
-        $('.app-download').removeClass('js-active');
-
         $('#body-closer').removeClass('js-active');
         $('body').css('overflow', 'auto');
     }
 
     /* Функция для отключения скролла */
     function disableScroll() {
-        $('.app-download').addClass('js-active');
-
         $('#body-closer').addClass('js-active');
         $('body').css('overflow', 'hidden');
     }

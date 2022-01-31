@@ -298,9 +298,6 @@ body {
     opacity: 0.8;
     visibility: visible;
 }
-.app-download.js-active {
-    position: fixed;
-}
 .is-disabled {
     border: 1px solid #A1A9AF !important;
     color: #A1A9AF !important;
