@@ -11,7 +11,6 @@
     background-size: cover;
     position: relative;
 }
-
 .tourist-intro::before {
     content: '';
     position: absolute;
@@ -22,46 +21,37 @@
     background: #0B192C;
     opacity: 0.7;
 }
-
 .tourist-intro__content {
     position: relative;
 }
-
 .tourist-intro__title {
     max-width: 265px;
     margin-bottom: 8px;
     color: #F0C806;
 }
-
 .tourist-about .container {
     padding: 0 25px;
 }
-
 .tourist-about__item {
     margin-bottom: 36px;
 }
-
 .tourist-about__item:last-child {
     margin-bottom: 0;
 }
-
 .tourist-about__title {
     max-width: 242px;
     margin-bottom: 48px;
     color: #0B192C;
 }
-
 .tourist-levels__table {
     margin: 0 -17px;
 }
-
 .tourist-levels__title {
     margin-left: -4px;
     margin-bottom: 19px;
     max-width: 242px;
     color: #0B192C;
 }
-
 .tourist-about__item-title {
     margin-bottom: 8px;
     font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
@@ -72,7 +62,6 @@
     letter-spacing: 0;
     color: #0B192C;
 }
-
 .tourist-about__item-desc {
     font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
     font-size: 14px;
@@ -81,70 +70,56 @@
     line-height: 22px;
     letter-spacing: 0;
 }
-
 .tourist-about__table {
     margin-bottom: 36px;
 }
-
 .tourist-intro__desc {
     max-width: 305px;
     margin-bottom: 9px;
     color: #fff;
 }
-
 .tourist-enter {
     margin-bottom: 42px;
 }
-
 .tourist-enter__desc {
     max-width: 260px;
     color: #858D97;
     margin-bottom: 24px;
 }
-
 .tourist-levels .container {
     padding: 0 25px;
 }
-
 .tourist-about {
     margin-bottom: 64px;
 }
-
 .tourist-intro__btn,
 .tourist-about__enter,
 .tourist-enter__link {
     width: 265px;
     padding: 9px;
 }
-
 .tourist-intro__desc-mark {
     font-weight: 700;
 }
-
 .tourist-levels__item {
     padding: 30px 15px;
     background: #fff;
     border-radius: 2px;
     margin-bottom: 24px;
 }
-
 .tourist-levels__item:first-child {
     border-top: 2px solid #F0C806;
 }
-
 .tourist-levels__item:nth-child(2) {
     border-top: 2px solid #007AFF;
 }
-
 .tourist-levels {
     margin-bottom: 46px;
 }
-
 .tourist-levels__item:last-child {
     margin-bottom: 0;
     border-top: 2px solid #5ADC70;
 }
-
 .tourist-levels__item-title {
     margin-bottom: 8px;
     font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
@@ -155,13 +130,11 @@
     letter-spacing: 0;
     color: #0B192C;
 }
-
 .tourist-enter__title {
     margin-bottom: 9px;
     max-width: 265px;
     color: #0B192C;
 }
-
 .tourist-levels__item-desc {
     margin-bottom: 27px;
     font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
@@ -172,27 +145,22 @@
     letter-spacing: 0;
     color: #0B192C;
 }
-
 .tourist-levels__item-table {
     padding-right: 20px;
 }
-
 .tourist-levels__item-offer {
     display: flex;
     align-items: flex-start;
     margin-bottom: 16px;
 }
-
 .tourist-levels__item-offer:last-child {
     margin-bottom: 0;
 }
-
 .tourist-levels__item-icon {
     flex-shrink: 0;
     margin-right: 8px;
     margin-top: 2px;
 }
-
 .tourist-levels__item-suptitle {
     margin-bottom: 4px;
     font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
@@ -203,7 +171,6 @@
     letter-spacing: 0;
     color: #0B192C;
 }
-
 .tourist-levels__item-subdesc {
     font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
     font-size: 12px;
