@@ -396,13 +396,9 @@
     padding-right: 35px;
 }
 .search-modal__close {
-    width: 13px;
-    height: 13px;
-    position: absolute;
     top: 50%;
     right: 0;
     transform: translateY(-50%);
-    background: none;
 }
 .search-modal__location-marker {
     margin-right: 8px;
@@ -447,27 +443,6 @@
 }
 .search-modal__location-icon {
     margin-right: 11px;
-}
-.search-modal__close::before {
-    content: '';
-    position: absolute;
-    top: 5px;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    transform: rotate(45deg);
-    background: #637280;
-}
-.search-modal__close::after {
-    content: '';
-    position: absolute;
-    top: 5px;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    transform: rotate(-45deg);
-    background: #637280;
-    border-radius: 2px;
 }
 .search-modal__field::after {
     content: '';

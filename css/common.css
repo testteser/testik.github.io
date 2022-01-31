@@ -55,6 +55,10 @@ body {
     border-radius: 12px;
     text-transform: uppercase;
 }
+.app-download__logo {
+    width: 32px;
+    height: 32px;
+}
 
 /* Стили для шапки */
 
@@ -510,24 +514,26 @@ body {
 .site-close {
     position: absolute;
     background: none;
-    padding: 5px;
+    width: 24px;
+    height: 24px;
 }
 .site-close::before {
     content: '';
     position: absolute;
-    top: 5px;
-    left: 0;
-    width: 100%;
+    top: 12px;
+    left: 6px;
+    width: 15px;
     height: 2px;
     transform: rotate(45deg);
     background: #637280;
+    border-radius: 2px;
 }
 .site-close::after {
     content: '';
     position: absolute;
-    top: 5px;
-    left: 0;
-    width: 100%;
+    top: 12px;
+    left: 6px;
+    width: 15px;
     height: 2px;
     transform: rotate(-45deg);
     background: #637280;
@@ -576,13 +582,14 @@ body {
 .site-next {
     position: absolute;
     background: none;
-    padding: 5px;
+    width: 24px;
+    height: 24px;
 }
 .site-next::before {
     content: '';
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 7px;
+    left: 8px;
     width: 10px;
     height: 2px;
     transform: rotate(45deg);
@@ -591,8 +598,8 @@ body {
 .site-next::after {
     content: '';
     position: absolute;
-    top: 6px;
-    left: 0;
+    top: 13px;
+    left: 8px;
     width: 10px;
     height: 2px;
     transform: rotate(-45deg);
