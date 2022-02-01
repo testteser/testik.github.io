@@ -7,6 +7,8 @@ $(function () {
 
         $('.auth__content-item').removeClass('js-active');
         $(`.auth__content-item[data-content="${tabAttr}"]`).addClass('js-active');
+
+        tabAttr === 'phone' ? $('.auth-tabs').addClass('is-active') : $('.auth-tabs').removeClass('is-active');
     })
 
     $.each($('.auth__form-show'), function (index, item) {

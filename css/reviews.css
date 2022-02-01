@@ -32,15 +32,9 @@
     z-index: 5;
 }
 
-.reviews__tabs.is-active::before {
-    left: 50%;
-}
 
 .reviews__table-item {
     display: none;
-}
-.reviews__table-item.is-active {
-    display: block;
 }
 .reviews__tabs-switch {
     padding: 5px;
@@ -181,7 +175,12 @@
 
 /* Состояния */
 
+.reviews__table-item.is-active {
+    display: block;
+}
 .reviews__tabs-switch.is-active {
     color: #007AFF;
-    font-weight: 600;
+}
+.reviews__tabs.is-active::before {
+    left: 50%;
 }
