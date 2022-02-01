@@ -12,13 +12,10 @@ body {
 /* Стили для скачивания приложения */
 
 .app-download {
-    position: absolute;
-    top: 0;
-    left: 0;
     padding: 13px 0;
     background: #0B192C;
-    z-index: 901;
     width: 100%;
+    border-bottom: 0.5px solid #485F7E;
 }
 .app-download__wrapper {
     display: flex;
@@ -64,7 +61,6 @@ body {
 .header {
     padding: 10px 0;
     border-bottom: 0.5px solid #485F7E;
-    border-top: 0.5px solid #485F7E;
     background: #0B192C;
 }
 .header__wrapper {
@@ -190,8 +186,6 @@ body {
 .header-settings__close {
     top: 10px;
     right: 15px;
-    width: 13px;
-    height: 13px;
 }
 .header-settings__item-link {
     display: flex;
@@ -304,33 +298,6 @@ body {
 }
 .status-is-cancelled {
     color: #DE2B21;
-}
-
-/* Страница - Турист */
-
-.tourist-big-title {
-    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 32px;
-    letter-spacing: 0;
-}
-.tourist-small-title {
-    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 24px;
-    letter-spacing: 0;
-}
-.tourist-desc {
-    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 22px;
-    letter-spacing: 0;
 }
 
 /* БЛОК ПОДПИСКИ */

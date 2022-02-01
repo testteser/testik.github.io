@@ -4,16 +4,11 @@
     padding: 20px 0;
     background: #F8F9FA;
 }
-
 .auth-back {
     position: absolute;
     top: 50%;
     left: 15px;
     transform: translateY(-50%);
-}
-
-.header-settings {
-    padding-top: 0;
 }
 
 .auth {
@@ -218,6 +213,7 @@
     font-weight: 500;
     line-height: 22px;
     letter-spacing: 0;
+    color: #0B192C;
 }
 .auth__join-name {
     font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;

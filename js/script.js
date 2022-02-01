@@ -24,18 +24,6 @@ $(function () {
         }
     })
 
-    $('#main-menu').on('click', function () {
-        $('.account-menu').addClass('js-active');
-
-        disableScroll();
-    })
-
-    $('.account-menu__close').on('click', function () {
-        $('.account-menu').removeClass('js-active');
-
-        enableScroll();
-    })
-
     $('#search-input').on('keyup', function () {
         if ($(this).val().length > 0) {
 
@@ -188,7 +176,6 @@ $(function () {
         $('.search-form__field-item--rooms input').val(roomsValue);
     })
 
-
     let today = new Date();
     let minDate = today.setUTCHours(0, 0, 0);
 
@@ -253,24 +240,21 @@ $(function () {
         console.log(data);
     })
 
-    $('#body-closer').on('click', function () {
-        $('.search-modal').removeClass('js-active');
-
-        enableScroll();
-    })
-
-    $('#show-menu').on('click', function () {
-        $('#menu').addClass('js-active');
-
-        disableScroll();
-    })
-
     /* Функция для форматирования дат */
     function formatDate(value, options) {
         let formatter = new Intl.DateTimeFormat("ru", options);
 
         return formatter.format(value);
     }
+
+    $('.recent-hotels__slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        centerMode: false,
+        infinite: true,
+        variableWidth: true,
+    })
 
     /* Функция для включения скролла */
     function enableScroll() {
@@ -283,19 +267,4 @@ $(function () {
         $('#body-closer').addClass('js-active');
         $('body').css('overflow', 'hidden');
     }
-
-    $('#menu-close').on('click', function () {
-        $('#menu').removeClass('js-active');
-
-        enableScroll();
-    })
-
-    $('.recent-hotels__slider').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: false,
-        centerMode: false,
-        infinite: true,
-        variableWidth: true,
-    })
 })

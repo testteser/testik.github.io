@@ -17,7 +17,7 @@
     text-transform: uppercase;
 }
 .search-modal--cities {
-    padding-top: 58px;
+     padding-top: 24px;
 }
 .search-form {
     display: flex;
@@ -119,7 +119,6 @@
     transform: translate(-50%, -50%);
     opacity: 0;
     visibility: hidden;
-    transition: 0.2s ease-out;
 }
 .search-form__field--count {
     display: flex;
@@ -368,8 +367,6 @@
     margin-bottom: 0;
 }
 .search-modal__title {
-    margin-top: 24px;
-    margin-bottom: 29px;
     font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
     font-size: 20px;
     font-style: normal;
@@ -393,6 +390,7 @@
     transition: 0.2s ease-out;
 }
 .search-modal__top {
+    margin-bottom: 29px;
     position: relative;
     padding-right: 35px;
 }
@@ -710,8 +708,4 @@
 
 .recent-hotels .container {
     padding: 0 8px;
-}
-
-.header {
-    margin-top: 58px;
 }

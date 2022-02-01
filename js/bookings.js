@@ -55,9 +55,4 @@ $(function () {
         $('#body-closer').addClass('js-active');
         $('.bookings-delete').addClass('js-active');
     })
-
-    $('#body-closer').on('click', function () {
-        $(this).removeClass('js-active');
-        $('.bookings-delete').removeClass('js-active');
-    })
 })

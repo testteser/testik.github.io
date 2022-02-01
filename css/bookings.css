@@ -127,8 +127,6 @@
     top: 50%;
     right: 15px;
     transform: translateY(-50%);
-    width: 13px;
-    height: 13px;
 }
 .bookings-table__class-desc {
     display: inline-block;
