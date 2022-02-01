@@ -8,11 +8,11 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/bookings.css">
+    <link rel="stylesheet" href="css/auth.css">
 </head>
 <body>
 
-<div class="main-wrapper bookings">
+<main class="main-wrapper">
     <div class="app-download">
         <div class="container">
             <div class="app-download__wrapper">
@@ -66,122 +66,38 @@
             </div>
         </div>
     </header>
-    <section class="bookings-table">
+    <div class="reg">
         <div class="container">
-            <div class="bookings-table__info">
-                <h1 class="bookings-table__title">
-                    Бронирования
-                </h1>
-                <a href="#!" class="bookings-table__find">
-                    Не можете найти бронирование?
+            <div class="auth__header">
+                <a href="index.html" class="auth-back">
+                    <svg width="11" height="19" viewBox="0 0 11 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M9.98454 2.78822L2.84544 9.92352L9.98454 17.0982C10.9493 18.0444 9.36711 19.6606 8.40236 18.6751L0.259923 10.5937C-0.0873851 10.2389 -0.0873851 9.64757 0.259923 9.33219L8.40236 1.17193C9.36711 0.225818 10.9493 1.8421 9.98454 2.78822Z"
+                              fill="#858D97"/>
+                    </svg>
                 </a>
+                <h1 class="auth__title">
+                    Регистрация
+                </h1>
             </div>
-            <div class="bookings-table__content">
-                <div class="bookings-table__cell">
-                    <div class="bookings-table__cell-info">
-                        <h2 class="bookings-table__cell-title">
-                            Бухара
-                        </h2>
-                        <p class="bookings-table__cell-date">
-                            18 ноября. 2021 - 19 нояб. 2021
-                        </p>
-                    </div>
-                    <div class="bookings-table__list">
-                        <div class="bookings-table__item">
-                            <img src="images/booking-hotel.png" alt="Фото отеля" class="bookings-table__item-img">
-                            <div class="bookings-table__item-content">
-                                <div class="bookings-table__item-info">
-                                    <h3 class="bookings-table__item-name">
-                                        DMG Apartments Hotel
-                                    </h3>
-                                    <p class="bookings-table__item-date">
-                                        18 ноября. 2021 - 19 нояб. 2021
-                                    </p>
-                                    <span class="bookings-table__item-price">
-                                        UZS 232 222
-                                    </span>
-                                    <span class="bookings-table__item-status status-is-cancelled">
-                                        Отменено
-                                    </span>
-                                </div>
-                                <div class="bookings-table__class">
-                                    <span class="bookings-table__class-desc">
-                                        Оцените проживание и <br> оставьте отзыв
-                                    </span>
-                                    <button class="bookings-table__class-close site-close">
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <div class="auth__body">
+                <div class="auth-tabs">
+                    <button class="auth-tabs__tab js-active" data-tab="email">
+                        Эл. почта
+                    </button>
+                    <button class="auth-tabs__tab" data-tab="phone">
+                        Телефон
+                    </button>
                 </div>
-                <div class="bookings-table__cell">
-                    <div class="bookings-table__cell-info">
-                        <h2 class="bookings-table__cell-title">
-                            Бухара
-                        </h2>
-                        <p class="bookings-table__cell-date">
-                            18 ноября. 2021 - 19 нояб. 2021
-                        </p>
-                    </div>
-                    <div class="bookings-table__list">
-                        <div class="bookings-table__item">
-                            <img src="images/booking-hotel.png" alt="Фото отеля" class="bookings-table__item-img">
-                            <div class="bookings-table__item-content">
-                                <div class="bookings-table__item-info">
-                                    <h3 class="bookings-table__item-name">
-                                        DMG Apartments Hotel
-                                    </h3>
-                                    <p class="bookings-table__item-date">
-                                        18 ноября. 2021 - 19 нояб. 2021
-                                    </p>
-                                    <span class="bookings-table__item-price">
-                                        UZS 232 222
-                                    </span>
-                                    <span class="bookings-table__item-status status-is-cancelled">
-                                        Отменено
-                                    </span>
-                                    <button class="bookings-table__item-more site-more">
-                                        <span></span>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
+                <div class="auth__content">
+                    <div class="auth__content-item js-active" data-content="email">
                     </div>
                 </div>
             </div>
-            <button class="bookings-table__show site-btn" id="show-more">
-                Посмотреть больше бронирований
-            </button>
         </div>
-    </section>
-</div>
-
-<div class="bookings-more">
-    <div class="container">
-
     </div>
-</div>
-<div class="bookings-delete">
-    <button class="bookings-delete__close site-close">
+</main>
 
-    </button>
-    <h2 class="bookings-delete__title">
-        Удаление бронирования <br> из списка?
-    </h2>
-    <p class="bookings-delete__desc">
-        Это бронирование будет навсегдда удалено <br>
-        из вашего списка бронирований.
-    </p>
-    <div class="bookings-delete__group">
-        <button class="bookings-delete__btn site-btn">
-            Удалить
-        </button>
-        <button class="bookings-delete__btn site-btn-border">
-            Отмена
-        </button>
-    </div>
-</div>
 <div class="account-menu">
     <div class="container">
         <button class="account-menu__close site-close">
@@ -355,7 +271,7 @@
 <div class="body-closer" id="body-closer"></div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script src="js/bookings.js"></script>
+<script src="js/reg.js"></script>
 <script src="js/common.js"></script>
 </body>
 </html>

@@ -127,15 +127,6 @@
 .auth__form-item:last-child {
     margin-bottom: 0;
 }
-.auth-tabs__tab.js-active::before {
-    background: #007AFF;
-    bottom: -2px;
-    opacity: 1;
-}
-.auth-tabs__tab.js-active {
-    font-weight: 700;
-    color: #007AFF;
-}
 .auth__join-table {
     display: flex;
     flex-wrap: wrap;
@@ -235,6 +226,14 @@
     border-radius: 2px;
     background: #fff;
 }
+.auth__join-platform:hover,
+.auth__join-enter:hover {
+    background: #007AFF;
+}
+.auth__join-platform:hover .auth__join-name,
+.auth__join-enter:hover {
+    color: #fff;
+}
 .auth__join {
     margin-bottom: 24px;
 }
@@ -243,9 +242,6 @@
 }
 .auth__content-item {
     display: none;
-}
-.auth__content-item.js-active {
-    display: block;
 }
 .auth__join-enter {
     margin-bottom: 13px;
@@ -269,3 +265,17 @@
 .auth__join-icon {
     margin-right: 9px;
 }
+
+/* Состояния */
+.auth__content-item.js-active {
+    display: block;
+}
+.auth-tabs__tab.js-active::before {
+    background: #007AFF;
+    bottom: -2px;
+    opacity: 1;
+}
+.auth-tabs__tab.js-active {
+    color: #007AFF;
+}
+

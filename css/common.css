@@ -156,6 +156,7 @@ body {
 /* Стили для меню */
 
 .header-settings {
+    padding-top: 30px;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -170,7 +171,6 @@ body {
     transition: 0.3s ease-out;
 }
 .header-settings__title {
-    margin-top: 24px;
     margin-bottom: 25px;
     font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
     font-size: 20px;
