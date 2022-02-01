@@ -126,6 +126,8 @@
 /*  */
 .reviews-advice {
     margin-bottom: 20px;
+    display: inline-block;
+    width: 100%;
 }
 .reviews-advice .container {
     padding: 0 8px;
