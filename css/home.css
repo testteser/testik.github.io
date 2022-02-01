@@ -287,6 +287,10 @@
     margin: 0 -8px;
     margin-bottom: 6px;
 }
+.offers__row-img {
+    width: 82px;
+    height: 82px;
+}
 
 /* Стили для перехода скачивания шапки - $search-modal */
 
