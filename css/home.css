@@ -304,7 +304,7 @@
     left: 0;
     width: 100%;
     z-index: 901;
-    min-height: 100vh;
+    height: 100%;
     background: #fff;
     transition: 0.3s ease-out;
     visibility: hidden;
