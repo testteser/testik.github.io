@@ -206,7 +206,10 @@ body {
     margin-bottom: 0;
 }
 .header-settings__item-icon {
-    width: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
     margin-right: 12px;
 }
 .header-settings__item-value {

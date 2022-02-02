@@ -133,6 +133,10 @@ $(function () {
 
         $(this).blur();
 
+        setTimeout(function () {
+            $('#search-input').focus();
+        },300)
+
         disableScroll();
     })
 
