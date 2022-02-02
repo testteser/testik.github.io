@@ -266,6 +266,10 @@ $(function () {
         $('body').css('overflow', 'auto');
     }
 
+    return {
+
+    }
+
     /* Функция для отключения скролла */
     function disableScroll() {
         $('#body-closer').addClass('js-active');
