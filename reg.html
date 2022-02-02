@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/auth.css">
+    <link rel="stylesheet" href="css/reg.css">
 </head>
 <body>
 
@@ -91,6 +92,80 @@
                 </div>
                 <div class="auth__content">
                     <div class="auth__content-item js-active" data-content="email">
+                        <form class="auth__form" action="">
+                            <div class="auth__form-item">
+                                <div class="auth__form-top">
+                                    <label for="email-name" class="auth__form-label">
+                                        Имя *
+                                    </label>
+                                </div>
+                                <input type="text" class="auth__form-input" name="password" id="email-name" autocomplete="off" placeholder="Имя">
+                            </div>
+                            <div class="auth__form-item">
+                                <div class="auth__form-top">
+                                    <label for="email-surname" class="auth__form-label">
+                                        Фамилия *
+                                    </label>
+                                </div>
+                                <input type="text" class="auth__form-input" name="password" id="email-surname" autocomplete="off" placeholder="Фамилия">
+                            </div>
+                            <div class="auth__form-item">
+                                <div class="auth__form-top">
+                                    <label for="email-mail" class="auth__form-label">
+                                        Электронная почта *
+                                    </label>
+                                </div>
+                                <input type="email" class="auth__form-input" name="password" id="email-mail" autocomplete="off" placeholder="Почта">
+                            </div>
+                            <div class="auth__form-item error">
+                                <div class="auth__form-top">
+                                    <label for="email-password" class="auth__form-label">
+                                        Пароль *
+                                    </label>
+                                </div>
+                                <input type="password" class="auth__form-input error" name="password" id="email-password" autocomplete="off" placeholder="Пароль">
+                                <div class="auth__form-bottom">
+                                    <span class="auth__form-error">
+                                        Заполните поле
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="auth__form-item">
+                                <div class="auth__form-top">
+                                    <label for="email-password-confirm" class="auth__form-label">
+                                        Подтвердите пароль *
+                                    </label>
+                                </div>
+                                <input type="password" class="auth__form-input" name="password" id="email-password-confirm" autocomplete="off" placeholder="Пароль">
+                            </div>
+                            <button class="auth__form-submit">
+                                Зарегистрироваться
+                            </button>
+                        </form>
+                    </div>
+                    <div class="auth__content-item js-active" data-content="mobile">
+                        <form class="auth__form" action="">
+                            <div class="auth__form-item">
+                                <div class="auth__form-top">
+                                    <label for="mobile-password" class="auth__form-label">
+                                        Пароль *
+                                    </label>
+                                </div>
+                                <input type="password" class="auth__form-input" name="password" id="mobile-password" autocomplete="off" placeholder="Пароль">
+                            </div>
+                            <div class="auth__form-item">
+                                <div class="auth__form-top">
+                                    <label for="mobile-password" class="auth__form-label">
+                                        Подтвердите пароль *
+                                    </label>
+
+                                </div>
+                                <input type="password" class="auth__form-input" name="password" id="mobile-password" autocomplete="off" placeholder="Подтверждение пароля">
+                            </div>
+                            <button class="auth__form-submit">
+                                Отправить пароль
+                            </button>
+                        </form>
                     </div>
                 </div>
             </div>

@@ -268,6 +268,18 @@
 .auth__join-icon {
     margin-right: 9px;
 }
+.auth__form-bottom {
+    text-align: right;
+}
+.auth__form-error {
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0;
+    color: #DE2B21;
+}
 
 /* Состояния */
 .auth__content-item.js-active {
@@ -283,5 +295,11 @@
 }
 .auth-tabs.is-active::before {
     left: 50%;
+}
+.auth__form-input.error {
+    border-color: #DE2B21;
+}
+.auth__form-item.error {
+    margin-bottom: 0;
 }
 
