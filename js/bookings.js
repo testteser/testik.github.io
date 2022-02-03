@@ -53,6 +53,31 @@ $(function () {
 
     $('.bookings-table__item-more').on('click', function () {
         $('#body-closer').addClass('js-active');
-        $('.bookings-delete').addClass('js-active');
+        $('#bookings-more').addClass('js-active');
+    })
+
+    $('#bookings-more-close').on('click', function () {
+        $('#bookings-more').removeClass('js-active');
+        $('#body-closer').removeClass('js-active');
+    })
+
+    $('#body-closer').on('click', function () {
+        $('#bookings-more').removeClass('js-active');
+        $('#bookings-delete').removeClass('js-active');
+    })
+
+    $('#booking-delete-show').on('click', function () {
+        $('#bookings-more').removeClass('js-active');
+        $('#bookings-delete').addClass('js-active');
+    })
+
+    $('#bookings-delete-cancel').on('click', function () {
+        $('#bookings-delete').removeClass('js-active');
+        $('#bookings-more').addClass('js-active');
+    })
+
+    $('#bookings-delete-close').on('click', function () {
+        $('#bookings-delete').removeClass('js-active');
+        $('#body-closer').removeClass('js-active');
     })
 })

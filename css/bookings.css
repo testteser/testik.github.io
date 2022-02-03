@@ -190,6 +190,59 @@
 .bookings-delete__btn:last-child {
     margin-right: 0;
 }
+.bookings-more {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: auto;
+    width: 100%;
+    z-index: 901;
+    transition: 0.3s ease-out;
+    visibility: hidden;
+    transform: translateY(100%);
+    padding-top: 18px;
+    background: #FFFFFF;
+    border-radius: 2px;
+}
+.bookings-more__close {
+    right: 14px;
+    top: 8px;
+}
+.bookings-more__hotel {
+    background: #FFFFFF;
+    border: 0.5px solid rgba(151, 151, 151, 0.3);
+    border-radius: 2px;
+}
+.bookings-more__item {
+    border-bottom: 1px solid #E3E3E3;
+}
+.bookings-more__item:last-child {
+    border-bottom: none;
+}
+.bookings-more__link {
+    display: block;
+    padding: 13px;
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0;
+    color: #0B192C;
+}
+.bookings-more__hotels {
+    margin-bottom: 10px;
+}
+.booking-more__title {
+    margin-bottom: 12px;
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 26px;
+    letter-spacing: 0;
+    color: #0B192C;
+}
 
 .bookings-delete__close {
     position: absolute;
@@ -201,5 +254,9 @@
 
 .bookings-delete.js-active {
     opacity: 1;
+    visibility: visible;
+}
+.bookings-more.js-active {
+    transform: translateY(0);
     visibility: visible;
 }

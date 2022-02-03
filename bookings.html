@@ -157,13 +157,54 @@
     </section>
 </div>
 
-<div class="bookings-more">
+<div class="bookings-more" id="bookings-more">
     <div class="container">
-
+        <button class="bookings-more__close site-close" id="bookings-more-close"></button>
+        <h3 class="booking-more__title">
+            Ваше бронирование: жилье
+        </h3>
+        <div class="bookings-table__list bookings-more__hotels">
+            <div class="bookings-table__item bookings-more__hotel">
+                <img src="images/booking-hotel.png" alt="Фото отеля" class="bookings-table__item-img">
+                <div class="bookings-table__item-content">
+                    <div class="bookings-table__item-info">
+                        <h3 class="bookings-table__item-name">
+                            DMG Apartments Hotel
+                        </h3>
+                        <p class="bookings-table__item-date">
+                            18 ноября. 2021 - 19 нояб. 2021
+                        </p>
+                        <span class="bookings-table__item-price">
+                                    UZS 232 222
+                                </span>
+                        <span class="bookings-table__item-status status-is-cancelled">
+                                    Отменено
+                                </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <ul class="bookings-more__list">
+            <li class="bookings-more__item">
+                <a href="#!" class="bookings-more__link">
+                    Забронировать снова
+                </a>
+            </li>
+            <li class="bookings-more__item">
+                <a href="#!" class="bookings-more__link">
+                    Связаться с нами
+                </a>
+            </li>
+            <li class="bookings-more__item">
+                <a href="#!" class="bookings-more__link" id="booking-delete-show">
+                    Удалить бронирование
+                </a>
+            </li>
+        </ul>
     </div>
 </div>
-<div class="bookings-delete">
-    <button class="bookings-delete__close site-close">
+<div class="bookings-delete" id="bookings-delete">
+    <button class="bookings-delete__close site-close" id="bookings-delete-close">
 
     </button>
     <h2 class="bookings-delete__title">
@@ -177,7 +218,7 @@
         <button class="bookings-delete__btn site-btn">
             Удалить
         </button>
-        <button class="bookings-delete__btn site-btn-border">
+        <button class="bookings-delete__btn site-btn-border" id="bookings-delete-cancel">
             Отмена
         </button>
     </div>
