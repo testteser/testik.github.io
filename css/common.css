@@ -233,9 +233,6 @@ body {
     background: rgba(0, 122, 255, 0.1);
     border-radius: 2px;
 }
-.litepicker .container__days .day-item {
-    margin-bottom: 2px;
-}
 .litepicker .container__months {
     box-shadow: none;
 }
@@ -244,6 +241,7 @@ body {
     padding: 0;
 }
 .litepicker .container__days .day-item {
+    margin-bottom: 4px;
     font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
     font-size: 13px;
     font-style: normal;
@@ -251,6 +249,7 @@ body {
     line-height: 24px;
     letter-spacing: 0;
     color: #0B192C;
+    height: 32px;
 }
 .litepicker .container__days .day-item.is-end-date {
     background: #007AFF;

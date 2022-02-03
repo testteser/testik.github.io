@@ -263,16 +263,12 @@ $(function () {
     /* Функция для включения скролла */
     function enableScroll() {
         $('#body-closer').removeClass('js-active');
-        $('body').css('overflow', 'auto');
-    }
-
-    return {
-
+        $('body, html').css('overflow', 'auto');
     }
 
     /* Функция для отключения скролла */
     function disableScroll() {
         $('#body-closer').addClass('js-active');
-        $('body').css('overflow', 'hidden');
+        $('body, html').css('overflow', 'hidden');
     }
 })
