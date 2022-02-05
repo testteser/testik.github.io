@@ -10,6 +10,7 @@ body {
 }
 .main-wrapper {
     background: #F8F9FA !important;
+    padding-bottom: 10px;
 }
 
 /* Стили для скачивания приложения */
