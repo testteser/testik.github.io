@@ -345,6 +345,7 @@
     background: #007AFF;
     padding: 4px;
     margin-left: 8px;
+    border-radius: 2px;
 }
 .hotels-table__slider-text {
     margin-bottom: 8px;
