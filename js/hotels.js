@@ -7,12 +7,12 @@ $(function () {
         }
     })
 
-    // $('.hotels-table__dates').slick({
-    //     slidesToShow: 1,
-    //     slidesToScroll: 1,
-    //     arrows: false,
-    //     centerMode: false,
-    //     infinite: true,
-    //     variableWidth: true,
-    // })
+    $('#booking-variants').slick({
+        infinite: true,
+        dots: false,
+        arrows: false,
+        variableWidth: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+    });
 })

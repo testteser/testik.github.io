@@ -71,7 +71,30 @@
         <div class="container">
             <form action="#!" class="search-mini__form">
                 <div class="search-mini__field">
-                    <input type="text" class="search-mini__input" placeholder="Вблизи меня">
+                    <input type="text" class="search-mini__input" readonly placeholder="Вблизи меня">
+                    <svg class="search-mini__icon" width="13" height="13" viewBox="0 0 13 13" fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.8361 12.0687L9.10626 8.3361C9.84158 7.45425 10.2838 6.32729 10.2838 5.09643C10.2838 2.28835 7.9793 0.00512695 5.14458 0.00512695C2.30987 0.00512695 0 2.29102 0 5.09909C0 7.90717 2.30454 10.1904 5.13926 10.1904C6.34348 10.1904 7.45179 9.77744 8.33098 9.08741L12.0742 12.8306C12.2927 13.0491 12.6177 13.0491 12.8361 12.8306C13.0546 12.6122 13.0546 12.2871 12.8361 12.0687ZM1.09232 5.09909C1.09232 2.89313 2.90931 1.10012 5.13926 1.10012C7.3692 1.10012 9.18619 2.89313 9.18619 5.09909C9.18619 7.30505 7.3692 9.09807 5.13926 9.09807C2.90931 9.09807 1.09232 7.30239 1.09232 5.09909Z"
+                              fill="#B5BAC0"/>
+                    </svg>
+                </div>
+                <div class="search-mini__row">
+                    <div class="search-mini__field">
+                        <input type="text" class="search-mini__row-input" readonly placeholder="Jan 27 - Jan 28 (1 night)">
+                        <svg class="search-mini__icon" width="15" height="18" viewBox="0 0 15 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g id="icons8-calendar">
+                                <path id="Shape" fill-rule="evenodd" clip-rule="evenodd" d="M2.4 2.62131V0.922852H4V2.62131H10.4V0.922852H12V2.62131H14.4V17.9075H0V2.62131H2.4ZM12.8001 6.86749H1.6001V16.209H12.8001V6.86749Z" fill="#B5BAC0"/>
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="search-mini__field">
+                        <input type="text" class="search-mini__row-input" readonly placeholder="2 взрослых">
+                        <svg class="search-mini__icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g id="icons8-account">
+                                <path id="Shape" fill-rule="evenodd" clip-rule="evenodd" d="M4 4C4 1.814 5.172 0 8 0C9.526 0 10 1 10 1C11.3647 1 12 2.38133 12 4C12 4.80733 11.6484 5.47526 11.6484 5.47526C11.7898 5.55659 12.0222 5.8141 11.9635 6.27344C11.8542 7.12877 11.4834 7.34658 11.2474 7.36458C11.1574 8.16258 10.3 9.18336 10 9.33203V10.6654C10.0553 10.8327 10.1536 10.9691 10.2682 11.0951C9.70956 11.5771 8.95067 11.9987 8 11.9987C7.04933 11.9987 6.29044 11.5771 5.73177 11.0951C5.84644 10.9691 5.94467 10.8327 6 10.6654V9.33203C5.7 9.18336 4.8426 8.16258 4.7526 7.36458C4.5166 7.34658 4.14579 7.12877 4.03646 6.27344C3.97779 5.8141 4.21023 5.55593 4.35156 5.47526C4.35156 5.47526 4 4.736 4 4ZM3.7377 12.019C4.0051 11.9402 4.26479 11.8638 4.50781 11.7812C5.26781 12.5513 6.424 13.332 8 13.332C9.576 13.332 10.7322 12.5513 11.4922 11.7812C11.7352 11.8638 11.9949 11.9402 12.2623 12.019C13.9732 12.5227 16 13.1194 16 15.9987H0C0 13.1194 2.02678 12.5227 3.7377 12.019Z" fill="#B5BAC0"/>
+                            </g>
+                        </svg>
+                    </div>
                 </div>
             </form>
         </div>
@@ -296,22 +319,74 @@
                             </div>
                             <h3 class="hotels-table__name">
                                 DMG Apartments Hotel
+                                <div class="hotels-table__name-icon">
+                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                              d="M4.93623 2.05066L5.40146 -0.00012207C5.40146 -0.00012207 7.20146 0.0726467 7.20146 1.71785C7.20146 2.77745 6.60146 4.19988 6.60146 4.19988H10.8015C11.4615 4.19988 12.0015 4.73988 12.0015 5.39988V5.96472C12.0015 6.21072 11.9493 6.45399 11.8491 6.67839L10.0479 10.7319C9.86735 11.1381 9.46481 11.3999 9.02021 11.3999H4.20146C3.53846 11.3999 3.00146 10.8629 3.00146 10.1999V4.66042C3.00146 4.36402 3.11107 4.07789 3.30967 3.85769L4.93623 2.05066ZM0.000976562 11.3997V4.19971H1.80098V11.3997H0.000976562Z"
+                                              fill="white"/>
+                                    </svg>
+                                </div>
                             </h3>
+                            <div class="hotels-table__status">
+                                <span class="hotels-table__status-item hotels-table__status-item--sold">
+                                    Sold out
+                                </span>
+                            </div>
+                            <div class="hotels-table__error">
+                                <svg class="hotels-table__error-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="8" cy="8" r="7.5" stroke="#DE2B21"/>
+                                    <path d="M7.12891 3.54492L7.28125 9.2168H8.8457L9.00391 3.54492H7.12891ZM8.06641 12.1758C8.72852 12.1758 9.13281 11.7949 9.13281 11.1797C9.13281 10.5586 8.72852 10.1777 8.06641 10.1777C7.41016 10.1777 7 10.5586 7 11.1797C7 11.7949 7.41016 12.1758 8.06641 12.1758Z" fill="#DE2B21"/>
+                                </svg>
+                                <p class="hotels-table__error-text">
+                                    Этот вариант не отвечает требованиям вашей группы
+                                </p>
+                            </div>
                         </div>
                     </a>
                     <div class="hotels-table__slider">
                         <p class="hotels-table__slider-text">
                             На эти даты еще есть места, но они могут закончится:
                         </p>
-<!--                        <div class="hotels-table__dates">-->
-<!--                            <div class="hotels-table__dates-item">-->
-<!--                                1-->
-<!--                            </div>-->
-<!--                            <div class="hotels-table__dates-item">-->
-<!--                                2-->
-<!--                            </div>-->
-<!--                        </div>-->
+                        <div class="hotels-table__dates" id="booking-variants">
+                            <div class="hotels-table__dates-item">
+                                <span class="hotels-table__dates-days">
+                                    24 янв. - 25 янв.
+                                </span>
+                                <span class="hotels-table__dates-nights">
+                                    1 ночь
+                                </span>
+                                <span class="hotels-table__dates-price">
+                                    от UZS 6 125 000
+                                </span>
+                            </div>
+                            <div class="hotels-table__dates-item">
+                                <span class="hotels-table__dates-days">
+                                    24 янв. - 25 янв.
+                                </span>
+                                <span class="hotels-table__dates-nights">
+                                    1 ночь
+                                </span>
+                                <span class="hotels-table__dates-price">
+                                    от UZS 6 125 000
+                                </span>
+                            </div>
+                            <div class="hotels-table__dates-item">
+                                <span class="hotels-table__dates-days">
+                                    24 янв. - 25 янв.
+                                </span>
+                                <span class="hotels-table__dates-nights">
+                                    1 ночь
+                                </span>
+                                <span class="hotels-table__dates-price">
+                                    от UZS 6 125 000
+                                </span>
+                            </div>
+                        </div>
                     </div>
+                    <a href="#!" class="hotels-table__btn">
+                        Все равно посмотреть этот вариант
+                    </a>
                 </div>
             </div>
             <div class="hotels-pagination">
@@ -332,7 +407,7 @@
             <div class="registration-offer__content">
                 <p class="registration-offer__text">
                     Зарегистрируйтесь и получите скидку от этой <br> цены -
-                    <a href="#!" class="registration-offer__link">
+                    <a href="auth.html" class="registration-offer__link">
                         войти в акаунт
                     </a>
                 </p>

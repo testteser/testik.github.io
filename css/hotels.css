@@ -91,6 +91,8 @@
     flex-wrap: wrap;
     background: #FFFFFF;
     border: 1px solid #E3E3E3;
+    border-left: none;
+    border-right: none;
     margin-bottom: 12px;
 }
 .hotels-table__main-content {
@@ -329,7 +331,21 @@
     top: 45px;
     right: 8px;
 }
-.hotels-table__slider {}
+.hotels-table__status-item--sold {
+    background: #DE2B21;
+}
+.hotels-table__slider {
+    padding: 0 15px;
+    padding-right: 0;
+    margin-bottom: 12px;
+    width: 100%;
+}
+.hotels-table__name-icon {
+    display: inline-flex;
+    background: #007AFF;
+    padding: 4px;
+    margin-left: 8px;
+}
 .hotels-table__slider-text {
     margin-bottom: 8px;
     font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
@@ -339,6 +355,22 @@
     line-height: 17px;
     letter-spacing: 0;
     color: #0B192C;
+}
+.hotels-table__btn {
+    margin: 0 16px;
+    width: 100%;
+    padding: 9px;
+    margin-bottom: 16px;
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: 0;
+    text-align: center;
+    color: #007AFF;
+    border: 1px solid #007AFF;
+    border-radius: 2px;
 }
 
 .hotels-pagination {
@@ -375,11 +407,66 @@
     opacity: 0;
     visibility: hidden;
 }
+.hotels-table__error {
+    display: flex;
+    margin-bottom: 18px;
+}
+.hotels-table__error-icon {
+    margin-right: 6px;
+}
+.hotels-table__dates-nights,
+.hotels-table__dates-price {
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 17px;
+    letter-spacing: 0;
+    text-align: center;
+    color: #979797;
+}
+
+.hotels-table__dates-days {
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 17px;
+    letter-spacing: 0;
+    text-align: center;
+    color: #0B192C;
+}
+
+.hotels-table__error-text {
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0;
+    text-align: left;
+    color: #DE2B21;
+}
+
+.hotels-table__dates-nights,
+.hotels-table__dates-price,
+.hotels-table__dates-days {
+    display: block;
+}
+
+.hotels-table__dates-item {
+    width: 120px;
+    margin-right: 12px;
+    text-align: center;
+    padding: 8px 10px;
+    background: #FFFFFF;
+    border: 1px solid #007AFF;
+    border-radius: 2px;
+}
 
 .hotels-table__item.is-empty .hotels-table__main-content {
     margin-bottom: 15px;
 }
-
-.hotels-table__slider {
-    padding: 0 15px;
+.hotels-table__item.is-empty .hotels-table__status {
+    margin-bottom: 16px;
 }

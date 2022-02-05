@@ -382,8 +382,6 @@ body {
 .recent-hotels__info-top {
     display: flex;
     align-items: center;
-}
-.recent-hotels__info-top {
     margin-bottom: 6px;
 }
 .recent-hotels__slider {
@@ -577,7 +575,49 @@ body {
 }
 
 .search-mini__field {
+    position: relative;
     margin-bottom: 8px;
+    width: 100%;
+}
+
+.search-mini__row .search-mini__icon {
+    right: auto;
+    left: 11px;
+    top: 45%;
+}
+
+.search-mini__row .search-mini__field {
+    margin-bottom: 0;
+}
+
+.search-mini__row .search-mini__field:first-child {
+    width: 60%;
+}
+
+.search-mini__row .search-mini__field:last-child {
+    width: 40%;
+}
+
+.search-mini__row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: #FFFFFF;
+    border-radius: 2px;
+}
+
+.search-mini__row-input {
+    padding: 15px 13px;
+    padding-left: 33px;
+    width: 100%;
+}
+
+.search-mini__icon {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .search-mini__field:last-child {
