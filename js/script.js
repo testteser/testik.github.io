@@ -242,6 +242,8 @@ $(function () {
         let data = $(this).serializeArray();
 
         console.log(data);
+
+        window.location.href = 'hotels.html'
     })
 
     /* Функция для форматирования дат */
