@@ -190,14 +190,14 @@
                     <a href="#!" class="hotels-table__main-content">
                         <img src="images/hotel-page-photo.png" class="hotels-table__img">
                         <div class="hotels-table__content">
-                            <div class="hotels-table__heart">
+                            <button class="hotels-table__heart">
                                 <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
                                      xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd" clip-rule="evenodd"
                                           d="M7.38147 14.0024C7.55261 14.1523 7.77222 14.2349 8 14.2349C8.22766 14.2349 8.44739 14.1523 8.61841 14.0027C9.26624 13.4362 9.89038 12.9042 10.4412 12.4349L10.4414 12.4347C12.053 11.0613 13.4447 9.87519 14.4132 8.70654C15.4958 7.40027 16 6.16162 16 4.80847C16 3.49377 15.5493 2.28088 14.7308 1.39307C13.9026 0.494751 12.766 0 11.5304 0C10.6068 0 9.76099 0.291992 9.01648 0.867798C8.64062 1.15845 8.30017 1.51416 8 1.92908C7.69995 1.51416 7.35938 1.15845 6.98364 0.867798C6.23914 0.291992 5.39331 0 4.46973 0C3.23401 0 2.09753 0.494751 1.26929 1.39307C0.450806 2.28088 0 3.49377 0 4.80847C0 6.16162 0.504272 7.40027 1.58691 8.70667C2.55542 9.87524 3.94739 11.0615 5.55933 12.4352L5.56213 12.4376C6.11194 12.9061 6.73511 13.4373 7.38147 14.0024ZM1.95825 2.02832C2.60706 1.32471 3.4989 0.937256 4.46973 0.937256C5.18079 0.937256 5.83374 1.16333 6.41028 1.60913C6.92419 2.00659 7.2821 2.50903 7.49182 2.8606C7.59973 3.04138 7.78967 3.14929 8 3.14929C8.21033 3.14929 8.40027 3.04138 8.50818 2.8606C8.71802 2.50903 9.07593 2.00659 9.58972 1.60913C10.1663 1.16333 10.8192 0.937256 11.5304 0.937256C12.5011 0.937256 13.3931 1.32471 14.0417 2.02832C14.7002 2.74255 15.0629 3.72986 15.0629 4.80847C15.0629 5.94653 14.6399 6.96436 13.6917 8.10864C12.7759 9.21372 11.4142 10.3742 9.83753 11.718L9.83325 11.7217C9.28027 12.1927 8.65369 12.7268 7.99866 13.2972C7.34753 12.7279 6.72192 12.1947 6.17004 11.7244L6.16711 11.7219L6.16618 11.7211C4.58797 10.3761 3.22492 9.2145 2.30847 8.10864C1.36011 6.96436 0.937134 5.94653 0.937134 4.80847C0.937134 3.72986 1.2998 2.74255 1.95825 2.02832Z"
                                           fill="#071D32"/>
                                 </svg>
-                            </div>
+                            </button>
                             <div class="hotels-table__next site-next">
 
                             </div>
@@ -418,6 +418,74 @@
         </div>
     </div>
 </main>
+
+<div class="filter">
+    <div class="container">
+        <button class="filter__close site-close"></button>
+        <div class="filter__top">
+            <h3 class="filter__title">
+                Фильтры
+            </h3>
+            <button class="filter__remove">
+                Снять фильтры
+            </button>
+        </div>
+        <div class="filter__body">
+            <div class="filter__item">
+                <h4 class="filter__item-title">
+                    Ваш бюджет (за ночь)
+                </h4>
+                <ul class="filter__item-list">
+                    <li class="filter__item-option">
+                        <label class="filter__item-label">
+                            <input type="checkbox" name="br">
+                            <span class="filter__item-checkbox"></span>
+                            <span class="filter__item-desc">
+                                Все оценки по отзывам
+                            </span>
+                        </label>
+                    </li>
+                    <li class="filter__item-option">
+                        <label class="filter__item-label">
+                            <input type="hidden">
+                            <span class="filter__item-checkbox"></span>
+                            <span class="filter__item-desc">
+                                Превосходно
+                            </span>
+                        </label>
+                    </li>
+                    <li class="filter__item-option">
+                        <label class="filter__item-label">
+                            <input type="hidden">
+                            <span class="filter__item-checkbox"></span>
+                            <span class="filter__item-desc">
+                                Хорошо
+                            </span>
+                        </label>
+                    </li>
+                    <li class="filter__item-option">
+                        <label class="filter__item-label">
+                            <input type="hidden">
+                            <span class="filter__item-checkbox"></span>
+                            <span class="filter__item-desc">
+                                Удовлетворительно
+                            </span>
+                        </label>
+                    </li>
+                    <li class="filter__item-option">
+                        <label class="filter__item-label">
+                            <input type="hidden">
+                            <span class="filter__item-checkbox"></span>
+                            <span class="filter__item-desc">
+                                Плохо
+                            </span>
+                        </label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
 
 <div class="account-menu">
     <div class="container">

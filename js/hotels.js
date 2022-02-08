@@ -7,6 +7,12 @@ $(function () {
         }
     })
 
+    $('.hotels-table__heart').on('click', function (e) {
+        e.stopPropagation();
+
+        $(this).toggleClass('is-active');
+    })
+
     $('#booking-variants').slick({
         infinite: true,
         dots: false,

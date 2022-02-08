@@ -475,3 +475,60 @@
 .hotels-table__item.is-empty .hotels-table__status {
     margin-bottom: 16px;
 }
+
+
+.filter {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background: #fff;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+}
+.filter__item-title {
+    margin-bottom: 15px;
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: -0.2346666306257248px;
+    color: #0B192C;
+}
+.filter__item-label {
+    display: flex;
+    align-items: center;
+}
+.filter__item-label input {
+    display: none;
+}
+.filter__item-label input:checked ~ .filter__item-checkbox {
+    background: #0B192C;
+}
+.filter__item-checkbox {
+    margin-right: 5px;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #0B192C;
+    border-radius: 2px;
+    background: #fff;
+}
+.filter__item-option {
+    margin-bottom: 8px;
+}
+.filter__item-option:last-child {
+    margin-bottom: 0;
+}
+.filter__item-desc {
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: -0.2346666306257248px;
+    color: #0B192C;
+}
