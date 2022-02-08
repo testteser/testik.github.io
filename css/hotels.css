@@ -465,6 +465,10 @@
     border-radius: 2px;
 }
 
+.hotels-table__dates-item:active {
+    background: #EFF6FF;
+}
+
 .hotels-table__item.is-empty .hotels-table__main-content {
     margin-bottom: 15px;
 }
