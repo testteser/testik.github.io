@@ -253,15 +253,6 @@ $(function () {
         return formatter.format(value);
     }
 
-    $('.recent-hotels__slider').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: false,
-        centerMode: false,
-        infinite: true,
-        variableWidth: true,
-    })
-
     /* Функция для включения скролла */
     function enableScroll() {
         $('#body-closer').removeClass('js-active');
