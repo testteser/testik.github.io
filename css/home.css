@@ -50,6 +50,7 @@
     color: #333333;
     border-radius: 2px;
     user-select: none;
+    background: #fff;
 }
 .search-form__label {
     position: absolute;
