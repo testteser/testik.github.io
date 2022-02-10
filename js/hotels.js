@@ -21,4 +21,8 @@ $(function () {
         slidesToShow: 1,
         slidesToScroll: 1,
     });
+
+    $('#filter-show').on('click', function () {
+        $('.filter').addClass('show');
+    })
 })

@@ -480,15 +480,41 @@
 
 
 .filter {
-    display: none;
+    opacity: 0;
+    visibility: hidden;
     position: fixed;
-    bottom: 0;
+    bottom: -100%;
     left: 0;
     width: 100%;
     height: auto;
     background: #fff;
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
+    transition: 0.2s ease-out;
+    padding: 24px 0;
+}
+.filter.show {
+    bottom: 0;
+    visibility: visible;
+    opacity: 1;
+}
+.filter__remove {
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: -0.2346666306257248px;
+    color: #979797;
+}
+.filter__title {
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: -0.2346666306257248px;
+    color: #0B192C;
 }
 .filter__item-title {
     margin-bottom: 15px;
