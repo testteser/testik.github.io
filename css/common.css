@@ -1,7 +1,7 @@
 /* Системные */
 
 body {
-    background: #F8F9FA !important;
+    background: #f8f9fa !important;
     font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
 }
 .container {
@@ -9,17 +9,17 @@ body {
     padding: 0 15px;
 }
 .main-wrapper {
-    background: #F8F9FA !important;
+    background: #f8f9fa !important;
     padding-bottom: 10px;
 }
 
-/* Стили для скачивания приложения */
+/* БЛОК ПРИЛОЖЕНИЕ */
 
 .app-download {
     padding: 13px 0;
-    background: #0B192C;
+    background: #0b192c;
     width: 100%;
-    border-bottom: 0.5px solid #485F7E;
+    border-bottom: 1px solid #485f7e;
 }
 .app-download__wrapper {
     display: flex;
@@ -39,7 +39,7 @@ body {
     font-weight: 500;
     line-height: 17px;
     letter-spacing: 0em;
-    color: #FFFFFF;
+    color: #ffffff;
 }
 .app-download__link {
     padding: 5px 12px;
@@ -60,12 +60,12 @@ body {
     height: 32px;
 }
 
-/* Стили для шапки */
+/* БЛОК ШАПКА*/
 
 .header {
     padding: 10px 0;
-    border-bottom: 0.5px solid #485F7E;
-    background: #0B192C;
+    border-bottom: 1px solid #485f7e;
+    background: #0b192c;
 }
 .header__wrapper {
     display: flex;
@@ -74,8 +74,11 @@ body {
     justify-content: space-between;
 }
 .header__option {
-    display: inherit;
+    display: flex;
     margin-right: 13px;
+}
+.header__option:last-child {
+    margin-right: 0;
 }
 .header__item--row {
     display: flex;
@@ -83,26 +86,23 @@ body {
     justify-content: space-between;
     align-items: center;
 }
-.header__option:last-child {
-    margin-right: 0;
-}
 .header__logo {
     display: block;
 }
 
-/* Стили для меню аккаунта */
+/* БЛОК МЕНЮ АККАУНТА */
 .account-menu {
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 991;
     width: 100%;
     height: 100vh;
-    background: #fff;
     padding-top: 39px;
-    z-index: 991;
     transition: 0.3s ease-out;
     visibility: hidden;
     transform: translateY(100%);
+    background: #ffffff;
 }
 .account-menu__close {
     top: 20px;
@@ -117,13 +117,13 @@ body {
     font-weight: 400;
     line-height: 17px;
     letter-spacing: 0;
-    color: #007AFF;
+    color: #007aff;
 }
 .account-menu__header {
     margin-bottom: 35px;
 }
 .account-menu__item {
-    border-bottom: 1px solid #E3E3E3;
+    border-bottom: 1px solid #e3e3e3;
     border-radius: 2px;
 }
 .account-menu__link {
@@ -145,7 +145,7 @@ body {
     font-weight: 600;
     line-height: 19px;
     letter-spacing: 0;
-    color: #0B192C;
+    color: #0b192c;
 }
 .account-menu__title {
     font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
@@ -154,27 +154,27 @@ body {
     font-weight: 500;
     line-height: 24px;
     letter-spacing: 0;
-    color: #0B192C;
+    color: #0b192c;
 }
 
-/* Стили для меню */
+/* БЛОК ГЛАВНОЕ МЕНЮ */
 
-.header-settings {
-    padding-top: 30px;
+.main-menu {
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 901;
     width: 100%;
     height: 100vh;
-    background: #fff;
-    z-index: 901;
-    overflow: auto;
+    padding-top: 30px;
     padding-bottom: 25px;
+    overflow: auto;
     transform: translateY(100%);
     visibility: hidden;
     transition: 0.3s ease-out;
+    background: #ffffff;
 }
-.header-settings__title {
+.main-menu__title {
     margin-bottom: 25px;
     font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
     font-size: 20px;
@@ -184,36 +184,36 @@ body {
     letter-spacing: 0;
     text-align: center;
 }
-.header-settings__item {
+.main-menu__item {
     margin-bottom: 40px;
 }
-.header-settings__close {
+.main-menu__close {
     top: 10px;
     right: 15px;
 }
-.header-settings__item-link {
+.main-menu__item-link {
     display: flex;
     align-items: center;
     width: 100%;
     padding-top: 15px;
     padding-bottom: 14px;
-    border-bottom: 1px solid #E3E3E3;
+    border-bottom: 1px solid #e3e3e3;
     border-radius: 2px;
 }
-.header-settings__item:last-child {
+.main-menu__item:last-child {
     margin-bottom: 0;
 }
-.header-settings__item-option:last-child {
+.main-menu__item-option:last-child {
     margin-bottom: 0;
 }
-.header-settings__item-icon {
+.main-menu__item-icon {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 20px;
     margin-right: 12px;
 }
-.header-settings__item-value {
+.main-menu__item-value {
     font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
     font-size: 16px;
     font-style: normal;
@@ -221,13 +221,13 @@ body {
     line-height: 19px;
     letter-spacing: 0;
     text-align: left;
-    color: #0B192C;
+    color: #0b192c;
 }
 
-/* Стили для календаря */
+/* БЛОК КАЛЕНДАРЬ */
 
 .litepicker .container__days .day-item.is-start-date {
-    background: #007AFF;
+    background: #007aff;
     border-radius: 2px;
 }
 .litepicker .container__days .day-item.is-range-date {
@@ -249,19 +249,19 @@ body {
     font-weight: 600;
     line-height: 24px;
     letter-spacing: 0;
-    color: #0B192C;
+    color: #0b192c;
     height: 32px;
 }
 .litepicker .container__days .day-item.is-end-date {
-    background: #007AFF;
+    background: #007aff;
     outline: 2px solid rgba(0, 122, 255, 0.38);
     border-radius: 2px;
 }
 .litepicker .container__days .day-item.is-today {
-    color: #007AFF;
+    color: #007aff;
 }
 .litepicker .container__days .day-item.is-today.is-start-date {
-    color: #fff;
+    color: #ffffff;
 }
 .litepicker .container__months .month-item:last-child .button-next-month,
 .litepicker .container__months .month-item:first-child .button-previous-month {
@@ -277,41 +277,41 @@ body {
     z-index: 900;
     width: 100%;
     height: 100%;
-    background: #1E1E1E;
     opacity: 0;
     visibility: hidden;
     transition: 0.3s ease-out;
+    background: #1e1e1e;
 }
 
 /* Состояния  */
 
-.header-settings.js-active,
-.account-menu.js-active {
+.main-menu.show,
+.account-menu.show {
     transform: translateY(0);
     visibility: visible;
 }
-.body-closer.js-active {
+.body-closer.show {
     opacity: 0.8;
     visibility: visible;
 }
 .is-disabled {
-    border: 1px solid #A1A9AF !important;
-    color: #A1A9AF !important;
-    background: #fff !important;
+    border: 1px solid #a1a9af !important;
+    color: #a1a9af !important;
+    background: #ffffff !important;
 }
 .status-is-completed {
-    color: #5ADC70;
+    color: #5adc70;
 }
 .status-is-cancelled {
-    color: #DE2B21;
+    color: #de2b21;
 }
 
 /* БЛОК ПОДПИСКИ */
 
 .subscribe {
-    background: #0B192C;
     padding-top: 15px;
     padding-bottom: 32px;
+    background: #0b192c;
 }
 .subscribe__title {
     margin-bottom: 8px;
@@ -321,7 +321,7 @@ body {
     font-weight: 700;
     line-height: 22px;
     letter-spacing: 0;
-    color: #F8F9FA;
+    color: #f8f9fa;
 }
 .subscribe__desc {
     max-width: 260px;
@@ -332,9 +332,10 @@ body {
     font-weight: 500;
     line-height: 22px;
     letter-spacing: 0;
-    color: #F8F9FA;
+    color: #f8f9fa;
 }
 .subscribe__form-input {
+    width: 100%;
     margin-bottom: 15px;
     padding: 15px 12px;
     font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
@@ -343,9 +344,8 @@ body {
     font-weight: 400;
     line-height: 17px;
     letter-spacing: 0;
-    background: #fff;
+    background: #ffffff;
     color: #767676;
-    width: 100%;
 }
 .subscribe__form-submit {
     width: 100%;
@@ -357,12 +357,12 @@ body {
     line-height: 18px;
     letter-spacing: 0;
     text-align: center;
-    background: #007AFF;
     border-radius: 2px;
-    color: #fff;
+    background: #007aff;
+    color: #ffffff;
 }
 
-/* БЛОК НЕДАВНИХ ПРОСМОТРЕННЫХ */
+/* БЛОК НЕДАВНИХ ОТЕЛЕЙ */
 
 .recent-hotels {
     margin-bottom: 24px;
@@ -375,6 +375,7 @@ body {
     font-weight: 700;
     line-height: 24px;
     letter-spacing: 0;
+    color: #0b192c;
 }
 .recent-hotels__img {
     margin-bottom: 12px;
@@ -396,7 +397,7 @@ body {
     font-weight: 500;
     line-height: 18px;
     letter-spacing: 0;
-    color: #0B192C;
+    color: #0b192c;
 }
 .recent-hotels__rating {
     display: flex;
@@ -432,8 +433,8 @@ body {
     transform: translateY(-50%);
     height: 3px;
     width: 3px;
-    background: #484848;
     border-radius: 50%;
+    background: #484848;
 }
 .recent-hotels__item {
     width: 250px;
@@ -443,7 +444,75 @@ body {
     margin-right: 0;
 }
 
-/* Элемент - кнопка сплошная (синия) */
+/* БЛОК ПОИСКА (МАЛЕНЬКИЙ) */
+
+.search-mini {
+    padding: 20px 0;
+    background: #0b192c;
+}
+.search-mini__field {
+    position: relative;
+    margin-bottom: 8px;
+    width: 100%;
+}
+.search-mini__row .search-mini__icon {
+    right: auto;
+    left: 11px;
+    top: 45%;
+}
+.search-mini__row .search-mini__field {
+    margin-bottom: 0;
+}
+.search-mini__row .search-mini__field:first-child {
+    width: 60%;
+}
+.search-mini__row .search-mini__field:last-child {
+    width: 40%;
+}
+.search-mini__row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-radius: 2px;
+    background: #ffffff;
+}
+.search-mini__row-input {
+    padding: 15px 13px;
+    padding-left: 33px;
+    width: 100%;
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0;
+    color: #333333;
+
+}
+.search-mini__icon {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.search-mini__field:last-child {
+    margin-bottom: 0;
+}
+.search-mini__input {
+    padding: 15px 13px;
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0;
+    width: 100%;
+    color: #767676;
+    background: #ffffff;
+}
+
+/* БЛОК КНОПКА (кнопка сплошная (синия)) */
 .site-btn {
     display: inline-block;
     font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
@@ -453,12 +522,12 @@ body {
     line-height: 18px;
     letter-spacing: 0;
     text-align: center;
-    color: #fff;
-    background: #007AFF;
     border-radius: 2px;
+    color: #ffffff;
+    background: #007aff;
 }
 
-/* Элемент - кнопка рамка (синия) */
+/* БЛОК КНОПКА (кнопка рамка (синия)) */
 .site-btn-border {
     display: inline-block;
     font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
@@ -468,16 +537,15 @@ body {
     line-height: 18px;
     letter-spacing: 0;
     text-align: center;
-    color: #007AFF;
-    background: #FFFFFF;
     border-radius: 2px;
-    border: 1px solid #007AFF;
+    border: 1px solid #007aff;
+    color: #007aff;
+    background: #ffffff;
 }
 
-/* Элемент - закрытия (крестик) */
+/* БЛОК КРЕСТИК */
 .site-close {
     position: absolute;
-    background: none;
     width: 24px;
     height: 24px;
 }
@@ -504,12 +572,11 @@ body {
     border-radius: 2px;
 }
 
-/* Элемент - показать больше (троеточие) */
+/* БЛОК ТРОЕТОЧИЕ */
 .site-more {
     position: absolute;
     width: 18px;
     height: 4px;
-    background: none;
 }
 .site-more::before {
     content: '';
@@ -519,7 +586,7 @@ body {
     width: 4px;
     height: 4px;
     border-radius: 50%;
-    background: #0B192C;
+    background: #0b192c;
 }
 .site-more::after {
     content: '';
@@ -529,7 +596,7 @@ body {
     width: 4px;
     height: 4px;
     border-radius: 50%;
-    background: #0B192C;
+    background: #0b192c;
 }
 .site-more span {
     position: absolute;
@@ -539,13 +606,12 @@ body {
     width: 4px;
     height: 4px;
     border-radius: 50%;
-    background: #0B192C;
+    background: #0b192c;
 }
 
-/* Элементы - перейти дальше (стрелка) */
+/* БЛОК СТРЕЛКА */
 .site-next {
     position: absolute;
-    background: none;
     width: 24px;
     height: 24px;
 }
@@ -557,7 +623,7 @@ body {
     width: 10px;
     height: 2px;
     transform: rotate(45deg);
-    background: #858D97;
+    background: #858d97;
 }
 .site-next::after {
     content: '';
@@ -567,83 +633,7 @@ body {
     width: 10px;
     height: 2px;
     transform: rotate(-45deg);
-    background: #858D97;
-}
-
-.search-mini {
-    padding: 20px 0;
-    background: #0B192C;
-}
-
-.search-mini__field {
-    position: relative;
-    margin-bottom: 8px;
-    width: 100%;
-}
-
-.search-mini__row .search-mini__icon {
-    right: auto;
-    left: 11px;
-    top: 45%;
-}
-
-.search-mini__row .search-mini__field {
-    margin-bottom: 0;
-}
-
-.search-mini__row .search-mini__field:first-child {
-    width: 60%;
-}
-
-.search-mini__row .search-mini__field:last-child {
-    width: 40%;
-}
-
-.search-mini__row {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    background: #FFFFFF;
-    border-radius: 2px;
-}
-
-.search-mini__row-input {
-    padding: 15px 13px;
-    padding-left: 33px;
-    width: 100%;
-    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-    font-size: 13px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 16px;
-    letter-spacing: 0;
-    color: #333333;
-
-}
-
-.search-mini__icon {
-    position: absolute;
-    right: 15px;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.search-mini__field:last-child {
-    margin-bottom: 0;
-}
-
-.search-mini__input {
-    padding: 15px 13px;
-    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 18px;
-    letter-spacing: 0;
-    color: #767676;
-    width: 100%;
-    background: #fff;
+    background: #858d97;
 }
 
 .registration-offer__content {
@@ -654,7 +644,6 @@ body {
     border: 1px solid #0A83FE;
     border-radius: 2px;
 }
-
 .registration-offer__text {
     font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
     font-size: 13px;
@@ -665,7 +654,6 @@ body {
     text-align: left;
     color: #0B192C;
 }
-
 .registration-offer__link {
     font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
     font-size: 13px;
@@ -675,7 +663,6 @@ body {
     letter-spacing: 0;
     color: #007AFF;
 }
-
 .registration-offer__name {
     position: absolute;
     bottom: 4px;
@@ -715,7 +702,7 @@ body {
     left: 0;
     width: 100%;
     height: 2px;
-    background: #fff;
+    background: #ffffff;
 }
 .header-hotel__menu::after {
     content: '';
@@ -724,5 +711,14 @@ body {
     left: 0;
     width: 100%;
     height: 2px;
-    background: #fff;
+    background: #ffffff;
+}
+
+@media (max-width: 325px) {
+    .app-download__desc {
+        margin-left: 5px;
+    }
+    .app-download__link {
+        padding: 5px 10px;
+    }
 }

@@ -1,3 +1,5 @@
+/* Турист */
+
 .tourist-intro {
     margin-bottom: 42px;
     padding-top: 57px;
@@ -14,8 +16,8 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: #0B192C;
     opacity: 0.7;
+    background: #0b192c;
 }
 .tourist-intro__content {
     position: relative;
@@ -23,7 +25,7 @@
 .tourist-intro__title {
     max-width: 265px;
     margin-bottom: 8px;
-    color: #F0C806;
+    color: #f0c806;
 }
 .tourist-about .container {
     padding: 0 25px;
@@ -37,7 +39,7 @@
 .tourist-about__title {
     max-width: 242px;
     margin-bottom: 48px;
-    color: #0B192C;
+    color: #0b192c;
 }
 .tourist-levels__table {
     margin: 0 -17px;
@@ -46,7 +48,7 @@
     margin-left: -4px;
     margin-bottom: 19px;
     max-width: 242px;
-    color: #0B192C;
+    color: #0b192c;
 }
 .tourist-about__item-title {
     margin-bottom: 8px;
@@ -56,7 +58,7 @@
     font-weight: 700;
     line-height: 19px;
     letter-spacing: 0;
-    color: #0B192C;
+    color: #0b192c;
 }
 .tourist-about__item-desc {
     font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
@@ -65,6 +67,7 @@
     font-weight: 400;
     line-height: 22px;
     letter-spacing: 0;
+    color: #0b192c;
 }
 .tourist-about__table {
     margin-bottom: 36px;
@@ -72,15 +75,15 @@
 .tourist-intro__desc {
     max-width: 305px;
     margin-bottom: 9px;
-    color: #fff;
+    color: #ffffff;
 }
 .tourist-enter {
     margin-bottom: 42px;
 }
 .tourist-enter__desc {
     max-width: 260px;
-    color: #858D97;
     margin-bottom: 24px;
+    color: #858d97;
 }
 .tourist-levels .container {
     padding: 0 25px;
@@ -99,22 +102,22 @@
 }
 .tourist-levels__item {
     padding: 30px 15px;
-    background: #fff;
     border-radius: 2px;
     margin-bottom: 24px;
+    background: #ffffff;
 }
 .tourist-levels__item:first-child {
-    border-top: 2px solid #F0C806;
+    border-top: 2px solid #f0c806;
 }
 .tourist-levels__item:nth-child(2) {
-    border-top: 2px solid #007AFF;
+    border-top: 2px solid #007aff;
 }
 .tourist-levels {
     margin-bottom: 46px;
 }
 .tourist-levels__item:last-child {
     margin-bottom: 0;
-    border-top: 2px solid #5ADC70;
+    border-top: 2px solid #5adc70;
 }
 .tourist-levels__item-title {
     margin-bottom: 8px;
@@ -124,12 +127,12 @@
     font-weight: 700;
     line-height: 21px;
     letter-spacing: 0;
-    color: #0B192C;
+    color: #0b192c;
 }
 .tourist-enter__title {
     margin-bottom: 9px;
     max-width: 265px;
-    color: #0B192C;
+    color: #0b192c;
 }
 .tourist-levels__item-desc {
     margin-bottom: 27px;
@@ -139,7 +142,7 @@
     font-weight: 400;
     line-height: 22px;
     letter-spacing: 0;
-    color: #0B192C;
+    color: #0b192c;
 }
 .tourist-levels__item-table {
     padding-right: 20px;
@@ -165,7 +168,7 @@
     font-weight: 700;
     line-height: 22px;
     letter-spacing: 0;
-    color: #0B192C;
+    color: #0b192c;
 }
 .tourist-levels__item-subdesc {
     font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
@@ -174,7 +177,7 @@
     font-weight: 400;
     line-height: 20px;
     letter-spacing: 0;
-    color: #0B192C;
+    color: #0b192c;
 }
 
 /* Блоки страницы */

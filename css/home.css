@@ -4,7 +4,7 @@
     margin-bottom: 8px;
     padding: 25px 0;
     padding-bottom: 32px;
-    background: #0B192C;
+    background: #0b192c;
 }
 .search__title {
     margin-bottom: 20px;
@@ -14,7 +14,7 @@
     font-weight: 700;
     line-height: 21px;
     letter-spacing: 0;
-    color: #F0C806;
+    color: #f0c806;
     text-transform: uppercase;
 }
 .search-modal--cities {
@@ -47,10 +47,10 @@
     font-weight: 600;
     line-height: 18px;
     letter-spacing: 0;
-    color: #333333;
     border-radius: 2px;
     user-select: none;
-    background: #fff;
+    color: #333333;
+    background: #ffffff;
 }
 .search-form__label {
     position: absolute;
@@ -69,8 +69,8 @@
 .search-form__icon {
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
     right: 17px;
+    transform: translateY(-50%);
 }
 .search-form__resident-label {
     display: flex;
@@ -88,7 +88,7 @@
     font-weight: 500;
     line-height: 16px;
     letter-spacing: 0;
-    color: #FFFFFF;
+    color: #ffffff;
 }
 .search-form__btn {
     display: inline-block;
@@ -101,9 +101,9 @@
     line-height: 18px;
     letter-spacing: 0;
     text-align: center;
-    background: #007AFF;
     border-radius: 2px;
-    color: #FFFFFF;
+    color: #ffffff;
+    background: #007aff;
 }
 .search-form__resident {
     margin-bottom: 32px;
@@ -113,7 +113,7 @@
     display: inline-block;
     width: 19px;
     height: 19px;
-    border: 1px solid #FFFFFF;
+    border: 1px solid #ffffff;
 }
 .search-form__resident-box svg {
     position: absolute;
@@ -128,9 +128,9 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    background: #fff;
     padding: 15px 11px;
     border-radius: 2px;
+    background: #ffffff;
 }
 .search-form__field-item {
     position: relative;
@@ -152,7 +152,7 @@
     transform: translateY(-50%);
     width: 6px;
     height: 6px;
-    background: #0B192C;
+    background: #0b192c;
     border-radius: 50%;
 }
 .search-form__field-item:first-child {
@@ -172,8 +172,8 @@
     padding: 26px 17px;
     padding-right: 25px;
     position: relative;
-    background: #FFFFFF;
     border-radius: 2px;
+    background: #ffffff;
 }
 .offers__content {
     max-width: 90%;
@@ -188,7 +188,7 @@
     z-index: 2;
     width: 100%;
     height: 100%;
-    background: #0B192C;
+    background: #0b192c;
     opacity: .95;
 }
 .offers__item:last-child {
@@ -201,7 +201,7 @@
 }
 .offers__item--auth .offers__title,
 .offers__item--auth .offers__desc {
-    color: #fff;
+    color: #ffffff;
 }
 .offers__pic {
     position: absolute;
@@ -214,16 +214,16 @@
     border: none;
 }
 .offers__item--registration {
-    background: #007AFF;
+    background: #007aff;
 }
 .offers__item--registration .offers__title,
 .offers__item--registration .offers__row-desc,
 .offers__item--registration .offers__row-btn {
-    color: #fff;
+    color: #ffffff;
 }
 .offers__item--registration .offers__close::before,
 .offers__item--registration .offers__close::after {
-    background: #fff;
+    background: #ffffff;
 }
 .offers__title {
     margin-bottom: 10px;
@@ -233,7 +233,7 @@
     font-weight: 700;
     line-height: 24px;
     letter-spacing: 0;
-    color: #0B192C;
+    color: #0b192c;
 }
 .offers__item--attention .offers__desc {
     max-width: 70%;
@@ -246,6 +246,7 @@
     font-weight: 500;
     line-height: 18px;
     letter-spacing: 0;
+    color: #1d1d1d;
 }
 .offers__row {
     display: flex;
@@ -262,26 +263,26 @@
     line-height: 18px;
     letter-spacing: 0px;
     text-align: center;
-    color: #007AFF;
-    border: 1px solid #007AFF;
     border-radius: 2px;
+    color: #007aff;
+    border: 1px solid #007aff;
     background: #fff;
 }
 .offers__row-btn {
-    background: transparent;
-    border: 1px solid #FFFFFF;
     border-radius: 2px;
+    background: transparent;
+    border: 1px solid #ffffff;
 }
 .offers__row-content {
     margin-left: 28px;
 }
 .offers__desc-sum {
-    color: #4CD964;
+    color: #0fa30c;
 }
 .offers__close,
 .offers__item-next {
-    top: 13px;
-    right: 13px;
+    top: 5px;
+    right: 5px;
 }
 .offers .container {
     padding: 0 8px;
@@ -295,7 +296,7 @@
     height: 82px;
 }
 .offers__title-span {
-    color: #007AFF;
+    color: #007aff;
 }
 
 /* Стили для перехода скачивания шапки - $search-modal */
@@ -307,14 +308,15 @@
     width: 100%;
     z-index: 901;
     height: 100%;
-    background: #fff;
     transition: 0.3s ease-out;
     visibility: hidden;
     padding-bottom: 20px;
     overflow: auto;
     transform: translateY(100%);
+    background: #ffffff;
 }
 .search-modal__confirm {
+    width: 100%;
     padding: 15px;
     font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
     font-size: 15px;
@@ -323,10 +325,9 @@
     line-height: 18px;
     letter-spacing: 0;
     text-align: center;
-    color: #FFFFFF;
-    background: #007AFF;
     border-radius: 2px;
-    width: 100%;
+    color: #fff;
+    background: #007aff;
 }
 .search-modal--count,
 .search-modal--date {
@@ -383,7 +384,7 @@
     font-weight: 700;
     line-height: 24px;
     letter-spacing: 0;
-    color: #0B192C;
+    color: #0b192c;
 }
 .search-modal__field {
     position: relative;
@@ -396,8 +397,8 @@
     left: 0;
     width: 100%;
     height: 2px;
-    background: #E3E3E3;
     transition: 0.2s ease-out;
+    background: #e3e3e3;
 }
 .search-modal__top {
     margin-bottom: 29px;
@@ -424,9 +425,9 @@
     font-weight: 400;
     line-height: 18px;
     letter-spacing: 0;
-    color: #0B192C;
     background: none;
-    border-bottom: 1px solid #E3E3E3;
+    color: #0b192c;
+    border-bottom: 1px solid #e3e3e3;
 }
 .search-modal__location-title {
     margin-bottom: 22px;
@@ -436,7 +437,7 @@
     font-weight: 700;
     line-height: 18px;
     letter-spacing: 0;
-    color: #0B192C;
+    color: #0b192c;
 }
 .search-modal__location-item {
     display: flex;
@@ -460,8 +461,8 @@
     left: 0;
     width: 100%;
     height: 2px;
-    background: #E3E3E3;
     transition: 0.2s ease-out;
+    background: #e3e3e3;
 }
 .search-modal__pic {
     position: absolute;
@@ -480,11 +481,11 @@
     font-weight: 500;
     line-height: 16px;
     letter-spacing: 0;
-    color: #007AFF;
-    background: transparent;
     visibility: visible;
     opacity: 0;
     transition: 0.2s ease-out;
+    color: #007aff;
+    background: transparent;
 }
 .search-modal__item {
     display: flex;
@@ -494,8 +495,8 @@
     margin-bottom: 20px;
     width: 100%;
     text-align: left;
-    background: none;
     padding: 0;
+    background: none;
 }
 .search-modal__item:last-child {
     margin-bottom: 0;
@@ -509,7 +510,7 @@
     font-weight: 400;
     line-height: 18px;
     letter-spacing: 0;
-    color: #0B192C;
+    color: #0b192c;
 }
 .search-modal__sub-value,
 .search-modal__location-sub-value {
@@ -536,7 +537,8 @@
     color: #767676;
 }
 .search-modal__input {
-    padding: 17px 0px;
+    padding: 17px 0;
+    padding-right: 90px;
     padding-left: 35px;
     width: 100%;
     font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
@@ -546,8 +548,7 @@
     line-height: 17px;
     letter-spacing: 0;
     text-align: left;
-    color: #0B192C;
-    padding-right: 90px;
+    color: #0b192c;
 }
 .search-modal__label {
     position: absolute;
@@ -583,56 +584,22 @@
     letter-spacing: 0;
     height: 28px;
     width: 28px;
-    border: 1px solid #1785ED;
     border-radius: 2px;
-    color: #1785ED;
-    background: none;
     transition: 0.1s ease-in-out;
+    border: 1px solid #1785ed;
+    color: #1785ed;
+    background: none;
 }
 .search-modal__settings-btn:active {
     background: rgba(2, 24, 45, 0.8) !important;
     border-color: rgba(2, 24, 45, 1);
-    color: #FFFFFF !important;
+    color: #ffffff !important;
 }
 .search-modal__settings-btn:hover {
     background: rgba(23, 133, 237, 0.1);
-    border-color: #1785ED;
-    color: #1785ED;
+    border-color: #1785ed;
+    color: #1785ed;
 }
-
-.litepicker .container__months,
-.litepicker .container__months .month-item {
-    width: 100% !important;
-}
-
-.litepicker .container__days div {
-    width: 14.22%;
-}
-
-.litepicker .container__months .month-item-header div {
-    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 24px;
-    letter-spacing: 0;
-    text-align: center;
-    color: #0B192C;
-}
-
-.search-modal__calendar-row {
-    max-width: 308px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 5px;
-}
-
-.month-item-weekdays-row {
-    display: none !important;
-}
-
 .search-modal__calendar-item {
     font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
     font-size: 13px;
@@ -641,25 +608,22 @@
     line-height: 24px;
     letter-spacing: 0;
     text-align: center;
-    color: #B7B8BC;
     width: 44px;
     height: 32px;
     padding: 5px 0;
+    color: #b7b8bc;
 }
-
 .search-modal__calendar {
     margin-bottom: 26px;
-    border-top: 1px solid #E3E3E3;
-    border-bottom: 1px solid #E3E3E3;
+    border-top: 1px solid #e3e3e3;
+    border-bottom: 1px solid #e3e3e3;
 }
-
 .search-modal__calendar-datepicker {
     max-width: 308px;
     height: 335px;
     margin: 0 auto;
     overflow: auto;
 }
-
 .search-modal__date {
     margin: 0 auto;
     margin-bottom: 15px;
@@ -671,51 +635,84 @@
     font-weight: 500;
     line-height: 17px;
     letter-spacing: 0;
-    color: #0B192C;
+    color: #0b192c;
+}
+.search-modal__calendar-row {
+    max-width: 308px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5px;
+}
+
+/* Календарь */
+
+.litepicker .container__months,
+.litepicker .container__months .month-item {
+    width: 100% !important;
+}
+.litepicker .container__days div {
+    width: 14.22%;
+}
+.litepicker .container__months .month-item-header div {
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0;
+    text-align: center;
+    color: #0b192c;
+}
+.month-item-weekdays-row {
+    display: none !important;
 }
 
 /* Состояния */
 
-.search-modal__label.js-active {
-    display: none;
+.search-modal__form.active {
+    margin-bottom: 23px;
 }
-.search-modal__field.js-active::before {
-    opacity: 0;
-}
-.search-modal__field.js-active::after {
-    height: 1px;
-}
-.search-modal.js-active {
+.search-modal.show {
     transform: translateY(0);
     visibility: visible;
 }
-.search-modal__location.js-active {
-    display: none;
-}
-.search-modal__form.js-active {
-    margin-bottom: 23px;
-}
-.search-modal__table.js-active {
+.search-modal__table.show {
     display: block;
 }
-.search-modal__clear.js-active {
+.search-modal__clear.show {
     opacity: 1;
     visibility: visible;
 }
-.offers__item.js-active {
+.search-modal__location.hide {
     display: none;
 }
-.search-form__field--date.js-active .search-form__label {
+.search-form__field--date.active .search-form__label {
     top: 28%;
 }
-.search-form__field--date.js-active .search-form__input {
+.search-form__field--date.active .search-form__input {
     padding-bottom: 5px;
     padding-top: 20px;
 }
-
+.search-modal__field.active::before {
+    opacity: 0;
+}
+.search-modal__field.active::after {
+    height: 1px;
+}
+.offers__item.hide {
+    display: none;
+}
 
 /* Слайдер последних гостиниц $recent-hotels */
 
 .recent-hotels .container {
     padding: 0 8px;
+}
+
+@media (max-width: 325px) {
+    .offers__content {
+        max-width: none;
+    }
 }

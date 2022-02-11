@@ -1,44 +1,37 @@
 $(function () {
-    /* Логика меню аккаунта */
-    $('.account-menu__close').on('click', function () {
-        $('.account-menu').removeClass('js-active');
+    /* Обработчики меню аккаунта */
+    $('#close-account-menu').on('click', function () {
+        $('#account-menu').removeClass('show');
 
         enableScroll();
     })
-    $('#main-menu').on('click', function () {
-        $('.account-menu').addClass('js-active');
+    $('#show-account-menu').on('click', function () {
+        $('.account-menu').addClass('show');
 
         disableScroll();
     })
 
-    /* Клик по черному фону - плашке */
-    $('#body-closer').on('click', function () {
-        $('.search-modal').removeClass('js-active');
-
-        enableScroll();
-    })
-
-    /* Клик по меню */
+    /* Обработчики главного меню */
     $('#show-menu').on('click', function () {
-        $('#menu').addClass('js-active');
+        $('#menu').addClass('show');
 
         disableScroll();
     })
     $('#menu-close').on('click', function () {
-        $('#menu').removeClass('js-active');
+        $('#menu').removeClass('show');
 
         enableScroll();
     })
 
     /* Функция для включения скролла */
     function enableScroll() {
-        $('#body-closer').removeClass('js-active');
-        $('body').css('overflow', 'auto');
+        $('#body-closer').removeClass('show');
+        $('body, html').css('overflow', 'auto');
     }
 
     /* Функция для отключения скролла */
     function disableScroll() {
-        $('#body-closer').addClass('js-active');
-        $('body').css('overflow', 'hidden');
+        $('#body-closer').addClass('show');
+        $('body, html').css('overflow', 'hidden');
     }
 })
