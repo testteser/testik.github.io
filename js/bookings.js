@@ -7,6 +7,7 @@ $(function () {
 
     let counter = 0;
 
+    /* Получение других бронирований по клику на кнопку */
     $('#show-more').on('click', function () {
         let cell = `
             <div class="bookings-table__cell">
@@ -52,32 +53,33 @@ $(function () {
     })
 
     $('.bookings-table__item-more').on('click', function () {
-        $('#body-closer').addClass('js-active');
-        $('#bookings-more').addClass('js-active');
+        $('#body-closer').addClass('show');
+        $('#bookings-more').addClass('show');
     })
 
-    $('#bookings-more-close').on('click', function () {
-        $('#bookings-more').removeClass('js-active');
-        $('#body-closer').removeClass('js-active');
+    $('.bookings-more__close').on('click', function () {
+        $('#bookings-more').removeClass('show');
+        $('#body-closer').removeClass('show');
     })
 
     $('#body-closer').on('click', function () {
-        $('#bookings-more').removeClass('js-active');
-        $('#bookings-delete').removeClass('js-active');
+        $(this).removeClass('show');
+        $('#bookings-more').removeClass('show');
+        $('#bookings-delete').removeClass('show');
     })
 
     $('#booking-delete-show').on('click', function () {
-        $('#bookings-more').removeClass('js-active');
-        $('#bookings-delete').addClass('js-active');
+        $('#bookings-more').removeClass('show');
+        $('#bookings-delete').addClass('show');
     })
 
     $('#bookings-delete-cancel').on('click', function () {
-        $('#bookings-delete').removeClass('js-active');
-        $('#bookings-more').addClass('js-active');
+        $('#bookings-delete').removeClass('show');
+        $('#bookings-more').addClass('show');
     })
 
     $('#bookings-delete-close').on('click', function () {
-        $('#bookings-delete').removeClass('js-active');
-        $('#body-closer').removeClass('js-active');
+        $('#bookings-delete').removeClass('show');
+        $('#body-closer').removeClass('show');
     })
 })

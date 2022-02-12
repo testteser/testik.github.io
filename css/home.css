@@ -711,6 +711,12 @@
     padding: 0 8px;
 }
 
+@media (max-width: 350px) {
+    .search-form__field-item {
+        font-size: 13px;
+    }
+}
+
 @media (max-width: 325px) {
     .offers__content {
         max-width: none;

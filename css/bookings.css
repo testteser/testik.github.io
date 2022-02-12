@@ -148,7 +148,8 @@
     transform: translate(-50%, -50%);
     z-index: 991;
     border-radius: 2px;
-    width: 343px;
+    width: 100%;
+    max-width: 343px;
     padding: 16px 12px;
     opacity: 0;
     visibility: hidden;
@@ -248,17 +249,17 @@
 }
 .bookings-delete__close {
     position: absolute;
-    top: 13px;
-    right: 13px;
+    top: 5px;
+    right: 5px;
 }
 
 /* Состояния */
 
-.bookings-delete.js-active {
+.bookings-delete.show {
     opacity: 1;
     visibility: visible;
 }
-.bookings-more.js-active {
+.bookings-more.show {
     transform: translateY(0);
     visibility: visible;
 }

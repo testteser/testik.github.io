@@ -99,6 +99,8 @@
     border: 1px solid #007aff;
 }
 .reviews__table-info {
+    display: flex;
+    flex-direction: column;
     padding: 12px;
     padding-right: 40px;
     width: 100%;
