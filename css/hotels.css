@@ -14,6 +14,9 @@
     background: none;
     margin-right: 25px;
 }
+.hotels-filter__btn:last-child {
+    margin-right: 0;
+}
 .hotels-filter__btn-icon {
     margin-right: 7px;
 }
@@ -24,7 +27,7 @@
     font-weight: 500;
     line-height: 13px;
     letter-spacing: 0;
-    color: #007AFF;
+    color: #007aff;
 }
 .hotels-filter__list {
     display: flex;
@@ -45,9 +48,9 @@
     font-weight: 600;
     line-height: 14px;
     letter-spacing: 0;
-    background: rgba(0, 122, 255, 0.17);
     border-radius: 2px;
-    color: #0B192C;
+    background: rgba(0, 122, 255, 0.17);
+    color: #0b192c;
 }
 .hotels-filter__close {
     position: absolute;
@@ -65,8 +68,8 @@
     width: 100%;
     height: 2px;
     border-radius: 2px;
-    background: #33393F;
     transform: rotate(45deg);
+    background: #33393f;
 }
 .hotels-filter__close::before {
     content: '';
@@ -76,8 +79,8 @@
     width: 100%;
     height: 2px;
     border-radius: 2px;
-    background: #33393F;
     transform: rotate(-45deg);
+    background: #33393f;
 }
 .hotels-filter__item:last-child {
     margin-right: 0;
@@ -89,11 +92,11 @@
 .hotels-table__item {
     display: flex;
     flex-wrap: wrap;
-    background: #FFFFFF;
-    border: 1px solid #E3E3E3;
+    margin-bottom: 12px;
+    background: #ffffff;
+    border: 1px solid #e3e3e3;
     border-left: none;
     border-right: none;
-    margin-bottom: 12px;
 }
 .hotels-table__main-content {
     position: relative;
@@ -109,14 +112,15 @@
     width: 100%;
 }
 .hotels-table__name {
+    padding-right: 35px;
     margin-bottom: 2px;
     font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
     font-size: 14px;
     font-style: normal;
     font-weight: 700;
     line-height: 17px;
-    letter-spacing: -0.33764711022377014px;
-    color: #0B192C;
+    letter-spacing: -0.3px;
+    color: #0b192c;
 }
 .hotels-table__rating {
     display: flex;
@@ -129,6 +133,7 @@
     margin-right: 0;
 }
 .hotels-table__location {
+    padding-right: 35px;
     margin-bottom: 9px;
     display: flex;
     align-items: center;
@@ -137,8 +142,8 @@
     font-style: normal;
     font-weight: 400;
     line-height: 14px;
-    letter-spacing: -0.3135294020175934px;
-    color: #858D97;
+    letter-spacing: -0.3px;
+    color: #858d97;
 }
 .hotels-table__location-left {
     display: flex;
@@ -155,7 +160,7 @@
     width: 4px;
     height: 4px;
     border-radius: 50%;
-    background: #858D97;
+    background: #858d97;
 }
 .hotels-table__location-icon {
     margin-right: 6px;
@@ -175,16 +180,16 @@
     margin-bottom: 8px;
 }
 .hotels-table__info-item--new {
-    background: #F0C806;
+    background: #f0c806;
 }
 .hotels-table__info-item--promo {
-    background: #FFFFFF;
-    border: 0.5px solid #000000;
+    background: #ffffff;
+    border: 1px solid #000000;
 }
 .hotels-table__info-item--like {
     display: flex;
-    background: #007AFF;
     padding: 4px !important;
+    background: #007aff;
 }
 .hotels-table__info-item {
     padding: 4px 3px;
@@ -196,7 +201,7 @@
     line-height: 11px;
     letter-spacing: 0;
     border-radius: 2px;
-    color: #0B192C;
+    color: #0b192c;
 }
 .hotels-table__info-item:last-child {
     margin-right: 0;
@@ -212,16 +217,16 @@
     width: 24px;
     height: 24px;
     margin-right: 6px;
-    background: #0B192C;
     border-radius: 2px 0 2px 2px;
     font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
     font-size: 12px;
     font-style: normal;
     font-weight: 500;
     line-height: 24px;
-    letter-spacing: -0.33764711022377014px;
+    letter-spacing: -0.3px;
     text-align: center;
-    color: #FFFFFF;
+    color: #ffffff;
+    background: #0b192c;
 }
 .hotels-table__total-review {
     position: relative;
@@ -236,7 +241,7 @@
     width: 4px;
     height: 4px;
     border-radius: 50%;
-    background: #858D97;
+    background: #858d97;
 }
 .hotels-table__status {
     display: flex;
@@ -244,7 +249,7 @@
     margin-bottom: 11px;
 }
 .hotels-table__status-item--demand {
-    background: #DE2B21;
+    background: #de2b21;
 }
 .hotels-table__status-item--tourist {
     background: #672168;
@@ -260,19 +265,19 @@
     line-height: 14px;
     letter-spacing: 0;
     text-align: center;
-    color: #fff;
     border-radius: 2px;
+    color: #ffffff;
 }
 .hotels-table__status-item:last-child {
     margin-right: 0;
 }
 .hotels-table__price {
-    border-top: 1px solid #ECECEC;
     padding: 5px 15px;
-    margin: 0 -15px;
+    margin: 0 -10px;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    border-top: 1px solid #ececec;
 }
 .hotels-table__price-rooms,
 .hotels-table__price-nights {
@@ -281,9 +286,9 @@
     font-style: normal;
     font-weight: 400;
     line-height: 21px;
-    letter-spacing: -0.27172550559043884px;
+    letter-spacing: -0.2px;
     text-align: right;
-    color: #00203E;
+    color: #00203e;
 }
 .hotels-table__price-count {
     font-weight: 600;
@@ -294,8 +299,8 @@
     font-style: normal;
     font-weight: 700;
     line-height: 26px;
-    letter-spacing: -0.23975780606269836px;
-    color: #0FA30C;
+    letter-spacing: -0.2px;
+    color: #0fa30c;
 }
 .hotels-table__price-free,
 .hotels-table__price-plus {
@@ -304,9 +309,9 @@
     font-style: normal;
     font-weight: 500;
     line-height: 14px;
-    letter-spacing: -0.3135294020175934px;
-    color: #0FA30C;
+    letter-spacing: -0.3px;
     text-align: right;
+    color: #0fa30c;
 }
 .hotels-table__price-plus {
     margin-bottom: 3px;
@@ -326,15 +331,15 @@
     font-style: normal;
     font-weight: 400;
     line-height: 14px;
-    letter-spacing: -0.3135294020175934px;
-    color: #858D97;
+    letter-spacing: -0.3px;
+    color: #858d97;
 }
 .hotels-table__next {
     top: 45px;
     right: 8px;
 }
 .hotels-table__status-item--sold {
-    background: #DE2B21;
+    background: #de2b21;
 }
 .hotels-table__slider {
     padding: 0 15px;
@@ -343,13 +348,17 @@
     width: 100%;
 }
 .hotels-table__name-icon {
+    position: absolute;
+    top: 10px;
+    right: 15px;
     display: inline-flex;
-    background: #007AFF;
     padding: 4px;
     margin-left: 8px;
     border-radius: 2px;
+    background: #007aff;
 }
 .hotels-table__slider-text {
+    padding-right: 15px;
     margin-bottom: 8px;
     font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
     font-size: 12px;
@@ -357,7 +366,7 @@
     font-weight: 500;
     line-height: 17px;
     letter-spacing: 0;
-    color: #0B192C;
+    color: #0b192c;
 }
 .hotels-table__btn {
     margin: 0 16px;
@@ -371,9 +380,9 @@
     line-height: 18px;
     letter-spacing: 0;
     text-align: center;
-    color: #007AFF;
-    border: 1px solid #007AFF;
     border-radius: 2px;
+    color: #007aff;
+    border: 1px solid #007aff;
 }
 
 .hotels-pagination {
@@ -390,11 +399,10 @@
     line-height: 23px;
     letter-spacing: 0;
     text-align: center;
-    color: #00203E;
+    color: #00203e;
 }
 .hotels-pagination__btn {
     width: 125px;
-    background: #007AFF;
     border-radius: 2px;
     padding: 7px;
     font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
@@ -404,7 +412,8 @@
     line-height: 23px;
     letter-spacing: 0;
     text-align: center;
-    color: #fff;
+    color: #ffffff;
+    background: #007aff;
 }
 .hotels-pagination__btn--prev {
     opacity: 0;
@@ -437,7 +446,7 @@
     line-height: 17px;
     letter-spacing: 0;
     text-align: center;
-    color: #0B192C;
+    color: #0b192c;
 }
 
 .hotels-table__error-text {
@@ -448,7 +457,7 @@
     line-height: 16px;
     letter-spacing: 0;
     text-align: left;
-    color: #DE2B21;
+    color: #de2b21;
 }
 
 .hotels-table__dates-nights,
@@ -462,13 +471,13 @@
     margin-right: 12px;
     text-align: center;
     padding: 8px 10px;
-    background: #FFFFFF;
-    border: 1px solid #007AFF;
     border-radius: 2px;
+    background: #ffffff;
+    border: 1px solid #007aff;
 }
 
 .hotels-table__dates-item:active {
-    background: #EFF6FF;
+    background: #eff6ff;
 }
 
 .hotels-table__item.is-empty .hotels-table__main-content {
@@ -480,31 +489,38 @@
 
 
 .filter {
-    opacity: 0;
     visibility: hidden;
     position: fixed;
     bottom: -100%;
     left: 0;
     width: 100%;
     height: auto;
-    background: #fff;
+    z-index: 901;
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
     transition: 0.2s ease-out;
     padding: 24px 0;
+    background: #ffffff;
+}
+.filter__top {
+    position: relative;
+    text-align: center;
+    margin-bottom: 17px;
 }
 .filter.show {
     bottom: 0;
     visibility: visible;
-    opacity: 1;
 }
 .filter__remove {
+    position: absolute;
+    top: 0;
+    right: 0;
     font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
     font-size: 13px;
     font-style: normal;
     font-weight: 600;
     line-height: 18px;
-    letter-spacing: -0.2346666306257248px;
+    letter-spacing: -0.2px;
     color: #979797;
 }
 .filter__title {
@@ -513,8 +529,42 @@
     font-style: normal;
     font-weight: 700;
     line-height: 18px;
-    letter-spacing: -0.2346666306257248px;
-    color: #0B192C;
+    letter-spacing: -0.2px;
+    color: #0b192c;
+}
+.filter__item {
+    margin-bottom: 26px;
+}
+.filter__close {
+    top: -4px;
+    left: 0;
+}
+.filter__item-budget {
+    margin-bottom: 16px;
+}
+.filter__item-setting {
+    margin-right: 15px;
+}
+.filter__item-set {
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: -0.2px;
+    color: #0b192c;
+}
+.filter__body {
+    padding: 10px 0;
+    height: 440px;
+    overflow: auto;
+}
+.filter__submit {
+    width: 100%;
+    padding: 14px;
+}
+.filter__item:last-child {
+    margin-bottom: 0;
 }
 .filter__item-title {
     margin-bottom: 15px;
@@ -523,8 +573,8 @@
     font-style: normal;
     font-weight: 600;
     line-height: 18px;
-    letter-spacing: -0.2346666306257248px;
-    color: #0B192C;
+    letter-spacing: -0.2px;
+    color: #0b192c;
 }
 .filter__item-label {
     display: flex;
@@ -534,16 +584,16 @@
     display: none;
 }
 .filter__item-label input:checked ~ .filter__item-checkbox {
-    background: #0B192C;
+    background: #0b192c;
 }
 .filter__item-checkbox {
     margin-right: 5px;
     display: inline-block;
     width: 15px;
     height: 15px;
-    border: 1px solid #0B192C;
     border-radius: 2px;
-    background: #fff;
+    border: 1px solid #0b192c;
+    background: #ffffff;
 }
 .filter__item-option {
     margin-bottom: 8px;
@@ -557,6 +607,49 @@
     font-style: normal;
     font-weight: 500;
     line-height: 18px;
-    letter-spacing: -0.2346666306257248px;
-    color: #0B192C;
+    letter-spacing: -0.2px;
+    color: #0b192c;
+}
+
+@media (max-width: 360px) {
+    .hotels-pagination__btn {
+        width: 100px;
+        font-size: 14px;
+        padding: 6px;
+    }
+}
+
+@media (max-width: 335px) {
+    .filter__remove {
+        font-size: 12px;
+    }
+
+    .hotels-filter__btn {
+        margin-right: 18px;
+    }
+
+    .registration-offer__text {
+        font-size: 12px;
+    }
+
+    .hotels-table__price {
+        padding: 5px 12px;
+    }
+
+    .hotels-table__content {
+        padding: 12px;
+    }
+
+    .hotels-table__price-rooms,
+    .hotels-table__price-nights {
+        font-size: 12px;
+    }
+
+    .hotels-table__price-value {
+        font-size: 16px;
+    }
+
+    .hotels-table__btn {
+        padding: 9px 5px;
+    }
 }

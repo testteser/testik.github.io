@@ -13,6 +13,16 @@ $(function () {
         $(this).toggleClass('is-active');
     })
 
+    $('#filter-remove').on('click', function () {
+        $('.filter input').prop('checked', false);
+    })
+
+    $('#filter-close').on('click', function () {
+        $('.filter').removeClass('show');
+
+        enableScroll();
+    })
+
     $('#booking-variants').slick({
         infinite: true,
         dots: false,
@@ -24,5 +34,25 @@ $(function () {
 
     $('#filter-show').on('click', function () {
         $('.filter').addClass('show');
+
+        disableScroll();
     })
+
+    $('#body-closer').on('click', function () {
+        $('.filter').removeClass('show');
+
+        enableScroll();
+    })
+
+    /* Функция для включения скролла */
+    function enableScroll() {
+        $('#body-closer').removeClass('show');
+        $('body, html').css('overflow', 'auto');
+    }
+
+    /* Функция для отключения скролла */
+    function disableScroll() {
+        $('#body-closer').addClass('show');
+        $('body, html').css('overflow', 'hidden');
+    }
 })
