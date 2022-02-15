@@ -8,7 +8,9 @@ $(function () {
     })
 
     $('.hotels-table__heart').on('click', function (e) {
-        e.stopPropagation();
+        e.preventDefault();
+
+        console.log('sss')
 
         $(this).toggleClass('is-active');
     })
@@ -23,22 +25,13 @@ $(function () {
         enableScroll();
     })
 
-    // $('#booking-variants').slick({
-    //     infinite: true,
-    //     dots: false,
-    //     arrows: false,
-    //     variableWidth: true,
-    //     slidesToShow: 1,
-    //     slidesToScroll: 1,
-    // });
-
-    let swiper = new Swiper(".mySwiper", {
+    let swiper = new Swiper("#variants", {
         loop: false,
         speed: 500,
         slidesPerView: 2.3,
         spaceBetween: 10,
         breakpoints: {
-            350: {
+            375: {
                 slidesPerView: 2.8,
             }
         }

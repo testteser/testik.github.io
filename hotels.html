@@ -7,7 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
-<!--    <link rel="stylesheet" href="libraries/slick.css">-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/litepicker/dist/css/litepicker.css"/>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/common.css">
@@ -349,7 +348,7 @@
                         <p class="hotels-table__slider-text">
                             На эти даты еще есть места, но они могут закончится:
                         </p>
-                        <div class="swiper mySwiper">
+                        <div class="swiper hotel-table__variants" id="variants">
                             <div class="swiper-wrapper">
                                 <a href="#!" class="swiper-slide hotels-table__dates-item">
                                     <span class="hotels-table__dates-days">
@@ -397,41 +396,6 @@
                                 </a>
                             </div>
                         </div>
-<!--                        <div class="hotels-table__dates" id="booking-variants">-->
-<!--                            <a href="#!" class="hotels-table__dates-item">-->
-<!--                                <span class="hotels-table__dates-days">-->
-<!--                                    24 янв. - 25 янв.-->
-<!--                                </span>-->
-<!--                                <span class="hotels-table__dates-nights">-->
-<!--                                    1 ночь-->
-<!--                                </span>-->
-<!--                                <span class="hotels-table__dates-price">-->
-<!--                                    от UZS 6 125 000-->
-<!--                                </span>-->
-<!--                            </a>-->
-<!--                            <a href="#!" class="hotels-table__dates-item">-->
-<!--                                <span class="hotels-table__dates-days">-->
-<!--                                    24 янв. - 25 янв.-->
-<!--                                </span>-->
-<!--                                <span class="hotels-table__dates-nights">-->
-<!--                                    1 ночь-->
-<!--                                </span>-->
-<!--                                <span class="hotels-table__dates-price">-->
-<!--                                    от UZS 6 125 000-->
-<!--                                </span>-->
-<!--                            </a>-->
-<!--                            <a href="#!" class="hotels-table__dates-item">-->
-<!--                                <span class="hotels-table__dates-days">-->
-<!--                                    24 янв. - 25 янв.-->
-<!--                                </span>-->
-<!--                                <span class="hotels-table__dates-nights">-->
-<!--                                    1 ночь-->
-<!--                                </span>-->
-<!--                                <span class="hotels-table__dates-price">-->
-<!--                                    от UZS 6 125 000-->
-<!--                                </span>-->
-<!--                            </a>-->
-<!--                        </div>-->
                     </div>
                     <a href="#!" class="hotels-table__btn">
                         Все равно посмотреть этот вариант
@@ -887,7 +851,6 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-<!--<script src="libraries/slick.min.js"></script>-->
 <script src="libraries/litepicker.js"></script>
 <script src="js/common.js"></script>
 <script src="js/hotels.js"></script>

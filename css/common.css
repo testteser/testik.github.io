@@ -483,13 +483,6 @@ body {
     border-radius: 50%;
     background: #484848;
 }
-.recent-hotels__item {
-    width: 250px;
-    margin-right: 8px;
-}
-.recent-hotels__item:last-child {
-    margin-right: 0;
-}
 
 /* БЛОК ПОИСКА (МАЛЕНЬКИЙ) */
 

@@ -6,7 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="libraries/slick.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/hotel.css">
@@ -710,65 +710,152 @@
                 <h2 class="recent-hotels__title">
                     Вы недавно посмотрели
                 </h2>
-                <div class="recent-hotels__slider" id="recent-slider">
-                    <div class="recent-hotels__item">
-                        <img src="images/hotel.png" alt="Фото отеля" class="recent-hotels__img">
-                        <div class="recent-hotels__info">
-                            <div class="recent-hotels__info-top">
+                <div class="swiper recent-hotels__slider hotel-slider" id="recent-slider">
+                    <div class="swiper-wrapper">
+                        <a href="#!" class="swiper-slide recent-hotels__item">
+                            <img src="images/hotel.png" alt="Фото отеля" class="recent-hotels__img">
+                            <div class="recent-hotels__info">
+                                <div class="recent-hotels__info-top">
                                             <span class="recent-hotels__name">
                                                 Bukhara Baraka
                                             </span>
-                                <ul class="recent-hotels__rating">
-                                    <li class="recent-hotels__rating-item">
-                                        <svg width="13" height="12" viewBox="0 0 13 12" fill="none"
-                                             xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                                  d="M4.5506 7.31835L3.15312 11.9167L6.77474 8.95431L10.5708 11.7294L10.5581 11.69L10.4274 11.2863L10.8432 11.567L9.23505 7.2702L12.7377 5.01119L8.36918 4.92663L6.77474 0L5.29556 4.86714L0.791016 4.77994L4.5506 7.31835Z"
-                                                  fill="#F9B500"/>
-                                        </svg>
-                                    </li>
-                                    <li class="recent-hotels__rating-item">
-                                        <svg width="13" height="12" viewBox="0 0 13 12" fill="none"
-                                             xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                                  d="M4.5506 7.31835L3.15312 11.9167L6.77474 8.95431L10.5708 11.7294L10.5581 11.69L10.4274 11.2863L10.8432 11.567L9.23505 7.2702L12.7377 5.01119L8.36918 4.92663L6.77474 0L5.29556 4.86714L0.791016 4.77994L4.5506 7.31835Z"
-                                                  fill="#F9B500"/>
-                                        </svg>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="recent-hotels__info-bottom">
+                                    <ul class="recent-hotels__rating">
+                                        <li class="recent-hotels__rating-item">
+                                            <svg width="13" height="12" viewBox="0 0 13 12" fill="none"
+                                                 xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                      d="M4.5506 7.31835L3.15312 11.9167L6.77474 8.95431L10.5708 11.7294L10.5581 11.69L10.4274 11.2863L10.8432 11.567L9.23505 7.2702L12.7377 5.01119L8.36918 4.92663L6.77474 0L5.29556 4.86714L0.791016 4.77994L4.5506 7.31835Z"
+                                                      fill="#F9B500"/>
+                                            </svg>
+                                        </li>
+                                        <li class="recent-hotels__rating-item">
+                                            <svg width="13" height="12" viewBox="0 0 13 12" fill="none"
+                                                 xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                      d="M4.5506 7.31835L3.15312 11.9167L6.77474 8.95431L10.5708 11.7294L10.5581 11.69L10.4274 11.2863L10.8432 11.567L9.23505 7.2702L12.7377 5.01119L8.36918 4.92663L6.77474 0L5.29556 4.86714L0.791016 4.77994L4.5506 7.31835Z"
+                                                      fill="#F9B500"/>
+                                            </svg>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="recent-hotels__info-bottom">
                                 <span class="recent-hotels__info-total">
                                     USZ 40 000 per night
                                 </span>
-                                <span class="recent-hotels__info-service">
+                                    <span class="recent-hotels__info-service">
                                     Free cancellation
                                 </span>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="recent-hotels__item">
-                        <img src="images/hotel.png" alt="Фото отеля" class="recent-hotels__img">
-                        <div class="recent-hotels__info">
-                            <div class="recent-hotels__info-top">
+                        </a>
+                        <a href="#!" class="swiper-slide recent-hotels__item">
+                            <img src="images/hotel.png" alt="Фото отеля" class="recent-hotels__img">
+                            <div class="recent-hotels__info">
+                                <div class="recent-hotels__info-top">
                                             <span class="recent-hotels__name">
                                                 Bukhara Baraka
                                             </span>
-                                <ul class="recent-hotels__rating">
-                                    <li class="recent-hotels__rating-item">
-                                        1
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="recent-hotels__info-bottom">
-                                <div class="recent-hotels__info-total">
+                                    <ul class="recent-hotels__rating">
+                                        <li class="recent-hotels__rating-item">
+                                            <svg width="13" height="12" viewBox="0 0 13 12" fill="none"
+                                                 xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                      d="M4.5506 7.31835L3.15312 11.9167L6.77474 8.95431L10.5708 11.7294L10.5581 11.69L10.4274 11.2863L10.8432 11.567L9.23505 7.2702L12.7377 5.01119L8.36918 4.92663L6.77474 0L5.29556 4.86714L0.791016 4.77994L4.5506 7.31835Z"
+                                                      fill="#F9B500"/>
+                                            </svg>
+                                        </li>
+                                        <li class="recent-hotels__rating-item">
+                                            <svg width="13" height="12" viewBox="0 0 13 12" fill="none"
+                                                 xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                      d="M4.5506 7.31835L3.15312 11.9167L6.77474 8.95431L10.5708 11.7294L10.5581 11.69L10.4274 11.2863L10.8432 11.567L9.23505 7.2702L12.7377 5.01119L8.36918 4.92663L6.77474 0L5.29556 4.86714L0.791016 4.77994L4.5506 7.31835Z"
+                                                      fill="#F9B500"/>
+                                            </svg>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="recent-hotels__info-bottom">
+                                <span class="recent-hotels__info-total">
                                     USZ 40 000 per night
-                                </div>
-                                <div class="recent-hotels__info-total">
+                                </span>
+                                    <span class="recent-hotels__info-service">
                                     Free cancellation
+                                </span>
                                 </div>
                             </div>
-                        </div>
+                        </a>
+                        <a href="#!" class="swiper-slide recent-hotels__item">
+                            <img src="images/hotel.png" alt="Фото отеля" class="recent-hotels__img">
+                            <div class="recent-hotels__info">
+                                <div class="recent-hotels__info-top">
+                                            <span class="recent-hotels__name">
+                                                Bukhara Baraka
+                                            </span>
+                                    <ul class="recent-hotels__rating">
+                                        <li class="recent-hotels__rating-item">
+                                            <svg width="13" height="12" viewBox="0 0 13 12" fill="none"
+                                                 xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                      d="M4.5506 7.31835L3.15312 11.9167L6.77474 8.95431L10.5708 11.7294L10.5581 11.69L10.4274 11.2863L10.8432 11.567L9.23505 7.2702L12.7377 5.01119L8.36918 4.92663L6.77474 0L5.29556 4.86714L0.791016 4.77994L4.5506 7.31835Z"
+                                                      fill="#F9B500"/>
+                                            </svg>
+                                        </li>
+                                        <li class="recent-hotels__rating-item">
+                                            <svg width="13" height="12" viewBox="0 0 13 12" fill="none"
+                                                 xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                      d="M4.5506 7.31835L3.15312 11.9167L6.77474 8.95431L10.5708 11.7294L10.5581 11.69L10.4274 11.2863L10.8432 11.567L9.23505 7.2702L12.7377 5.01119L8.36918 4.92663L6.77474 0L5.29556 4.86714L0.791016 4.77994L4.5506 7.31835Z"
+                                                      fill="#F9B500"/>
+                                            </svg>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="recent-hotels__info-bottom">
+                                <span class="recent-hotels__info-total">
+                                    USZ 40 000 per night
+                                </span>
+                                    <span class="recent-hotels__info-service">
+                                    Free cancellation
+                                </span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#!" class="swiper-slide recent-hotels__item">
+                            <img src="images/hotel.png" alt="Фото отеля" class="recent-hotels__img">
+                            <div class="recent-hotels__info">
+                                <div class="recent-hotels__info-top">
+                                            <span class="recent-hotels__name">
+                                                Bukhara Baraka
+                                            </span>
+                                    <ul class="recent-hotels__rating">
+                                        <li class="recent-hotels__rating-item">
+                                            <svg width="13" height="12" viewBox="0 0 13 12" fill="none"
+                                                 xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                      d="M4.5506 7.31835L3.15312 11.9167L6.77474 8.95431L10.5708 11.7294L10.5581 11.69L10.4274 11.2863L10.8432 11.567L9.23505 7.2702L12.7377 5.01119L8.36918 4.92663L6.77474 0L5.29556 4.86714L0.791016 4.77994L4.5506 7.31835Z"
+                                                      fill="#F9B500"/>
+                                            </svg>
+                                        </li>
+                                        <li class="recent-hotels__rating-item">
+                                            <svg width="13" height="12" viewBox="0 0 13 12" fill="none"
+                                                 xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                      d="M4.5506 7.31835L3.15312 11.9167L6.77474 8.95431L10.5708 11.7294L10.5581 11.69L10.4274 11.2863L10.8432 11.567L9.23505 7.2702L12.7377 5.01119L8.36918 4.92663L6.77474 0L5.29556 4.86714L0.791016 4.77994L4.5506 7.31835Z"
+                                                      fill="#F9B500"/>
+                                            </svg>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="recent-hotels__info-bottom">
+                                <span class="recent-hotels__info-total">
+                                    USZ 40 000 per night
+                                </span>
+                                    <span class="recent-hotels__info-service">
+                                    Free cancellation
+                                </span>
+                                </div>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -927,7 +1014,7 @@
     <div class="body-closer"></div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="libraries/slick.min.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="libraries/litepicker.js"></script>
     <script src="js/common.js"></script>
     <script src="js/hotel.js"></script>

@@ -1094,6 +1094,7 @@
     z-index: 901;
     transition: 0.2s ease-out;
     background: #eff6ff;
+    box-shadow: 0 1px 2px rgb(0 0 0 / 25%), inset 0 1px 0 rgb(255 255 255 / 10%);
 }
 .hotel-bookings.show {
     top: 0;
@@ -1318,6 +1319,10 @@
     position: absolute;
     bottom: 12px;
     right: 12px;
+}
+
+.hotel-slider {
+    margin-right: -15px;
 }
 
 .hotel-search__row--double .hotel-search__field {

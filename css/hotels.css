@@ -450,6 +450,7 @@
 }
 
 .hotels-table__error-text {
+    max-width: 170px;
     font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
     font-size: 12px;
     font-style: normal;
@@ -470,7 +471,7 @@
     text-align: center;
     padding: 8px 10px;
     border-radius: 2px;
-    background: red;
+    background: #ffffff;
     border: 1px solid #007aff;
 }
 
@@ -484,7 +485,6 @@
 .hotels-table__item.is-empty .hotels-table__status {
     margin-bottom: 16px;
 }
-
 
 .filter {
     visibility: hidden;
@@ -504,10 +504,6 @@
     position: relative;
     text-align: center;
     margin-bottom: 17px;
-}
-.filter.show {
-    bottom: 0;
-    visibility: visible;
 }
 .filter__remove {
     position: absolute;
@@ -607,6 +603,13 @@
     line-height: 18px;
     letter-spacing: -0.2px;
     color: #0b192c;
+}
+
+/* Состояния */
+
+.filter.show {
+    bottom: 0;
+    visibility: visible;
 }
 
 @media (max-width: 360px) {

@@ -1,13 +1,4 @@
 $(function () {
-    $('.recent-hotels__slider').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: false,
-        centerMode: false,
-        infinite: true,
-        variableWidth: true,
-    })
-
     $('.body-closer').on('click', function () {
         $(this).removeClass('js-active');
         $('.hotel-search').removeClass('js-active');
@@ -55,17 +46,20 @@ $(function () {
     $('.hotel-bookings__remove').on('click', function () {
         $(this).parent().remove();
 
-        console.log($('.hotel-bookings__list').children())
-
         if ($('.hotel-bookings__list').children().length === 0) {
             $('.hotel-bookings').removeClass('show');
         }
     })
 
-    // $(window).on('scroll', function (e) {
-    //     if ($(this).scrollTop() <= 500 && $('.hotel-bookings').hasClass('show')) {
-    //         $('.hotel-bookings').removeClass('show');
-    //
-    //     }
-    // })
+    let swiper = new Swiper("#recent-slider", {
+        loop: false,
+        speed: 500,
+        slidesPerView: 1.4,
+        spaceBetween: 10,
+        breakpoints: {
+            375: {
+                slidesPerView: 1.4,
+            }
+        }
+    });
 })
