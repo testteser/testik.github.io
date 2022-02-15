@@ -1,9 +1,4 @@
 $(function () {
-    $('.body-closer').on('click', function () {
-        $(this).removeClass('js-active');
-        $('.hotel-search').removeClass('js-active');
-    })
-
     $('.hotel__rooms-reserve').on('click', function () {
         $(this).addClass('hide');
         $('.hotel__rooms-total').addClass('hide');
@@ -33,14 +28,15 @@ $(function () {
 
     $('.hotel__availibility-item, .hotel__availibility-edit').on('click', function () {
         $('.hotel-search').addClass('show');
-        $('.body-closer').addClass('js-active');
-        $('body').css('overflow', 'hidden');
+
+        disableScroll();
     })
 
     $('.body-closer').on('click', function () {
-        $(this).removeClass('js-active');
+        $(this).removeClass('show');
         $('.hotel-search').removeClass('show')
-        $('body').css('overflow', 'auto');
+
+        enableScroll();
     })
 
     $('.hotel-bookings__remove').on('click', function () {
@@ -49,6 +45,14 @@ $(function () {
         if ($('.hotel-bookings__list').children().length === 0) {
             $('.hotel-bookings').removeClass('show');
         }
+    })
+
+    $('.hotel-bookings__value').on('click', function () {
+        let bookingsModal = $('.hotel-bookings').outerHeight();
+
+        $('body, html').animate({
+            scrollTop: $(this.hash).offset().top - bookingsModal
+        }, 600)
     })
 
     let swiper = new Swiper("#recent-slider", {
@@ -62,4 +66,16 @@ $(function () {
             }
         }
     });
+
+    /* Функция для включения скролла */
+    function enableScroll() {
+        $('#body-closer').removeClass('show');
+        $('body, html').css('overflow', '');
+    }
+
+    /* Функция для отключения скролла */
+    function disableScroll() {
+        $('#body-closer').addClass('show');
+        $('body, html').css('overflow', 'hidden');
+    }
 })
