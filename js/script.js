@@ -91,7 +91,7 @@ $(function () {
         $('#search-modal').removeClass('show');
         $('#date-modal').addClass('show');
 
-        $('#search-form-way').val('Tashkent, Uzbekistan');
+        $('#search-form-way input').val('Tashkent, Uzbekistan');
     })
 
     /* Календарь */
@@ -144,7 +144,9 @@ $(function () {
 
         let data = $(this).serializeArray();
 
-        getLocation();
+        if (!$('#search-form-way input').val()) {
+            getLocation();
+        }
 
         window.location.href = 'hotels.html';
     })

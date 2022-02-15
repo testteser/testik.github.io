@@ -23,14 +23,16 @@ $(function () {
         enableScroll();
     })
 
-    $('#booking-variants').slick({
-        infinite: true,
-        dots: false,
-        arrows: false,
-        variableWidth: true,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-    });
+    // $('#booking-variants').slick({
+    //     infinite: true,
+    //     dots: false,
+    //     arrows: false,
+    //     variableWidth: true,
+    //     slidesToShow: 1,
+    //     slidesToScroll: 1,
+    // });
+
+    var swiper = new Swiper(".mySwiper", {});
 
     $('#filter-show').on('click', function () {
         $('.filter').addClass('show');
