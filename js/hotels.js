@@ -32,7 +32,17 @@ $(function () {
     //     slidesToScroll: 1,
     // });
 
-    var swiper = new Swiper(".mySwiper", {});
+    let swiper = new Swiper(".mySwiper", {
+        loop: false,
+        speed: 500,
+        slidesPerView: 2.3,
+        spaceBetween: 10,
+        breakpoints: {
+            350: {
+                slidesPerView: 2.8,
+            }
+        }
+    });
 
     $('#filter-show').on('click', function () {
         $('.filter').addClass('show');
