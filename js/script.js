@@ -182,20 +182,35 @@ $(function () {
         getLocation();
     })
 
-    function getLocation () {
-        if (navigator.geolocation) {
-            let geoSuccess = function (pos) {
-                let lat = pos.coords.latitude;
-                let lng = pos.coords.longitude;
+    let geoSuccess = function (e) {
+        let lat = e.coords.latitude;
+        let lng = e.coords.longitude;
 
-                console.log(lat, lng);
-            }
+        $('#search-modal').removeClass('show');
+        $('.search-form__input[name="city"]').val(`${lat} ${lng}`);
 
-            let geoError = function (error) {
+        enableScroll();
+    }
+
+    let geoError = function (error) {
+        switch(error.code) {
+            case 1:
                 console.log(error.code);
-            }
+                break;
+            case 2:
+                console.log(error.code);
+                break;
+            case 3:
+                console.log(error.code);
+                break;
+        }
+    }
 
+    function getLocation() {
+        if (navigator.geolocation) {
             navigator.geolocation.getCurrentPosition(geoSuccess, geoError);
+        } else {
+            console.log("Your browser or device doesn't support Geolocation");
         }
     }
 
