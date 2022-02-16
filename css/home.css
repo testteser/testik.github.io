@@ -37,6 +37,9 @@
 .search-form__field--date {
     width: 48%;
 }
+.search-form__field--date .search-form__input {
+    padding-right: 13px;
+}
 .search-form__input {
     padding: 15px 13px;
     padding-right: 50px;

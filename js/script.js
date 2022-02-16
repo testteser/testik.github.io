@@ -148,7 +148,7 @@ $(function () {
             getLocation();
         }
 
-        window.location.href = 'hotels.html';
+        // window.location.href = 'hotels.html';
     })
 
     /* Клик по черному фону - плашке */

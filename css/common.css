@@ -131,6 +131,7 @@ body {
     display: inline-block;
     width: 100%;
     padding: 12px 8px;
+    padding-right: 30px;
 }
 .account-menu__next {
     top: 50%;
@@ -431,6 +432,7 @@ body {
 .recent-hotels__info-top {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     margin-bottom: 6px;
 }
 .recent-hotels__slider {
