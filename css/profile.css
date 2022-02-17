@@ -88,7 +88,8 @@
     align-items: center;
 }
 .profile__table-show {
-    padding-top: 25px;
+    padding-top: 20px;
+    display: none;
 }
 .profile__table-status {
     margin-left: 3px;
@@ -103,9 +104,6 @@
     text-align: center;
     border-radius: 2px;
     color: #ffffff;
-}
-.profile__table-show {
-    display: none;
 }
 .profile__table-label {
     margin-bottom: 4px;
@@ -151,5 +149,27 @@
     .profile__table-status {
         width: 80px;
         margin-left: 5px;
+    }
+
+    .profile__intro {
+        font-size: 20px;
+    }
+
+    .profile__desc {
+        font-size: 13px;
+    }
+
+    .profile__table-desc {
+        font-size: 13px;
+    }
+
+    .profile__table-status {
+        padding: 3px;
+    }
+
+    .profile__table-title {
+        margin-bottom: 0;
+        font-size: 15px;
+        line-height: 20px;
     }
 }

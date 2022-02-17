@@ -186,8 +186,12 @@ $(function () {
         let lat = e.coords.latitude;
         let lng = e.coords.longitude;
 
+        console.log('1223')
+
         $('#search-modal').removeClass('show');
         $('.search-form__input[name="city"]').val(`${lat} ${lng}`);
+
+        location.href = 'hotel.html';
 
         enableScroll();
     }
@@ -195,7 +199,7 @@ $(function () {
     let geoError = function (error) {
         switch(error.code) {
             case 1:
-                console.log(error.code);
+                console.log('Пользователь запретил отслеживать геолокацию');
                 break;
             case 2:
                 console.log(error.code);
