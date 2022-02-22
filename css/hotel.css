@@ -1452,6 +1452,10 @@
     object-fit: cover;
 }
 
+.fslightbox-container {
+    background: #000000 !important;
+}
+
 @media (max-width: 370px) {
     .hotel-bookings__info {
         flex-direction: column;
