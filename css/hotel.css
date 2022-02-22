@@ -1452,7 +1452,8 @@
     object-fit: cover;
 }
 
-.fslightbox-container {
+.fslightbox-container,
+.fslightbox-toolbar {
     background: #000000 !important;
 }
 
