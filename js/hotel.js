@@ -77,6 +77,12 @@ $(function () {
         }
     });
 
+    $('.header-hotel__menu').on('click', function () {
+        $('.hotel-gallery').removeClass('show');
+
+        enableScroll();
+    })
+
     $('.hotel__header-img').on('click', function () {
         $('.hotel-gallery').addClass('show');
         $('.header-hotel').addClass('active');
