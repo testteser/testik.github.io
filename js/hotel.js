@@ -79,6 +79,7 @@ $(function () {
 
     $('.header-hotel__menu').on('click', function () {
         $('.hotel-gallery').removeClass('show');
+        $('.header-hotel').removeClass('active');
 
         enableScroll();
     })
