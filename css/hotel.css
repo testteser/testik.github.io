@@ -1457,6 +1457,16 @@
     background: #000000 !important;
 }
 
+.fslightbox-slide-number-container{
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 14px !important;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 17px;
+    letter-spacing: 0;
+    color: #ffffff !important;
+}
+
 .fslightbox-slide-btn-container-next,
 .fslightbox-slide-btn-container-previous {
     display: none !important;
