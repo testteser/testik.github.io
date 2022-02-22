@@ -55,6 +55,16 @@ $(function () {
         }, 600)
     })
 
+    $('.hotel__rooms-sum').on('click', function () {
+        $('.hotel-price').addClass('show');
+
+        disableScroll();
+    })
+
+    $('#body-closer').on('click', function () {
+        $('.hotel-price').removeClass('show');
+    })
+
     let swiper = new Swiper("#recent-slider", {
         loop: false,
         speed: 500,
@@ -66,6 +76,12 @@ $(function () {
             }
         }
     });
+
+    $('.hotel__header-img').on('click', function () {
+        $('.hotel-gallery').addClass('show');
+        $('.header-hotel').addClass('active');
+        disableScroll();
+    })
 
     /* Функция для включения скролла */
     function enableScroll() {

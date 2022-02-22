@@ -719,8 +719,17 @@ body {
 }
 
 .header-hotel {
+    position: relative;
     padding: 20px 0;
-    background: #071A2E;
+    width: 100%;
+    height: auto;
+    z-index: 902;
+    background: #071a2e;
+}
+.header-hotel.active {
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 .header-hotel__logo {
     position: absolute;
