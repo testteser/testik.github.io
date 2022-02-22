@@ -1456,6 +1456,11 @@
     background: #000000 !important;
 }
 
+.fslightbox-slide-btn-container-next,
+.fslightbox-slide-btn-container-previous {
+    display: none !important;
+}
+
 @media (max-width: 370px) {
     .hotel-bookings__info {
         flex-direction: column;
