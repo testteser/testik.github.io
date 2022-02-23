@@ -87,6 +87,7 @@ $(function () {
     $('.hotel__header-img').on('click', function () {
         $('.hotel-gallery').addClass('show');
         $('.header-hotel').addClass('active');
+
         disableScroll();
     })
 

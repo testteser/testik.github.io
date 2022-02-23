@@ -1,5 +1,5 @@
 $(function () {
-    $('.hotels-filter__item').on('click', function () {
+    $('body').on('click', '.hotels-filter__item', function () {
         $(this).remove();
 
         if (!$('.hotels-filter__list').children().length) {
@@ -15,9 +15,50 @@ $(function () {
         $(this).toggleClass('is-active');
     })
 
+    $('.filter__submit').on('click', function () {
+        $('.filter').removeClass('show');
+
+        enableScroll();
+    })
+
     $('#filter-remove').on('click', function () {
         $('.filter input').prop('checked', false);
+        $(this).removeClass('active');
+
+        $('.filter__submit span').text('');
+        $('#filter-show .hotels-filter__btn-count').text('');
     })
+
+    $('.filter input').on('change', function () {
+        let inputCheckedCount = $('.filter').find('input:checked:not(#budget)').length;
+
+        renderItem($(this).siblings('.filter__item-desc').text())
+
+        $('.filter__submit span').text(inputCheckedCount === 0 ? '' : inputCheckedCount);
+        $('#filter-show .hotels-filter__btn-count').text(inputCheckedCount === 0 ? '' : `(${inputCheckedCount})`);
+
+        if (inputCheckedCount > 0) {
+            $('.filter__remove')
+                .addClass('active')
+                .prop('disabled', false);
+        } else {
+            $('.filter__remove')
+                .removeClass('active')
+                .prop('disabled', true);
+        }
+    })
+
+    function renderItem(item) {
+        let skeleton = `
+            <button class="hotels-filter__item">
+                ${item}
+                <span class="hotels-filter__close"></span>
+            </button>
+        `;
+
+        $('.hotels-filter__list').append(skeleton);
+    }
+
 
     $('#filter-close').on('click', function () {
         $('.filter').removeClass('show');

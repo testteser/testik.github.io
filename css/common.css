@@ -588,30 +588,11 @@ body {
 /* БЛОК КРЕСТИК */
 .site-close {
     position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 24px;
     height: 24px;
-}
-.site-close::before {
-    content: '';
-    position: absolute;
-    top: 12px;
-    left: 6px;
-    width: 15px;
-    height: 2px;
-    transform: rotate(45deg);
-    background: #637280;
-    border-radius: 2px;
-}
-.site-close::after {
-    content: '';
-    position: absolute;
-    top: 12px;
-    left: 6px;
-    width: 15px;
-    height: 2px;
-    transform: rotate(-45deg);
-    background: #637280;
-    border-radius: 2px;
 }
 
 /* БЛОК ТРОЕТОЧИЕ */

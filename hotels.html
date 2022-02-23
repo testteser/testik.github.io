@@ -129,7 +129,7 @@
                             </g>
                         </svg>
                         <span class="hotels-filter__btn-text">
-                        Фильтр <span class="hotels-filter__btn-count">(2)</span>
+                        Фильтр <span class="hotels-filter__btn-count"></span>
                     </span>
                     </button>
                     <button class="hotels-filter__btn">
@@ -147,42 +147,7 @@
                     </button>
                 </div>
                 <div class="hotels-filter__list">
-                    <button class="hotels-filter__item">
-                        Бесплатный Wi-Fi
-                        <span class="hotels-filter__close">
 
-                    </span>
-                    </button>
-                    <button class="hotels-filter__item">
-                        Бесплатный
-                        <span class="hotels-filter__close">
-
-                    </span>
-                    </button>
-                    <button class="hotels-filter__item">
-                        Бесплатный Wi-Fi
-                        <span class="hotels-filter__close">
-
-                    </span>
-                    </button>
-                    <button class="hotels-filter__item">
-                        Бесплатный
-                        <span class="hotels-filter__close">
-
-                    </span>
-                    </button>
-                    <button class="hotels-filter__item">
-                        Завтрак
-                        <span class="hotels-filter__close">
-
-                    </span>
-                    </button>
-                    <button class="hotels-filter__item">
-                        Бесплатный
-                        <span class="hotels-filter__close">
-
-                    </span>
-                    </button>
                 </div>
             </div>
             <div class="hotels-table">
@@ -435,11 +400,15 @@
 <div class="filter">
     <div class="container">
         <div class="filter__top">
-            <button class="filter__close site-close" id="filter-close"></button>
+            <button class="filter__close site-close" id="filter-close">
+                <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.12117 0.626878C1.73064 0.236353 1.09748 0.236353 0.706956 0.626878C0.316431 1.0174 0.316431 1.65057 0.706956 2.04109L5.33286 6.66699L0.707054 11.2928C0.31653 11.6833 0.31653 12.3165 0.707054 12.707C1.09758 13.0975 1.73074 13.0975 2.12127 12.707L6.74707 8.0812L11.2926 12.6268C11.6832 13.0173 12.3163 13.0173 12.7069 12.6268C13.0974 12.2363 13.0974 11.6031 12.7069 11.2126L8.16128 6.66699L12.707 2.12132C13.0975 1.7308 13.0975 1.09763 12.707 0.707107C12.3164 0.316582 11.6833 0.316582 11.2927 0.707107L6.74707 5.25278L2.12117 0.626878Z" fill="#637280"/>
+                </svg>
+            </button>
             <h3 class="filter__title">
                 Фильтры
             </h3>
-            <button class="filter__remove" id="filter-remove">
+            <button class="filter__remove" disabled id="filter-remove">
                 Снять фильтры
             </button>
         </div>
@@ -660,9 +629,11 @@
                 </ul>
             </div>
         </div>
-        <button class="filter__submit site-btn">
-            Показать 76 результатов
-        </button>
+        <div class="filter__bottom">
+            <button class="filter__submit site-btn">
+                Показать <span></span> результатов
+            </button>
+        </div>
     </div>
 </div>
 
