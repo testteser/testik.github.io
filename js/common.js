@@ -1,37 +1,57 @@
-$(function () {
-    /* Обработчики меню аккаунта */
-    $('#close-account-menu').on('click', function () {
-        $('#account-menu').removeClass('show');
+const accountMenu = document.querySelector('#account-menu');
+const closeAccountMenu = document.querySelector('#close-account-menu');
+const showAccountMenu = document.querySelector('#show-account-menu');
 
-        enableScroll();
-    })
-    $('#show-account-menu').on('click', function () {
-        $('.account-menu').addClass('show');
+const mainMenu = document.querySelector('#menu');
+const mainShowMenu = document.querySelector('#show-menu');
+const mainMenuClose = document.querySelector('#menu-close');
 
-        disableScroll();
-    })
+const bodyCloserItems = document.querySelectorAll('.body-closer-item');
 
-    /* Обработчики главного меню */
-    $('#show-menu').on('click', function () {
-        $('#menu').addClass('show');
+const bodyCloser = document.querySelector('#body-closer');
 
-        disableScroll();
-    })
-    $('#menu-close').on('click', function () {
-        $('#menu').removeClass('show');
-
-        enableScroll();
-    })
-
-    /* Функция для включения скролла */
-    function enableScroll() {
-        $('#body-closer').removeClass('show');
-        $('body, html').css('overflow', 'auto');
-    }
-
-    /* Функция для отключения скролла */
-    function disableScroll() {
-        $('#body-closer').addClass('show');
-        $('body, html').css('overflow', 'hidden');
-    }
+bodyCloser.addEventListener('click', (e) => {
+    enableScroll();
 })
+
+if (accountMenu) {
+    showAccountMenu.addEventListener('click', () => {
+        accountMenu.classList.add('show');
+
+        disableScroll();
+    });
+    closeAccountMenu.addEventListener('click', () => {
+        accountMenu.classList.remove('show');
+
+        enableScroll();
+    });
+}
+
+if (mainMenu) {
+    mainShowMenu.addEventListener('click', () => {
+        mainMenu.classList.add('show');
+
+        disableScroll();
+    });
+    mainMenuClose.addEventListener('click', () => {
+        mainMenu.classList.remove('show');
+
+        enableScroll();
+    });
+}
+
+/* Функция для включения скролла */
+function enableScroll() {
+    bodyCloser.classList.remove('show');
+
+    document.body.style.overflow = 'auto';
+
+    bodyCloserItems.forEach(item => item.classList.remove('show'));
+}
+
+/* Функция для отключения скролла */
+function disableScroll() {
+    bodyCloser.classList.add('show');
+
+    document.body.style.overflow = 'hidden';
+}

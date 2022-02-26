@@ -1,104 +1,102 @@
-$(function () {
-    $('body').on('click', '.hotels-filter__item', function () {
-        $(this).remove();
+const filterBody = document.querySelector('.filter');
+const filterList = document.querySelector('.hotels-filter__list');
+const filterSubmit = document.querySelector('.filter__submit');
+const filterShow = document.querySelector('#filter-show');
+const filterClose = document.querySelector('#filter-close');
+const filterRemove = document.querySelector('.filter__remove');
 
-        if (!$('.hotels-filter__list').children().length) {
-            $('.hotels-filter__list').remove();
-        }
-    })
+const hotelsFavourite = document.querySelectorAll('.hotels-table__heart');
 
-    $('.hotels-table__heart').on('click', function (e) {
+
+
+filterList.addEventListener('click', (e) => {
+    let elem = e.target.closest('button');
+
+    if (elem) elem.remove();
+})
+
+hotelsFavourite.forEach((item) => {
+    item.addEventListener('click', (e) => {
         e.preventDefault();
-
-        console.log('sss')
-
-        $(this).toggleClass('is-active');
+        e.currentTarget.classList.toggle('is-active');
     })
+})
 
-    $('.filter__submit').on('click', function () {
-        $('.filter').removeClass('show');
+filterSubmit.addEventListener('click', () => {
+    filterBody.classList.remove('show');
 
-        enableScroll();
-    })
+    enableScroll();
+})
 
-    $('#filter-remove').on('click', function () {
-        $('.filter input').prop('checked', false);
-        $(this).removeClass('active');
+filterShow.addEventListener('click', () => {
+    filterBody.classList.add('show');
+    
+    disableScroll();
+})
 
-        $('.filter__submit span').text('');
-        $('#filter-show .hotels-filter__btn-count').text('');
-    })
+filterClose.addEventListener('click',  () => {
+    filterBody.classList.remove('show');
 
-    $('.filter input').on('change', function () {
-        let inputCheckedCount = $('.filter').find('input:checked:not(#budget)').length;
+    enableScroll();
+})
 
-        renderItem($(this).siblings('.filter__item-desc').text())
+filterRemove.addEventListener('click', (e) => {
+    e.currentTarget.classList.remove('active');
 
-        $('.filter__submit span').text(inputCheckedCount === 0 ? '' : inputCheckedCount);
-        $('#filter-show .hotels-filter__btn-count').text(inputCheckedCount === 0 ? '' : `(${inputCheckedCount})`);
+    filterBody.querySelectorAll('input').forEach(item => item.checked = false);
+
+    filterSubmit.querySelector('span').innerText = '';
+    filterShow.querySelector('.hotels-filter__btn-count').innerText = '';
+})
+
+filterBody.querySelectorAll('input').forEach(item => {
+    item.addEventListener('change', () => {
+        const inputCheckedCount = filterBody.querySelectorAll('input:checked').length;
+
+        filterSubmit.querySelector('span').innerText = `${inputCheckedCount === 0 ? '' : inputCheckedCount}`;
 
         if (inputCheckedCount > 0) {
-            $('.filter__remove')
-                .addClass('active')
-                .prop('disabled', false);
+            filterRemove.classList.add('active');
+            filterRemove.disabled = false;
         } else {
-            $('.filter__remove')
-                .removeClass('active')
-                .prop('disabled', true);
+            filterRemove.classList.remove('active');
+            filterRemove.disabled = true;
         }
     })
+})
 
-    function renderItem(item) {
-        let skeleton = `
+filterSubmit.addEventListener('click', () => {
+    filterBody.querySelectorAll('input:checked').forEach((item, index, array) => {
+       let itemText = item.parentElement.querySelector('.filter__item-desc').innerText;
+
+       filterShow.querySelector('.hotels-filter__btn-count').innerText = `(${array.length === 0 ? '' : array.length})`;
+
+       renderItem(itemText);
+
+       if (array.length) filterList.classList.add('show');
+       else filterList.classList.remove('show');
+    })
+})
+
+let swiper = new Swiper("#variants", {
+    loop: false,
+    speed: 500,
+    slidesPerView: 2.3,
+    spaceBetween: 10,
+    breakpoints: {
+        375: {
+            slidesPerView: 2.8,
+        }
+    }
+});
+
+function renderItem(item) {
+    let skeleton = `
             <button class="hotels-filter__item">
                 ${item}
                 <span class="hotels-filter__close"></span>
             </button>
         `;
 
-        $('.hotels-filter__list').append(skeleton);
-    }
-
-
-    $('#filter-close').on('click', function () {
-        $('.filter').removeClass('show');
-
-        enableScroll();
-    })
-
-    let swiper = new Swiper("#variants", {
-        loop: false,
-        speed: 500,
-        slidesPerView: 2.3,
-        spaceBetween: 10,
-        breakpoints: {
-            375: {
-                slidesPerView: 2.8,
-            }
-        }
-    });
-
-    $('#filter-show').on('click', function () {
-        $('.filter').addClass('show');
-
-        disableScroll();
-    })
-
-    $('#body-closer').on('click', function () {
-        $('.filter').removeClass('show');
-
-        enableScroll();
-    })
-
-    /* Функция для включения скролла */
-    function enableScroll() {
-        $('#body-closer').removeClass('show');
-        $('body, html').css('overflow', 'auto');
-    }
-
-    /* Функция для отключения скролла */
-    function disableScroll() {
-        $('#body-closer').addClass('show');
-        $('body, html').css('overflow', 'hidden');
-    }
-})
+    filterList.insertAdjacentHTML("afterbegin", skeleton);
+}

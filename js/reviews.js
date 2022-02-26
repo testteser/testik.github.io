@@ -1,16 +1,24 @@
-$(function () {
-    $('#close-advice').on('click', function () {
-        $('.reviews-advice').remove();
-    })
+const adviceBody = document.querySelector('.reviews-advice');
+const closeAdvice = document.querySelector('#close-advice');
 
-    $('.reviews__tabs-switch').on('click', function () {
-        let currentAttr =  $(this).attr('id');
-        $('.reviews__tabs-switch').removeClass('is-active');
-        $(this).addClass('is-active');
+const reviewsItems = document.querySelectorAll('.reviews__table-item');
+const reviewsTab = document.querySelector('.reviews__tabs');
+const reviewsTabs = document.querySelectorAll('.reviews__tabs-switch');
 
-        $('.reviews__table-item').removeClass('is-active');
-        $(`div.reviews__table-item[data-reviews='${currentAttr}']`).addClass('is-active');
+closeAdvice.addEventListener('click', () => {
+    adviceBody.remove();
+})
 
-        currentAttr === 'sended' ? $('.reviews__tabs').addClass('is-active') : $('.reviews__tabs').removeClass('is-active');
+reviewsTabs.forEach((item, index, array) => {
+    item.addEventListener('click', (e) => {
+        let currentAttr = e.currentTarget.getAttribute('id');
+
+        array.forEach(item => item.classList.remove('is-active'));
+        reviewsItems.forEach(item => item.classList.remove('is-active'));
+        e.currentTarget.classList.add('is-active');
+
+        document.querySelector(`div.reviews__table-item[data-reviews='${currentAttr}']`).classList.add('is-active');
+
+        currentAttr === 'sended' ?  reviewsTab.classList.add('is-active') : reviewsTab.classList.remove('is-active');
     })
 })

@@ -1,9 +1,8 @@
-$(function () {
-    $('.profile__table-btn').on('click', function () {
-        $(this).toggleClass('is-active');
-        $(this)
-            .parent()
-            .next('.profile__table-show')
-            .slideToggle()
+const profileBtns = document.querySelectorAll('.profile__table-btn');
+
+profileBtns.forEach(item => {
+    item.addEventListener('click', (e) => {
+        e.currentTarget.classList.toggle('is-active');
+        e.currentTarget.parentElement.nextElementSibling.classList.toggle('active');
     })
 })

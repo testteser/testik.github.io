@@ -1,15 +1,21 @@
-$(function () {
-    $.each($('.bookings-table__class-close'), function (index, item) {
-        $(item).on('click', function () {
-            $(this).parent().remove();
-        })
+const bookingsTablesClose = document.querySelectorAll('.bookings-table__class-close');
+const bookingsTableContent = document.querySelector('.bookings-table__content');
+const showMore = document.querySelector('#show-more');
+
+let counter = 0;
+
+bookingsTablesClose.forEach(item => {
+    item.addEventListener('click', (e) => {
+        e.currentTarget.parentElement.remove();
     })
+})
 
-    let counter = 0;
+showMore.addEventListener('click', (e) => {
+    renderItem(e.currentTarget);
+})
 
-    /* Получение других бронирований по клику на кнопку */
-    $('#show-more').on('click', function () {
-        let cell = `
+function renderItem(button) {
+    let skeleton = `
             <div class="bookings-table__cell">
                 <div class="bookings-table__cell-info">
                     <h2 class="bookings-table__cell-title">
@@ -46,12 +52,14 @@ $(function () {
             </div>
         `;
 
-        $('.bookings-table__content').append(cell);
-        counter++;
+    bookingsTableContent.innerHTML += skeleton;
 
-        if (counter >= 3) $(this).remove();
-    })
+    counter++;
 
+    if (counter >= 3) button.remove();
+}
+
+(function () {
     $('.bookings-table__item-more').on('click', function () {
         $('#body-closer').addClass('show');
         $('#bookings-more').addClass('show');

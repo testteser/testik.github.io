@@ -36,6 +36,9 @@
     justify-content: center;
     margin-top: 11px;
 }
+.hotels-filter__list.show {
+    display: flex;
+}
 .hotels-filter__item {
     margin-bottom: 8px;
     position: relative;

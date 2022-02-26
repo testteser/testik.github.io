@@ -91,6 +91,9 @@
     padding-top: 20px;
     display: none;
 }
+.profile__table-show.active {
+    display: block;
+}
 .profile__table-status {
     margin-left: 3px;
     padding: 4px;
