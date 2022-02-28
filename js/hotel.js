@@ -10,11 +10,47 @@ const reviewsMore = document.querySelectorAll('.hotel__reviews-more');
 const reviewsModal = document.querySelector('.hotel-reviews');
 const reviewsModalAll = document.querySelector('.hotel-reviews__all-btn');
 const reviewsModalTable = document.querySelector('.hotel-reviews__table');
+const hotelMainImage = document.querySelector('.hotel__header-img');
+const hotelGallery = document.querySelector('.hotel-gallery');
+const headerHotel = document.querySelector('.header-hotel');
+const headerHotelMenu = document.querySelector('.header-hotel__menu');
+const hotelCalendar = document.querySelectorAll('.hotel-calendar');
+const hotelSearch = document.querySelector('.hotel-search');
+const hotelStats = document.querySelectorAll('.hotel__rooms-stat--bottom');
+
+hotelStats.forEach(item => {
+    item.querySelectorAll('.hotel__rooms-btn').forEach((btn, index, array) => {
+        array.forEach(btns => btns.classList.remove('active'));
+        btn.classList.add('active');
+    })
+})
 
 reviewsModalAll.addEventListener('click', (e) => {
     e.currentTarget.classList.add('hide');
 
     for (let i = 0; i <= 5; i++) renderReview();
+})
+
+hotelMainImage.addEventListener('click', () => {
+    hotelGallery.classList.add('show');
+    headerHotel.classList.add('active');
+
+    disableScroll();
+})
+
+hotelCalendar.forEach(item => {
+  item.addEventListener('click', () => {
+      hotelSearch.classList.add('show');
+
+      disableScroll();
+  })
+})
+
+headerHotelMenu.addEventListener('click', () => {
+    hotelGallery.classList.remove('show');
+    headerHotel.classList.remove('active');
+
+    enableScroll();
 })
 
 reviewsMore.forEach(item => {
@@ -131,39 +167,3 @@ let reviewsSlider = new Swiper(".hotel__reviews-slider", {
     slidesPerView: 1.4,
     spaceBetween: 12,
 });
-
-
-$(function () {
-    $('.hotel__rooms-stat--bottom .hotel__rooms-btn').on('click', function () {
-        $('.hotel__rooms-btn').removeClass('active');
-        $(this).addClass('active');
-    })
-
-    $('.hotel__availibility-item, .hotel__availibility-edit').on('click', function () {
-        $('.hotel-search').addClass('show');
-
-        disableScroll();
-    })
-
-    $('.hotel-bookings__value').on('click', function () {
-        let bookingsModal = $('.hotel-bookings').outerHeight();
-
-        $('body, html').animate({
-            scrollTop: $(this.hash).offset().top - bookingsModal
-        }, 600)
-    })
-
-    $('.header-hotel__menu').on('click', function () {
-        $('.hotel-gallery').removeClass('show');
-        $('.header-hotel').removeClass('active');
-
-        enableScroll();
-    })
-
-    $('.hotel__header-img').on('click', function () {
-        $('.hotel-gallery').addClass('show');
-        $('.header-hotel').addClass('active');
-
-        disableScroll();
-    })
-})

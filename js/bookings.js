@@ -1,8 +1,37 @@
 const bookingsTablesClose = document.querySelectorAll('.bookings-table__class-close');
 const bookingsTableContent = document.querySelector('.bookings-table__content');
+const bookingsItemMore = document.querySelectorAll('.bookings-table__item-more');
+const bookingsItemClose = document.querySelectorAll('.bookings-more__close');
+const bookingsDeleteClose = document.querySelectorAll('.bookings-delete-close');
+const bookingsMore = document.querySelector('#bookings-more');
+const bookingsDelete= document.querySelector('#bookings-delete');
 const showMore = document.querySelector('#show-more');
 
 let counter = 0;
+
+bookingsItemMore.forEach(item => {
+    item.addEventListener('click', () => {
+        bookingsMore.classList.add('show');
+
+        disableScroll();
+    })
+})
+
+bookingsItemClose.forEach(item => {
+    item.addEventListener('click', () => {
+        bookingsMore.classList.remove('show');
+
+        enableScroll();
+    })
+})
+
+bookingsDeleteClose.forEach(item => {
+    item.addEventListener('click', () => {
+        bookingsDelete.classList.remove('show');
+
+        enableScroll();
+    })
+})
 
 bookingsTablesClose.forEach(item => {
     item.addEventListener('click', (e) => {
@@ -60,22 +89,6 @@ function renderItem(button) {
 }
 
 (function () {
-    $('.bookings-table__item-more').on('click', function () {
-        $('#body-closer').addClass('show');
-        $('#bookings-more').addClass('show');
-    })
-
-    $('.bookings-more__close').on('click', function () {
-        $('#bookings-more').removeClass('show');
-        $('#body-closer').removeClass('show');
-    })
-
-    $('#body-closer').on('click', function () {
-        $(this).removeClass('show');
-        $('#bookings-more').removeClass('show');
-        $('#bookings-delete').removeClass('show');
-    })
-
     $('#booking-delete-show').on('click', function () {
         $('#bookings-more').removeClass('show');
         $('#bookings-delete').addClass('show');
@@ -84,10 +97,5 @@ function renderItem(button) {
     $('#bookings-delete-cancel').on('click', function () {
         $('#bookings-delete').removeClass('show');
         $('#bookings-more').addClass('show');
-    })
-
-    $('#bookings-delete-close').on('click', function () {
-        $('#bookings-delete').removeClass('show');
-        $('#body-closer').removeClass('show');
     })
 })
