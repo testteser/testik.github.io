@@ -17,12 +17,19 @@ const headerHotelMenu = document.querySelector('.header-hotel__menu');
 const hotelCalendar = document.querySelectorAll('.hotel-calendar');
 const hotelSearch = document.querySelector('.hotel-search');
 const hotelStats = document.querySelectorAll('.hotel__rooms-stat--bottom');
+const reviewsClose = document.querySelector('.hotel-reviews__close');
 
 hotelStats.forEach(item => {
     item.querySelectorAll('.hotel__rooms-btn').forEach((btn, index, array) => {
         array.forEach(btns => btns.classList.remove('active'));
         btn.classList.add('active');
     })
+})
+
+reviewsClose.addEventListener('click', () => {
+    reviewsModal.classList.remove('show');
+
+    enableScroll();
 })
 
 reviewsModalAll.addEventListener('click', (e) => {

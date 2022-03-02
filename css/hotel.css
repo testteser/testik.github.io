@@ -546,6 +546,10 @@
     display: flex;
     align-items: center;
 }
+.hotel-reviews__close {
+    top: 5px;
+    right: 10px;
+}
 .hotel-reviews__name {
     margin-bottom: 3px;
     font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
@@ -742,6 +746,9 @@
 }
 .hotel__rooms-item.active .hotel__rooms-remove {
     display: inline-flex;
+}
+.hotel__rooms-item.active .hotel__rooms-reserve {
+    display: none;
 }
 .hotel__rooms-item.active .hotel__rooms-total {
     display: none;
