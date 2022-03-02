@@ -18,6 +18,7 @@ const hotelCalendar = document.querySelectorAll('.hotel-calendar');
 const hotelSearch = document.querySelector('.hotel-search');
 const hotelStats = document.querySelectorAll('.hotel__rooms-stat--bottom');
 const reviewsClose = document.querySelector('.hotel-reviews__close');
+const searchClose = document.querySelector('.hotel-search__close');
 
 hotelStats.forEach(item => {
     item.querySelectorAll('.hotel__rooms-btn').forEach((btn, index, array) => {
@@ -28,6 +29,12 @@ hotelStats.forEach(item => {
 
 reviewsClose.addEventListener('click', () => {
     reviewsModal.classList.remove('show');
+
+    enableScroll();
+})
+
+searchClose.addEventListener('click', () => {
+    hotelSearch.classList.remove('show');
 
     enableScroll();
 })
@@ -148,10 +155,10 @@ roomsBookingsRemove.forEach(item => {
 })
 
 roomsStat.forEach(item => {
-    item.querySelectorAll('.hotel__rooms-btn').forEach((button, index, array) => {
-        button.addEventListener('click', (e) => {
-            array.forEach(btn => btn.classList.remove('active'));
-            e.currentTarget.classList.add('active');
+    item.querySelectorAll('.hotel__rooms-radio').forEach((button, index, array) => {
+        button.addEventListener('change', (e) => {
+            array.forEach(btn => btn.parentElement.classList.remove('active'));
+            e.currentTarget.parentElement.classList.add('active');
         })
     })
 })

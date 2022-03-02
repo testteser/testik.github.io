@@ -949,23 +949,29 @@
 .hotel__rooms-stat--bottom {
     border: none;
 }
-.hotel__rooms-stat--bottom .hotel__rooms-btn {
+.hotel__rooms-option {
+    display: flex;
+    align-items: center;
     margin-right: 10px;
     padding: 10px 15px;
     width: auto;
     border-radius: 2px;
     border: 1px solid #dadada;
 }
-.hotel__rooms-stat--bottom .hotel__rooms-btn:last-child {
-    margin-right: 0;
-}
-.hotel__rooms-stat--bottom .hotel__rooms-btn.active {
+.hotel__rooms-option.active {
     border-color: #007aff;
 }
-.hotel__rooms-stat--bottom .hotel__rooms-btn.active .hotel__rooms-radio::before {
+.hotel__rooms-option.active .hotel__rooms-flag {
+    border-color: #007aff;
+}
+.hotel__rooms-option.active .hotel__rooms-flag::before {
     opacity: 1;
 }
-.hotel__rooms-radio {
+
+.hotel__rooms-option:last-child {
+    margin-right: 0;
+}
+.hotel__rooms-flag {
     margin-right: 7px;
     position: relative;
     height: 12px;
@@ -973,7 +979,7 @@
     border-radius: 50%;
     border: 1px solid #dadada;
 }
-.hotel__rooms-radio::before {
+.hotel__rooms-flag::before {
     content: '';
     position: absolute;
     top: 50%;
@@ -1092,6 +1098,9 @@
     line-height: 22px;
     letter-spacing: 0;
     color: #0fa30c;
+}
+.hotel__rooms-radio {
+    display: none;
 }
 .hotel__rooms-sum svg {
     margin-left: 5px;
@@ -1669,6 +1678,10 @@
 }
 .hotel-search__submit:active {
     background: #0959af;
+}
+.hotel-search__close {
+    top: 13px;
+    right: 13px;
 }
 .hotel-search__icon {
     position: absolute;
