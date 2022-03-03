@@ -27,6 +27,18 @@ hotelStats.forEach(item => {
     })
 })
 
+let count = 0;
+
+document.querySelector('.hotel__rooms-btn.plus').addEventListener('click', (e) => {
+    count++;
+
+    console.log(e.currentTarget)
+
+    if (count >= 2) {
+        e.currentTarget.querySelector('svg path').style.fill = '#8e8e8e';
+    }
+})
+
 reviewsClose.addEventListener('click', () => {
     reviewsModal.classList.remove('show');
 

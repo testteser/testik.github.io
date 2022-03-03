@@ -197,7 +197,7 @@
     padding: 4px 3px;
     margin-right: 12px;
     font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-    font-size: 9px;
+    font-size: 12px;
     font-style: normal;
     font-weight: 500;
     line-height: 11px;
@@ -259,7 +259,7 @@
 .hotels-table__status-item {
     margin-right: 8px;
     display: inline-block;
-    padding: 1px 5px;
+    padding: 3px 5px;
     font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
     font-size: 12px;
     font-style: normal;
@@ -431,7 +431,7 @@
 .hotels-table__dates-nights,
 .hotels-table__dates-price {
     font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-    font-size: 10px;
+    font-size: 12px;
     font-style: normal;
     font-weight: 500;
     line-height: 17px;
