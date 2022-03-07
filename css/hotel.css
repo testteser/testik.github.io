@@ -501,24 +501,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #007aff;
     border-radius: 2px 0 2px 2px;
     height: 36px;
     width: 36px;
 }
 .hotel-reviews__img {
     margin-right: 6px;
-}
-.hotel-reviews__rate-count,
-.hotel__reviews-point {
-    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 19px;
-    letter-spacing: -0.3px;
-    text-align: center;
-    color: #ffffff;
 }
 .hotel-reviews__title {
     font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
@@ -1124,6 +1112,239 @@
 .hotel__rooms-people span {
     margin-right: 6px;
 }
+
+.hotel__recommendation {
+    margin: 0 -9px;
+    margin-bottom: 12px;
+}
+.hotel__recommendation-item {
+    border: 1px solid #007aff;
+}
+.hotel__recommendation-header {
+    display: flex;
+    flex-direction: column;
+    padding: 8px 15px;
+    align-items: center;
+    justify-content: center;
+    background: rgba(4, 105, 217, 0.7);
+}
+.hotel__recommendation-room {
+    margin-bottom: 14px;
+}
+.hotel__recommendation-row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 2px;
+}
+.hotel__recommendation-icons svg {
+    margin-right: 6px;
+}
+.hotel__recommendation-icons svg:last-child {
+    margin-right: 0;
+}
+.hotel__recommendation-icons {
+    display: inline-flex;
+}
+.hotel__recommendation-near {
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: -0.2px;
+    color: #0b192c;
+}
+.hotel__recommendation-info {
+    margin-bottom: 17px;
+}
+.hotel__recommendation-room:last-child {
+    margin-bottom: 0;
+}
+.hotel__recommendation-rooms {
+    margin: 0 -10px;
+    padding: 0 10px;
+    margin-bottom: 14px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid #d8d8d8;
+}
+.hotel__recommendation-group {
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 17px;
+    letter-spacing: 0;
+    color: #191919;
+}
+.hotel__recommendation-intro,
+.hotel__recommendation-count {
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0;
+    text-align: center;
+    color: #ffffff;
+}
+.hotel__recommendation-reserve {
+    width: 100%;
+    padding: 13px;
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 17px;
+    letter-spacing: 0;
+    text-align: center;
+    color: #ffffff;
+    background: #007aff;
+}
+.hotel__recommendation-body {
+    padding: 0 10px;
+    padding-top: 24px;
+    padding-bottom: 16px;
+}
+.hotel__recommendation-total {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+.hotel__recommendation-side {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+.hotel__recommendation-side:last-child {
+    align-items: flex-end;
+}
+.hotel__recommendation-price {
+    margin-bottom: 1px;
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0;
+    text-align: right;
+    color: #0fa30c;
+}
+.hotel__recommendation-taxes {
+    max-width: 110px;
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 12px;
+    letter-spacing: 0;
+    text-align: right;
+    color: rgba(39, 39, 39, 0.8);
+}
+.hotel__recommendation-benefits {
+    margin-bottom: 16px;
+}
+.hotel__recommendation-benefit {
+    position: relative;
+    margin-bottom: 6px;
+    padding-left: 20px;
+}
+.hotel__recommendation-split {
+    display: block;
+    width: 100%;
+    position: relative;
+    padding-left: 20px;
+}
+.hotel__recommendation-beds {
+    max-width: 160px;
+}
+.hotel__recommendation-bed {
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0;
+    color: #282828;
+}
+.hotel__recommendation-split input:checked ~ .hotel__recommendation-checkbox {
+    background: red;
+}
+.hotel__recommendation-checkbox {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    border-radius: 2px;
+    border: 1px solid #0b192c;
+}
+.hotel__recommendation-check {
+    position: absolute;
+    top: 2px;
+    left: 0;
+}
+.hotel__recommendation-benefit:last-child {
+    margin-bottom: 0;
+}
+.hotel__recommendation-bonus {
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0;
+    color: #282828;
+}
+.hotel__recommendation-name {
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 17px;
+    letter-spacing: 0;
+    color: #0369d9;
+}
+
+.hotel__filter {
+    margin-bottom: 12px;
+    padding: 16px 10px;
+    background: #ffffff;
+    border: 1px solid #dadada;
+}
+.hotel__filter-title {
+    margin-bottom: 12px;
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 17px;
+    letter-spacing: 0;
+    color: #333333;
+}
+.hotel__filter-item {
+    display: inline-block;
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 12px;
+    margin-right: 30px;
+}
+.hotel__filter-checkbox {
+    position: absolute;
+    top: 1px;
+    left: 0;
+}
+.hotel__filter-option {
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: -0.2346666306257248px;
+    color: #0b192c;
+}
+
 
 .hotel__availability {
     margin-bottom: 20px;
@@ -1742,6 +1963,39 @@
 .fslightbox-slide-btn-container-next,
 .fslightbox-slide-btn-container-previous {
     display: none !important;
+}
+
+/* Общие стили */
+
+.hotel-checkbox {
+    width: 15px;
+    height: 15px;
+    border-radius: 2px;
+    border: 1px solid #0b192c;
+}
+
+.hotel-rate {
+    background: #007aff;
+}
+.hotel-rate__count {
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: -0.3px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.hotel-option {
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0;
+    color: #282828;
 }
 
 @media (max-width: 370px) {

@@ -105,8 +105,8 @@ function renderReview() {
                     </div>
                 </div>
             </div>
-            <div class="hotel-reviews__rate">
-                <span class="hotel-reviews__rate-count">
+            <div class="hotel-reviews__rate hotel-rate">
+                <span class="hotel-reviews__rate-count hotel-rate__count">
                     9.6
                 </span>
             </div>
