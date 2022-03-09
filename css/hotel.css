@@ -1341,8 +1341,37 @@
     font-style: normal;
     font-weight: 400;
     line-height: 18px;
-    letter-spacing: -0.2346666306257248px;
+    letter-spacing: -0.2px;
     color: #0b192c;
+}
+.hotel__filter-members {
+    display: flex;
+    align-items: center;
+}
+.hotel__filter-icon {
+    margin-right: 2px;
+}
+.hotel__filter-icon:last-child {
+    margin-right: 0;
+}
+.hotel__filter-icons,
+.hotel__filter-member {
+    display: flex;
+    align-items: center;
+}
+.hotel__filter-member {
+    position: relative;
+    margin-right: 25px;
+    padding-left: 20px;
+}
+.hotel__filter-member:last-child {
+    margin-right: 0;
+}
+.hotel__filter-member input:checked ~ .hotel__filter-checkbox {
+    background: red;
+}
+.hotel__filter-item input:checked ~ .hotel__filter-checkbox {
+    background: red;
 }
 
 
