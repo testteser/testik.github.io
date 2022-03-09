@@ -763,14 +763,6 @@
     margin-right: 4px;
     display: inline-block;
     padding: 3px 4px;
-    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 11px;
-    letter-spacing: 0;
-    border-radius: 2px;
-    color: #0b192c;
     border: 1px solid #000000;
 }
 .hotel__rooms-info {
@@ -986,32 +978,9 @@
     position: relative;
     padding-left: 15px;
     margin-bottom: 10px;
-    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 20px;
-    letter-spacing: 0;
-    color: #191919;
 }
 .hotel__rooms-note:last-child {
     margin-bottom: 0;
-}
-.hotel__rooms-note::before {
-    content: '';
-    position: absolute;
-    top: 8px;
-    left: 0;
-    height: 4px;
-    width: 4px;
-    border-radius: 50%;
-    background: #191919;
-}
-.hotel__rooms-note--green {
-    color: #0fa30c;
-}
-.hotel__rooms-note--green::before {
-    color: #0fa30c;
 }
 .hotel__rooms-next {
     padding: 13px;
@@ -1613,35 +1582,9 @@
 }
 .hotel__rooms-selected {
     margin-bottom: 5px;
-    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 17px;
-    letter-spacing: 0;
-    text-align: center;
-    color: #191919;
 }
 .hotel__rooms-includes {
     margin-bottom: 9px;
-    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 14px;
-    letter-spacing: 0;
-    text-align: center;
-    color: #272727;
-}
-.hotel__rooms-dates {
-    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-    font-size: 13px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 21px;
-    letter-spacing: 0;
-    text-align: center;
-    color: #272727;
 }
 .hotel__rooms-selecting {
     padding-bottom: 32px;
@@ -1767,6 +1710,140 @@
     height: 16px;
     border-radius: 50%;
     background: #dedede;
+}
+
+.hotel-recommendation {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateY(100%);
+    visibility: hidden;
+    padding-bottom: 20px;
+    overflow: auto;
+    z-index: 902;
+    transition: 0.3s ease-out;
+    background: #ffffff;
+}
+.hotel-recommendation.show {
+    transform: translateY(0);
+    visibility: visible;
+}
+.hotel-recommendation__info {
+    padding: 0 16px;
+    margin-bottom: 20px;
+}
+.hotel-recommendation__size {
+    margin-bottom: 5px;
+}
+.hotel-recommendation__desc {
+    margin-bottom: 12px;
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0;
+    color: #000000;
+}
+.hotel-recommendation__size-text {
+    font-weight: 700;
+}
+.hotel-recommendation__options {
+    padding: 0 6px;
+    margin-bottom: 16px;
+}
+.hotel-recommendation__option {
+    margin-bottom: 8px;
+}
+.hotel-recommendation__option:last-child {
+    margin-bottom: 0;
+}
+.hotel-recommendation__option-header {
+    position: relative;
+    width: 100%;
+    padding: 13px 16px;
+    padding-right: 45px;
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0;
+    border-radius: 2px;
+    text-align: left;
+    background: #ffffff;
+    border: 1px solid #dadada;
+}
+.hotel-recommendation__option-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 22px;
+}
+.hotel-recommendation__header {
+    position: relative;
+    padding: 12px 17px;
+    padding-right: 42px;
+}
+.hotel-recommendation__close {
+    top: 50%;
+    right: 12px;
+    transform: translateY(-50%);
+}
+.hotel-recommendation__name {
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 17px;
+    letter-spacing: 0;
+    color: #0369d9;
+}
+.hotel-recommendation__picture {
+    width: 100%;
+    height: 167px;
+    margin-bottom: 16px;
+}
+.hotel-recommendation__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.hotel-recommendation__next {
+    display: block;
+    margin: 0 auto;
+    padding: 13px;
+    width: 90%;
+}
+.hotel-recommendation__benefit {
+    margin-bottom: 4px;
+    margin-right: 4px;
+    display: inline-block;
+    padding: 3px 4px;
+    border: 1px solid #000000;
+}
+.hotel-recommendation__total {
+    margin-bottom: 24px;
+    padding: 0 16px;
+    text-align: center;
+}
+.hotel-recommendation__selected {
+    margin-bottom: 5px;
+}
+.hotel-recommendation__step {
+    position: relative;
+    padding-left: 15px;
+    margin-bottom: 10px;
+}
+.hotel-recommendation__step:last-child {
+    margin-bottom: 0;
+}
+.hotel-recommendation-about {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 12px;
 }
 
 .hotel-complete {
@@ -2012,6 +2089,77 @@
     height: 15px;
     border-radius: 2px;
     border: 1px solid #0b192c;
+}
+
+.hotel-tag {
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 11px;
+    letter-spacing: 0;
+    border-radius: 2px;
+    color: #0b192c;
+}
+
+.hotel-note {
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0;
+    color: #191919;
+    text-align: left;
+}
+.hotel-note::before {
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: 0;
+    height: 4px;
+    width: 4px;
+    border-radius: 50%;
+    background: #191919;
+}
+.hotel-note--green {
+    color: #0fa30c;
+}
+.hotel-note--green::before {
+    color: #0fa30c;
+}
+
+.hotel-selected {
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 17px;
+    letter-spacing: 0;
+    text-align: center;
+    color: #191919;
+}
+
+.hotel-taxes {
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0;
+    text-align: center;
+    color: #272727;
+}
+
+.hotel-date {
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0;
+    text-align: center;
+    color: rgba(39, 39, 39, 0.8);
 }
 
 .hotel-rate {

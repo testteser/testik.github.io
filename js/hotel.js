@@ -19,6 +19,21 @@ const hotelSearch = document.querySelector('.hotel-search');
 const hotelStats = document.querySelectorAll('.hotel__rooms-stat--bottom');
 const reviewsClose = document.querySelector('.hotel-reviews__close');
 const searchClose = document.querySelector('.hotel-search__close');
+const recommendationShow = document.querySelector('.hotel__recommendation-reserve');
+const recommendationModal = document.querySelector('.hotel-recommendation');
+const recommendationClose = document.querySelector('.hotel-recommendation__close');
+
+recommendationShow.addEventListener('click', () => {
+    recommendationModal.classList.add('show');
+
+    disableScroll();
+})
+
+recommendationClose.addEventListener('click', () => {
+    recommendationModal.classList.remove('show');
+
+    enableScroll();
+})
 
 hotelStats.forEach(item => {
     item.querySelectorAll('.hotel__rooms-btn').forEach((btn, index, array) => {
