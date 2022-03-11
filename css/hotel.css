@@ -1,13 +1,63 @@
-.hotel__header {
+/* Шапка */
+
+/* Делаем шапку фиксированной по клику на фото */
+.hotel-header.active {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.hotel-header {
+    position: relative;
+    padding: 20px 0;
+    width: 100%;
+    height: auto;
+    z-index: 902;
+    background: #071a2e;
+}
+.hotel-header__logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.hotel-header__menu {
+    position: relative;
+    width: 34px;
+    height: 13px;
+}
+.hotel-header__wrapper {
+    display: flex;
+    position: relative;
+}
+.hotel-header__menu::before,
+.hotel-header__menu::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #ffffff;
+}
+.hotel-header__menu::before {
+    top: 0;
+}
+.hotel-header__menu::after {
+    bottom: 0;
+}
+
+/* Начало */
+
+.hotel__intro {
     position: relative;
     height: 325px;
     margin: 0 -15px;
 }
-.hotel__header-img {
+.hotel__intro-img {
     width: 100%;
     height: 100%;
 }
-.hotel__header-menu {
+.hotel__intro-menu {
     position: absolute;
     top: 12px;
     left: 0;
@@ -16,17 +66,15 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
     padding: 0 15px;
 }
-/*.hotel__header-menu.active {*/
-/*    position: fixed;*/
-/*    top: 70px;*/
-/*}*/
-.hotel__header-side {
+.hotel__intro-side {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 }
-.hotel__header-option {
+.hotel__intro-option {
     margin-right: 12px;
     display: flex;
     align-items: center;
@@ -36,14 +84,16 @@
     border-radius: 2px;
     background: rgba(255, 255, 255, 0.8);
 }
-.hotel__header-option:last-child {
+.hotel__intro-option:last-child {
     margin-right: 0;
 }
 
+/* Данные */
 .hotel__data {
     padding: 20px 0;
 }
 
+/* Главный заголовок страницы и название гостницы */
 .hotel__title {
     margin-bottom: 8px;
     font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
@@ -55,6 +105,8 @@
     color: #282828;
 }
 
+/* Рейтинг */
+
 .hotel__rating {
     display: flex;
     align-items: center;
@@ -64,16 +116,21 @@
     margin-right: 5px;
 }
 .hotel__rating-item:last-child {
-    margin: 0;
+    margin-right: 0;
 }
 
+/* Локация */
+
 .hotel__location {
-    display: flex;
+    display: block;
+    position: relative;
+    padding-left: 20px;
     margin-bottom: 7px;
 }
 .hotel__location-icon {
-    margin-right: 12px;
-    margin-left: 2px;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 .hotel__location-text {
     font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
@@ -85,15 +142,17 @@
     color: #838e98;
 }
 
+/* Совет */
+
 .hotel__advice {
     display: inline-flex;
     align-items: center;
     border-radius: 2px;
-    padding: 6px 15px;
-    padding-left: 11px;
+    padding: 6px 15px 6px 11px;
     background: #007aff;
 }
 .hotel__advice-icon {
+    flex-shrink: 0;
     margin-right: 7px;
 }
 .hotel__advice-text {
@@ -106,14 +165,15 @@
     color: #ffffff;
 }
 
+/* Информация */
+
 .hotel__info {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    margin: 0 -15px;
     padding: 30px 0;
-    margin-bottom: 20px;
+    margin: 0 -15px 20px;
     border-top: 1px solid #dadada;
     border-bottom: 1px solid #dadada;
 }
@@ -143,86 +203,7 @@
     color: #838285;
 }
 
-.hotel-price {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: auto;
-    max-height: 480px;
-    overflow: auto;
-    padding-top: 16px;
-    padding-bottom: 29px;
-    z-index: 901;
-    border-top-left-radius: 2px;
-    border-top-right-radius: 2px;
-    transition: 0.2s ease-out;
-    visibility: hidden;
-    transform: translateY(100%);
-    background: #ffffff;
-}
-.hotel-price.show {
-    visibility: visible;
-    transform: translateY(0);
-}
-.hotel-price__title {
-    margin-bottom: 22px;
-    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 26px;
-    letter-spacing: 0;
-    color: #0b192c;
-}
-.hotel-price__list {
-    margin-bottom: 20px;
-}
-.hotel-price__item {
-    margin-bottom: 9px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.hotel-price__item:last-child {
-    margin-bottom: 0;
-}
-.hotel-price__option,
-.hotel-price__value {
-    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 17px;
-    letter-spacing: 0;
-    color: #0b192c;
-}
-.hotel-price__value {
-    text-align: right;
-}
-.hotel-price__total {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.hotel-price__sum {
-    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 17px;
-    letter-spacing: 0;
-    color: #0b192c;
-}
-.hotel-price__text {
-    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 18px;
-    letter-spacing: 0;
-    color: #222222;
-}
+/* Отзывы */
 
 .hotel__reviews-item {
     border: 1px solid #dadada;
@@ -247,14 +228,7 @@
 .hotel__reviews-more {
     width: 100%;
     padding: 15px;
-    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 17px;
-    letter-spacing: 0;
     text-align: center;
-    color: #007aff;
     border: 1px solid #007aff;
 }
 .hotel__reviews-more--slide {
@@ -379,33 +353,12 @@
 .hotel__reviews-name {
     margin-bottom: 6px;
     display: inline-block;
-    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 17px;
-    letter-spacing: 0;
-    color: #0b192c;
 }
 .hotel__reviews-country {
     display: inline-block;
-    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-    font-size: 13px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 16px;
-    letter-spacing: 0;
-    color: #0b192c;
 }
 .hotel__reviews-review {
     margin-bottom: 28px;
-    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 20px;
-    letter-spacing: 0;
-    color: #333333;
 }
 .hotel__reviews-more {
     font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
@@ -416,7 +369,6 @@
     letter-spacing: 0;
     color: #007aff;
 }
-
 .hotel__reviews {
     margin-bottom: 30px;
 }
@@ -430,6 +382,8 @@
     letter-spacing: 0;
     color: #333333;
 }
+
+/* Отзывы - модальное окно */
 
 .hotel-reviews {
     position: fixed;
@@ -551,16 +505,6 @@
 .hotel-reviews__flag {
     margin-right: 6px;
 }
-.hotel-reviews__country {
-    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-    font-size: 13px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 16px;
-    letter-spacing: 0;
-    color: #0b192c;
-    opacity: 0.7;
-}
 .hotel-reviews__item {
     margin-bottom: 10px;
     background: #ffffff;
@@ -616,12 +560,96 @@
     margin-bottom: 0;
 }
 
-.hotel__comfort {
+
+.hotel-info {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    max-height: 480px;
+    overflow: auto;
+    padding-top: 16px;
+    padding-bottom: 29px;
+    z-index: 901;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    transition: 0.2s ease-out;
+    visibility: hidden;
+    transform: translateY(100%);
+    background: #ffffff;
+}
+.hotel-info.show {
+    visibility: visible;
+    transform: translateY(0);
+}
+.hotel-info__title {
+    margin-bottom: 22px;
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 26px;
+    letter-spacing: 0;
+    color: #0b192c;
+}
+.hotel-info__list {
+    margin-bottom: 20px;
+}
+.hotel-info__item {
+    margin-bottom: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.hotel-info__item:last-child {
+    margin-bottom: 0;
+}
+.hotel-info__option,
+.hotel-info__value {
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0;
+    color: #0b192c;
+}
+.hotel-info__value {
+    text-align: right;
+}
+.hotel-info__total {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.hotel-info__sum {
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 17px;
+    letter-spacing: 0;
+    color: #0b192c;
+}
+.hotel-info__text {
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: 0;
+    color: #222222;
+}
+
+/* Удобства */
+
+.hotel__amenities {
     margin-bottom: 21px;
     padding-bottom: 18px;
     border-bottom: 1px solid #dadada;
 }
-.hotel__comfort-title {
+.hotel__amenities-title {
     margin-bottom: 20px;
     font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
     font-size: 20px;
@@ -631,24 +659,28 @@
     letter-spacing: 0;
     color: #333333;
 }
-.hotel__comfort-list {
+.hotel__amenities-list {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
 }
-.hotel__comfort-item {
+.hotel__amenities-item {
+    position: relative;
     width: 43%;
+    padding-left: 35px;
     margin-bottom: 15px;
 }
-.hotel__comfort-pic {
+.hotel__amenities-pic {
+    position: absolute;
+    top: 0;
+    left: 0;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     width: 20px;
-    margin-right: 15px;
 }
-.hotel__comfort-text {
+.hotel__amenities-text {
     font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
     font-size: 14px;
     font-style: normal;
@@ -657,7 +689,7 @@
     letter-spacing: 0;
     color: rgba(16, 16, 16, 0.85);
 }
-.hotel__comfort-show {
+.hotel__amenities-show {
     font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
     font-size: 14px;
     font-style: normal;
@@ -665,8 +697,9 @@
     line-height: 17px;
     letter-spacing: 0;
     color: #2a3a4d;
-    background: none;
 }
+
+/* Напоминания */
 
 .hotel__remember {
     margin-bottom: 17px;
@@ -806,19 +839,6 @@
     height: 20px;
     width: 20px;
 }
-.hotel__rooms-bonus span {
-    color: #0fa30c;
-    font-weight: 600;
-}
-.hotel__rooms-bonus {
-    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 14px;
-    letter-spacing: 0;
-    color: #282828;
-}
 .hotel__rooms-bed,
 .hotel__rooms-people {
     display: flex;
@@ -840,9 +860,7 @@
     justify-content: space-between;
 }
 .hotel__rooms-top {
-    padding: 0 15px;
-    padding-top: 14px;
-    padding-bottom: 9px;
+    padding: 14px 10px 9px;
     transition: 0.2s ease-out;
     border: 1px solid transparent;
     border-bottom: none;
@@ -850,11 +868,8 @@
 .hotel__rooms-top.active {
     border-color: #007aff;
 }
-.hotel__rooms-top.active {
-    border-color: #007aff;
-}
 .hotel__rooms-mid {
-    padding: 8px 15px;
+    padding: 8px 10px;
     transition: 0.2s ease-out;
     border: 1px solid transparent;
 }
@@ -863,7 +878,7 @@
     height: 56px;
 }
 .hotel__rooms-bot {
-    padding: 20px 17px;
+    padding: 20px 10px;
     display: none;
     border: 1px solid transparent;
     border-top: none;
@@ -1021,13 +1036,6 @@
 }
 .hotel__rooms-nights {
     margin-bottom: 3px;
-    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 14px;
-    letter-spacing: 0;
-    color: #191919;
 }
 .hotel__rooms-benefits {
     margin-bottom: 18px;
@@ -1041,20 +1049,10 @@
     letter-spacing: 0;
     color: rgba(39, 39, 39, 0.8);
 }
-.hotel__rooms-nights span {
-    font-weight: 600;
-}
 .hotel__rooms-sum {
     margin-bottom: 3px;
     display: flex;
     align-items: center;
-    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 22px;
-    letter-spacing: 0;
-    color: #0fa30c;
 }
 .hotel__rooms-radio {
     display: none;
@@ -1191,25 +1189,10 @@
 }
 .hotel__recommendation-price {
     margin-bottom: 1px;
-    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 19px;
-    letter-spacing: 0;
-    text-align: right;
-    color: #0fa30c;
 }
 .hotel__recommendation-taxes {
     max-width: 110px;
-    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-    font-size: 10px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 12px;
-    letter-spacing: 0;
     text-align: right;
-    color: rgba(39, 39, 39, 0.8);
 }
 .hotel__recommendation-benefits {
     margin-bottom: 16px;
@@ -1257,15 +1240,6 @@
 .hotel__recommendation-benefit:last-child {
     margin-bottom: 0;
 }
-.hotel__recommendation-bonus {
-    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 14px;
-    letter-spacing: 0;
-    color: #282828;
-}
 .hotel__recommendation-name {
     font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
     font-size: 14px;
@@ -1275,6 +1249,8 @@
     letter-spacing: 0;
     color: #0369d9;
 }
+
+/* Фильтр отеля */
 
 .hotel__filter {
     margin-bottom: 12px;
@@ -1303,15 +1279,6 @@
     position: absolute;
     top: 1px;
     left: 0;
-}
-.hotel__filter-option {
-    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 18px;
-    letter-spacing: -0.2px;
-    color: #0b192c;
 }
 .hotel__filter-row {
     display: flex;
@@ -1354,6 +1321,7 @@
     color: #0b192c;
 }
 
+/* Календарь доступных броней */
 
 .hotel__availability {
     margin-bottom: 20px;
@@ -1370,90 +1338,36 @@
 }
 .hotel__availability-booking {
     padding: 20px 16px;
-    background: #ffffff;
     border: 1px solid #dadada;
 }
-.hotel__availibility-search {
-    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-    font-size: 13px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 16px;
-    letter-spacing: 0;
-    color: #333333;
-}
-.hotel__availibility-header {
+.hotel__availability-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 18px;
 }
-.hotel__availibility-edit {
-    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-    font-size: 13px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 16px;
-    letter-spacing: 0;
-    color: #007aff;
-    background: none;
-}
-.hotel__availibility-table {
+.hotel__availability-table {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.hotel__availibility-item {
+.hotel__availability-item {
     display: flex;
     flex-direction: column;
     width: 50%;
     position: relative;
 }
-.hotel__availibility-item:first-child {
+.hotel__availability-item:first-child {
     margin-right: 16px;
 }
-.hotel__availibility-item::before {
-    content: '';
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    height: 49px;
-    width: 1px;
-    background: #dadada;
-}
-.hotel__availibility-item:last-child::before {
-    display: none;
-}
-.hotel__availibility-name {
+.hotel__availability-name {
     margin-bottom: 8px;
-    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 17px;
-    letter-spacing: 0;
-    color: #333333;
 }
-.hotel__availibility-date {
+.hotel__availability-date {
     margin-bottom: 6px;
-    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 18px;
-    letter-spacing: 0;
-    color: #007aff;
 }
-.hotel__availibility-hours {
-    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-    font-size: 13px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 16px;
-    letter-spacing: 0;
-    color: rgba(51, 51, 51, 0.6);
-}
+
+/* Правила отеля */
 
 .hotel__rules {
     margin-bottom: 25px;
@@ -1474,8 +1388,7 @@
 .hotel__rules-link {
     position: relative;
     display: block;
-    padding: 13px 15px;
-    padding-right: 45px;
+    padding: 13px 45px 13px 15px;
     font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
     font-size: 14px;
     font-style: normal;
@@ -1489,12 +1402,14 @@
     top: 50%;
     transform: translateY(-50%);
 }
-.hotel__rules-option:first-child {
-    border-top: 1px solid #ebebeb;
-}
 .hotel__rules-option {
     border-bottom: 1px solid #ebebeb;
 }
+.hotel__rules-option:first-child {
+    border-top: 1px solid #ebebeb;
+}
+
+/* Описание отеля */
 
 .hotel__description {
     margin-bottom: 32px;
@@ -1527,8 +1442,9 @@
     line-height: 17px;
     letter-spacing: 0;
     color: #007aff;
-    background: none;
 }
+
+/* Преимущества вне отеля */
 
 .hotel__benefits {
     margin-bottom: 16px;
@@ -1632,29 +1548,10 @@
 }
 .hotel-bookings__price {
     margin-bottom: 4px;
-    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 17px;
-    letter-spacing: 0;
-    text-align: right;
-    color: #0b192c;
 }
 .hotel-bookings__price-discount {
     margin-right: 9px;
-    color: #0fa30c;
     text-decoration-line: line-through;
-}
-.hotel-bookings__taxes {
-    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 14px;
-    letter-spacing: 0;
-    text-align: right;
-    color: #0b192c;
 }
 .hotel-bookings__info {
     display: flex;
@@ -1756,6 +1653,9 @@
 }
 .hotel-recommendation__option {
     margin-bottom: 8px;
+    border-radius: 2px;
+    background: #ffffff;
+    border: 1px solid #dadada;
 }
 .hotel-recommendation__option:last-child {
     margin-bottom: 0;
@@ -1771,15 +1671,22 @@
     font-weight: 600;
     line-height: 22px;
     letter-spacing: 0;
-    border-radius: 2px;
     text-align: left;
-    background: #ffffff;
-    border: 1px solid #dadada;
+}
+.hotel-recommendation__option-body {
+    display: none;
+    padding: 0 13px;
+    padding-bottom: 20px;
+}
+.hotel-recommendation__option-header.active .hotel-recommendation__option-arrow {
+    transform: rotate(180deg);
+}
+.hotel-recommendation__option-body.active {
+    display: block;
 }
 .hotel-recommendation__option-arrow {
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 20px;
     right: 22px;
 }
 .hotel-recommendation__header {
@@ -1826,8 +1733,11 @@
 }
 .hotel-recommendation__total {
     margin-bottom: 24px;
-    padding: 0 16px;
+    padding: 0 22px;
     text-align: center;
+}
+.hotel-recommendation__taxes {
+    margin-bottom: 9px;
 }
 .hotel-recommendation__selected {
     margin-bottom: 5px;
@@ -1844,6 +1754,61 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 12px;
+}
+.hotel-recommendation__availability {
+    padding: 0 6px;
+}
+.hotel-recommendation__calendar {
+    margin-bottom: 14px;
+    padding: 20px 16px;
+    border: 1px solid #dadada;
+}
+.hotel-recommendation__calendar-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 18px;
+}
+.hotel-recommendation__calendar-table {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.hotel-recommendation__calendar-item {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    position: relative;
+}
+.hotel-recommendation__calendar-item:first-child {
+    margin-right: 16px;
+}
+.hotel-recommendation__calendar-name {
+    margin-bottom: 8px;
+}
+.hotel-recommendation__calendar-date {
+    margin-bottom: 6px;
+}
+.hotel-recommendation__choose {
+    display: flex;
+}
+.hotel-recommendation__row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.hotel-recommendation__сhoose-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 32px;
+    width: 32px;
+    border-radius: 2px;
+    background: #ffffff;
+    border: 1px solid #007aff;
+}
+.hotel-recommendation__nights {
+    margin-bottom: 3px;
 }
 
 .hotel-complete {
@@ -1879,24 +1844,12 @@
 }
 .hotel-complete__title,
 .hotel-complete__variants {
-    margin-bottom: 2px;
+    margin-bottom: 9px;
     font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
     font-size: 14px;
     font-style: normal;
     font-weight: 600;
     line-height: 17px;
-    letter-spacing: 0;
-    color: #ffffff;
-}
-.hotel-complete__variants {
-    margin-bottom: 9px;
-}
-.hotel-complete__taxes {
-    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 14px;
     letter-spacing: 0;
     color: #ffffff;
 }
@@ -2084,6 +2037,111 @@
 
 /* Общие стили */
 
+/* Отзывы */
+
+.hotel-reviews__name {
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 17px;
+    letter-spacing: 0;
+    color: #0b192c;
+}
+.hotel-reviews__country {
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0;
+    color: #0b192c;
+    opacity: 0.7;
+}
+.hotel-reviews__review {
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0;
+    color: #333333;
+}
+.hotel-reviews__more {
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 17px;
+    letter-spacing: 0;
+    color: #007aff;
+}
+
+/* Календарь */
+.hotel-calendar {
+    background: #ffffff;
+}
+.hotel-calendar__search {
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0;
+    color: #333333;
+}
+.hotel-calendar__edit {
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 16px;
+    letter-spacing: 0;
+    color: #007aff;
+    background: none;
+}
+.hotel-calendar__name {
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 17px;
+    letter-spacing: 0;
+    color: #333333;
+}
+.hotel-calendar__date {
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 0;
+    color: #007aff;
+}
+.hotel-calendar__hours {
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0;
+    color: rgba(51, 51, 51, 0.6);
+}
+.hotel-calendar__item::before  {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 49px;
+    width: 1px;
+    background: #dadada;
+}
+.hotel-calendar__item:last-child::before  {
+    display: none;
+}
+
+/* Чекбокс */
 .hotel-checkbox {
     width: 15px;
     height: 15px;
@@ -2091,6 +2149,7 @@
     border: 1px solid #0b192c;
 }
 
+/* Тэг */
 .hotel-tag {
     font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
     font-size: 12px;
@@ -2102,6 +2161,7 @@
     color: #0b192c;
 }
 
+/* Заметка */
 .hotel-note {
     font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
     font-size: 12px;
@@ -2126,6 +2186,33 @@
     color: #0fa30c;
 }
 .hotel-note--green::before {
+    background: #0fa30c;
+}
+
+/* Кол-во ночей */
+.hotel-nights {
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0;
+    color: #191919;
+}
+.hotel-nights span {
+    font-weight: 600;
+}
+
+/* Цена */
+.hotel-price {
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0;
+}
+.hotel-price--green {
     color: #0fa30c;
 }
 
@@ -2140,6 +2227,7 @@
     color: #191919;
 }
 
+/* Текст налоги и сборы */
 .hotel-taxes {
     font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
     font-size: 12px;
@@ -2147,7 +2235,6 @@
     font-weight: 400;
     line-height: 14px;
     letter-spacing: 0;
-    text-align: center;
     color: #272727;
 }
 
@@ -2185,6 +2272,10 @@
     letter-spacing: 0;
     color: #282828;
 }
+.hotel-option span {
+    color: #0fa30c;
+    font-weight: 600;
+}
 
 @media (max-width: 370px) {
     .hotel-bookings__info {
@@ -2214,3 +2305,4 @@
         font-size: 14px;
     }
 }
+

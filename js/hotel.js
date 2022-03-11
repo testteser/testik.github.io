@@ -1,7 +1,7 @@
 const roomReserve = document.querySelectorAll('.hotel__rooms-reserve');
 const roomsRemove = document.querySelectorAll('.hotel__rooms-remove');
 const roomsPrice = document.querySelectorAll('.hotel__rooms-sum');
-const roomPrice = document.querySelector('.hotel-price');
+const roomPrice = document.querySelector('.hotel-info');
 const roomsBookings = document.querySelector('.hotel-bookings');
 const roomsBookingsRemove = document.querySelectorAll('.hotel-bookings__remove');
 const roomsBookingsList = document.querySelectorAll('.hotel-bookings__list');
@@ -10,10 +10,10 @@ const reviewsMore = document.querySelectorAll('.hotel__reviews-more');
 const reviewsModal = document.querySelector('.hotel-reviews');
 const reviewsModalAll = document.querySelector('.hotel-reviews__all-btn');
 const reviewsModalTable = document.querySelector('.hotel-reviews__table');
-const hotelMainImage = document.querySelector('.hotel__header-img');
+const hotelMainImage = document.querySelector('.hotel__intro-img');
 const hotelGallery = document.querySelector('.hotel-gallery');
 const headerHotel = document.querySelector('.header-hotel');
-const headerHotelMenu = document.querySelector('.header-hotel__menu');
+const headerHotelMenu = document.querySelector('.hotel-header__menu');
 const hotelCalendar = document.querySelectorAll('.hotel-calendar');
 const hotelSearch = document.querySelector('.hotel-search');
 const hotelStats = document.querySelectorAll('.hotel__rooms-stat--bottom');
@@ -22,6 +22,23 @@ const searchClose = document.querySelector('.hotel-search__close');
 const recommendationShow = document.querySelector('.hotel__recommendation-reserve');
 const recommendationModal = document.querySelector('.hotel-recommendation');
 const recommendationClose = document.querySelector('.hotel-recommendation__close');
+const recommendationButtonAcc = document.querySelectorAll('.hotel-recommendation__option-header');
+const recommendationCalendar = document.querySelector('.hotel-recommendation__calendar');
+
+recommendationButtonAcc.forEach(item => {
+    item.addEventListener('click', (e) => {
+        let elem = e.currentTarget;
+
+        elem.classList.toggle('active');
+        elem.nextElementSibling.classList.toggle('active');
+
+        console.log(elem)
+    })
+})
+
+recommendationCalendar.addEventListener('click', () => {
+    recommendationModal.style.zIndex = 899;
+})
 
 recommendationShow.addEventListener('click', () => {
     recommendationModal.classList.add('show');

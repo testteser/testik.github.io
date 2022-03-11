@@ -12,6 +12,10 @@ const bodyCloser = document.querySelector('#body-closer');
 
 bodyCloser.addEventListener('click', (e) => {
     enableScroll();
+
+    if (recommendationModal) {
+        recommendationModal.style.zIndex = 901;
+    }
 })
 
 if (accountMenu) {

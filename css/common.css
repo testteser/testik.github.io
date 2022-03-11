@@ -410,11 +410,8 @@ body {
     color: #ffffff;
 }
 
-/* БЛОК НЕДАВНИХ ОТЕЛЕЙ */
+/* Недавно просмотренные отели */
 
-.recent-hotels {
-    margin-bottom: 24px;
-}
 .recent-hotels__title {
     margin-bottom: 9px;
     font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
@@ -434,9 +431,6 @@ body {
     align-items: center;
     flex-wrap: wrap;
     margin-bottom: 6px;
-}
-.recent-hotels__slider {
-    margin-right: -8px;
 }
 .recent-hotels__name {
     margin-right: 7px;
@@ -697,53 +691,6 @@ body {
     line-height: 18px;
     letter-spacing: 0;
     color: #8A0AEE;
-}
-
-.header-hotel {
-    position: relative;
-    padding: 20px 0;
-    width: 100%;
-    height: auto;
-    z-index: 902;
-    background: #071a2e;
-}
-.header-hotel.active {
-    position: fixed;
-    top: 0;
-    left: 0;
-}
-.header-hotel__logo {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-.header-hotel__menu {
-    position: relative;
-    width: 34px;
-    height: 13px;
-}
-.header-hotel__wrapper {
-    display: flex;
-    position: relative;
-}
-.header-hotel__menu::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background: #ffffff;
-}
-.header-hotel__menu::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background: #ffffff;
 }
 
 @media (max-width: 325px) {
