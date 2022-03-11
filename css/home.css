@@ -1,4 +1,4 @@
-/* Стили для формы поиска - $search */
+/* Форма поиска отелей */
 
 .search {
     margin-bottom: 8px;
@@ -164,7 +164,12 @@
     display: none;
 }
 
-/* Стили для карточек предложений - $offers */
+/* Таблица предложений */
+
+/* Скрываем карточку предложения */
+.offers__item.hide {
+    display: none;
+}
 
 .offers {
     margin-bottom: 10px;
@@ -301,7 +306,7 @@
     color: #007aff;
 }
 
-/* Стили для перехода скачивания шапки - $search-modal */
+/* Модальное окно для поиска направления */
 
 .search-modal {
     position: fixed;
@@ -703,11 +708,8 @@
 .search-modal__field.active::after {
     height: 1px;
 }
-.offers__item.hide {
-    display: none;
-}
 
-/* Слайдер последних гостиниц $recent-hotels */
+/* Слайдер последних гостиниц */
 
 .recent-hotels .container {
     padding: 0 8px;
