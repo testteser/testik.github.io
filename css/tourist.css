@@ -38,6 +38,9 @@
 
 /* Информация о программе */
 
+.tourist-about {
+    margin-bottom: 64px;
+}
 .tourist-about .container {
     padding: 0 25px;
 }
@@ -75,41 +78,19 @@
     color: #0b192c;
 }
 
-.tourist-levels__table {
-    margin: 0 -17px;
-}
-.tourist-levels__title {
-    margin-left: -4px;
-    margin-bottom: 19px;
-    max-width: 242px;
-    color: #0b192c;
-}
+/* Уровни программы */
 
-.tourist-enter {
-    margin-bottom: 42px;
+.tourist-levels {
+    margin-bottom: 46px;
 }
-.tourist-enter__desc {
-    max-width: 260px;
-    margin-bottom: 24px;
-    color: #858d97;
-}
-.tourist-enter__title {
-    margin-bottom: 9px;
-    max-width: 265px;
-    color: #0b192c;
-}
-
 .tourist-levels .container {
     padding: 0 25px;
 }
-.tourist-about {
-    margin-bottom: 64px;
-}
-.tourist-intro__btn,
-.tourist-about__enter,
-.tourist-enter__link {
-    width: 265px;
-    padding: 9px;
+.tourist-levels__title {
+    margin-left: 17px;
+    margin-bottom: 19px;
+    max-width: 242px;
+    color: #0b192c;
 }
 .tourist-levels__item {
     padding: 30px 15px;
@@ -117,14 +98,9 @@
     margin-bottom: 24px;
     background: #ffffff;
 }
-.tourist-levels__item:first-child {
-    border-top: 2px solid #f0c806;
-}
+.tourist-levels__item:first-child,
 .tourist-levels__item:nth-child(2) {
-    border-top: 2px solid #007aff;
-}
-.tourist-levels {
-    margin-bottom: 46px;
+    border-top: 2px solid #f0c806;
 }
 .tourist-levels__item:last-child {
     margin-bottom: 0;
@@ -184,6 +160,32 @@
     line-height: 20px;
     letter-spacing: 0;
     color: #0b192c;
+}
+
+/* Вход */
+
+.tourist-enter {
+    margin-bottom: 42px;
+}
+.tourist-enter__desc {
+    max-width: 260px;
+    margin-bottom: 24px;
+    color: #858d97;
+}
+.tourist-enter__title {
+    margin-bottom: 9px;
+    max-width: 265px;
+    color: #0b192c;
+}
+
+/* */
+
+.tourist-intro__btn,
+.tourist-about__enter,
+.tourist-enter__link {
+    display: inline-block;
+    width: 265px;
+    padding: 9px;
 }
 
 /* Общие стили */

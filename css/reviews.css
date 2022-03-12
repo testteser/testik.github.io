@@ -1,8 +1,26 @@
+/* Табы */
+
+/* Делаем видимым целый таб */
+.reviews__table-item.is-active {
+    display: block;
+}
+
+/* Меняем цвет для кнопки переключения таба */
+.reviews__tabs-switch.is-active {
+    color: #007aff;
+}
+
+/* Передвигаем полоску */
+.reviews__tabs.is-active::before {
+    left: 50%;
+}
+
 .reviews {
     margin-top: 28px;
     margin-bottom: 12px;
 }
 .reviews__title {
+    margin-left: 8px;
     margin-bottom: 12px;
     font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
     font-size: 22px;
@@ -17,7 +35,7 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    margin-bottom: 25px;
+    margin: 0 -8px 25px;
 }
 .reviews__tabs::before {
     content: '';
@@ -30,6 +48,8 @@
     transition: 0.3s ease-out;
     z-index: 5;
 }
+
+/* Таблица отзывов */
 
 .reviews__table-item {
     display: none;
@@ -87,22 +107,13 @@
     display: inline-block;
     width: 165px;
     padding: 7px;
-    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
     font-size: 12px;
-    font-style: normal;
-    font-weight: 600;
     line-height: 14px;
-    letter-spacing: 0;
-    text-align: center;
-    border-radius: 2px;
-    color: #007aff;
-    border: 1px solid #007aff;
 }
 .reviews__table-info {
     display: flex;
     flex-direction: column;
-    padding: 12px;
-    padding-right: 40px;
+    padding: 12px 40px 12px 12px;
     width: 100%;
 }
 .reviews__table-img {
@@ -113,9 +124,8 @@
     height: 100%;
     object-fit: cover;
 }
-.reviews__content {
-    margin: 0 -8px;
-}
+
+/* Cовет */
 
 .reviews-advice {
     margin-bottom: 20px;
@@ -130,15 +140,6 @@
     width: 286px;
     border-radius: 2px;
     padding: 14px;
-    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 18px;
-    letter-spacing: 0;
-    text-align: center;
-    border: 1px solid #007aff;
-    color: #007aff;
 }
 .reviews-advice__desc {
     margin-bottom: 18px;
@@ -170,18 +171,6 @@
     position: absolute;
     top: 8px;
     right: 10px;
-}
-
-/* Состояния */
-
-.reviews__table-item.is-active {
-    display: block;
-}
-.reviews__tabs-switch.is-active {
-    color: #007aff;
-}
-.reviews__tabs.is-active::before {
-    left: 50%;
 }
 
 @media (max-width: 340px) {

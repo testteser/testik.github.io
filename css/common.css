@@ -8,6 +8,10 @@ body {
     margin: 0 auto;
     padding: 0 15px;
 }
+.container-small {
+    margin: 0 auto;
+    padding: 0 8px;
+}
 .main-wrapper {
     background: #f8f9fa !important;
     padding-bottom: 10px;
@@ -38,7 +42,7 @@ body {
     font-style: normal;
     font-weight: 500;
     line-height: 17px;
-    letter-spacing: 0em;
+    letter-spacing: 0;
     color: #ffffff;
 }
 .app-download__link {
@@ -48,7 +52,7 @@ body {
     font-style: normal;
     font-weight: 500;
     line-height: 17px;
-    letter-spacing: 0em;
+    letter-spacing: 0;
     text-align: center;
     color: #0B192C;
     background: #F0C806;
@@ -120,7 +124,13 @@ body {
     color: #007aff;
 }
 .account-menu__header {
+    display: flex;
+    align-items: center;
     margin-bottom: 35px;
+}
+.account-menu__logo {
+    margin-right: 6px;
+    flex-shrink: 0;
 }
 .account-menu__item {
     border-bottom: 1px solid #e3e3e3;
@@ -130,8 +140,7 @@ body {
     position: relative;
     display: inline-block;
     width: 100%;
-    padding: 12px 8px;
-    padding-right: 30px;
+    padding: 12px 30px 12px 8px;
 }
 .account-menu__next {
     top: 50%;
@@ -354,7 +363,7 @@ body {
     color: #de2b21;
 }
 
-/* БЛОК ПОДПИСКИ */
+/* Подписка */
 
 .subscribe {
     padding-top: 15px;
@@ -514,8 +523,7 @@ body {
     background: #ffffff;
 }
 .search-mini__row-input {
-    padding: 15px 13px;
-    padding-left: 33px;
+    padding: 15px 13px 15px 33px;
     width: 100%;
     font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
     font-size: 13px;
@@ -550,7 +558,6 @@ body {
 
 /* БЛОК КНОПКА (кнопка сплошная (синия)) */
 .site-btn {
-    display: inline-block;
     font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
     font-size: 15px;
     font-style: normal;
@@ -565,7 +572,6 @@ body {
 
 /* БЛОК КНОПКА (кнопка рамка (синия)) */
 .site-btn-border {
-    display: inline-block;
     font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
     font-size: 15px;
     font-style: normal;

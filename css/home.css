@@ -1,5 +1,13 @@
 /* Форма поиска отелей */
 
+.search-form__field--date.active .search-form__label {
+    top: 28%;
+}
+.search-form__field--date.active .search-form__input {
+    padding-bottom: 5px;
+    padding-top: 20px;
+}
+
 .search {
     margin-bottom: 8px;
     padding: 25px 0;
@@ -307,6 +315,34 @@
 }
 
 /* Модальное окно для поиска направления */
+
+.search-modal__form.active {
+    margin-bottom: 23px;
+}
+.search-modal__table.show {
+    display: block;
+}
+.search-modal__clear.show {
+    opacity: 1;
+    visibility: visible;
+}
+.search-modal__location.hide {
+    display: none;
+}
+
+/* Показываем модальное окно */
+.search-modal.show {
+    transform: translateY(0);
+    visibility: visible;
+}
+
+/* При вводе инпута мы манипулируем бордерами */
+.search-modal__field.active::before {
+    opacity: 0;
+}
+.search-modal__field.active::after {
+    height: 1px;
+}
 
 .search-modal {
     position: fixed;
@@ -674,39 +710,6 @@
 }
 .month-item-weekdays-row {
     display: none !important;
-}
-
-/* Состояния */
-
-.search-modal__form.active {
-    margin-bottom: 23px;
-}
-.search-modal.show {
-    transform: translateY(0);
-    visibility: visible;
-}
-.search-modal__table.show {
-    display: block;
-}
-.search-modal__clear.show {
-    opacity: 1;
-    visibility: visible;
-}
-.search-modal__location.hide {
-    display: none;
-}
-.search-form__field--date.active .search-form__label {
-    top: 28%;
-}
-.search-form__field--date.active .search-form__input {
-    padding-bottom: 5px;
-    padding-top: 20px;
-}
-.search-modal__field.active::before {
-    opacity: 0;
-}
-.search-modal__field.active::after {
-    height: 1px;
 }
 
 /* Слайдер последних гостиниц */

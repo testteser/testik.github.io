@@ -4,7 +4,6 @@
     padding: 20px 0;
     background: #f8f9fa;
 }
-
 .auth-back {
     position: absolute;
     top: 50%;
@@ -28,14 +27,42 @@
     color: #0b192c;
 }
 
+/* Табы */
+
+.auth-tabs.active::before {
+    opacity: 1;
+    left: 50%;
+    background: #007aff;
+}
+
+.auth-tabs__tab.active {
+    color: #007aff;
+}
+
 .auth-tabs {
     position: relative;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    margin: 0 -15px;
-    margin-bottom: 24px;
+    margin: 0 -15px 24px;
+}
+.auth-tabs__tab {
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 8px;
+    width: 50%;
+    border-bottom: 1px solid #485f7e;
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0;
+    text-align: center;
+    background: #ffffff;
+    text-transform: uppercase;
+    transition: 0.3s ease-out;
 }
 .auth-tabs::before {
     content: '';
@@ -47,6 +74,13 @@
     transition: 0.3s ease-out;
     z-index: 5;
     background: #007aff;
+}
+
+/* Пути входа */
+
+/* Показ целого таба */
+.auth__content-item.show {
+    display: block;
 }
 
 .auth__content-options {
@@ -69,24 +103,7 @@
     display: none;
 }
 
-
-.auth-tabs__tab {
-    position: relative;
-    padding-top: 20px;
-    padding-bottom: 8px;
-    width: 50%;
-    border-bottom: 0.5px solid #485F7E;
-    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 24px;
-    letter-spacing: 0;
-    text-align: center;
-    background: #fff;
-    text-transform: uppercase;
-    transition: 0.3s ease-out;
-}
+/* Вход с других платформ */
 
 .auth__join-table {
     display: flex;
@@ -167,6 +184,8 @@
     margin-bottom: 12px;
 }
 
+/* Форма */
+
 .auth__form {
     margin-bottom: 16px;
 }
@@ -246,17 +265,19 @@
     color: #de2b21;
 }
 
+/* Контейнер для номера телефона */
+
 .auth-mobile__row {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 }
-.auth-mobile__item:first-child {
-    width: 28%;
-}
 .auth-mobile__item {
     width: 68%;
+}
+.auth-mobile__item:first-child {
+    width: 28%;
 }
 
 .auth__notify {
@@ -272,7 +293,6 @@
     color: #0b192c;
     background: #eec60a;
 }
-
 .auth--reset .auth__content-item {
     display: block;
 }
@@ -293,21 +313,6 @@
 }
 
 /* Состояния */
-.auth__content-item.show {
-    display: block;
-}
-
-.auth-tabs.active::before {
-    opacity: 1;
-    background: #007aff;
-}
-.auth-tabs__tab.active {
-    color: #007aff;
-}
-.auth-tabs.active::before {
-    left: 50%;
-}
-
 .auth__form-input.error {
     border-color: #de2b21;
 }

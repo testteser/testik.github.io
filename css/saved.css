@@ -1,3 +1,5 @@
+/* Верхние сохранненые отели */
+
 .saved {
     padding-top: 28px;
     margin-bottom: 15px;
@@ -23,67 +25,11 @@
     color: #0b192c;
 }
 .saved__intro {
+    margin-left: 8px;
     margin-bottom: 24px;
-}
-.saved__list {
-    margin: 0 -15px;
-    margin-bottom: 12px;
-    border-radius: 2px;
-    background: #ffffff;
-    border-top: 1px solid #ececec;
-    border-bottom: 1px solid #ececec;
-}
-.saved__list-item {
-    border-bottom: 1px solid #ececec;
-}
-.saved__list-item:last-child {
-    border-bottom: none;
-}
-.saved__list-link {
-    display: inline-block;
-    padding: 13px 15px;
-    width: 100%;
-    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 22px;
-    letter-spacing: 0;
-    color: #1785ed;
-}
-
-.saved__bottom {
-    margin: 0 -8px;
-}
-.saved__bottom-name {
-    margin-bottom: 4px;
-}
-.saved__bottom-price {
-    display: inline-block;
-    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 14px;
-    letter-spacing: 0;
-    color: #007aff;
-}
-.saved__bottom-img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    object-fit: cover;
-    width: 89px;
-    height: 100%;
-}
-.saved__bottom-arrow {
-    top: 50%;
-    right: 13px;
-    transform: translateY(-50%);
 }
 
 .saved__table {
-    margin: 0 -8px;
     margin-bottom: 12px;
 }
 .saved__table-name {
@@ -112,7 +58,65 @@
     right: 12px;
 }
 
+/* Список опций */
+
+.saved__list {
+    margin: 0 -8px 12px;
+    border-radius: 2px;
+    background: #ffffff;
+    border-top: 1px solid #ececec;
+    border-bottom: 1px solid #ececec;
+}
+.saved__list-item {
+    border-bottom: 1px solid #ececec;
+}
+.saved__list-item:last-child {
+    border-bottom: none;
+}
+.saved__list-link {
+    display: inline-block;
+    padding: 13px 15px;
+    width: 100%;
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0;
+    color: #1785ed;
+}
+
+/* Нижние сохранненые отели */
+
+.saved__bottom-name {
+    margin-bottom: 4px;
+}
+.saved__bottom-price {
+    display: inline-block;
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0;
+    color: #007aff;
+}
+.saved__bottom-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 89px;
+    height: 100%;
+}
+.saved__bottom-arrow {
+    top: 50%;
+    right: 13px;
+    transform: translateY(-50%);
+}
+
 /* Общие стили */
+
 .saved__table-item,
 .saved__bottom-item {
     display: flex;
@@ -151,7 +155,6 @@
 .saved__bottom-content,
 .saved__table-content {
     position: relative;
-    padding: 15px 12px;
-    padding-right: 40px;
+    padding: 15px 40px 15px 12px;
     width: 100%;
 }

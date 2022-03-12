@@ -1,4 +1,9 @@
-.bookings-table__item {
+/* Список броней */
+
+.bookings {
+    padding: 28px 0;
+}
+.bookings__item {
     display: flex;
     align-items: center;
     border-radius: 2px;
@@ -8,13 +13,10 @@
     padding-left: 89px;
     background: #ffffff;
 }
-.bookings-table__item:last-child {
+.bookings__item:last-child {
     margin-bottom: 0;
 }
-.bookings-table__list {
-    margin: 0 -8px;
-}
-.bookings-table__cell-title {
+.bookings__cell-title {
     font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
     font-size: 16px;
     font-style: normal;
@@ -23,7 +25,7 @@
     letter-spacing: 0;
     color: #0b192c;
 }
-.bookings-table__cell-date {
+.bookings__cell-date {
     display: inline-block;
     font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
     font-size: 14px;
@@ -33,13 +35,14 @@
     letter-spacing: 0;
     color: #0b192c;
 }
-.bookings-table__cell-info {
+.bookings__cell-info {
+    margin-left: 8px;
     margin-bottom: 12px;
 }
-.bookings-table__cell {
+.bookings__cell {
     margin-bottom: 24px;
 }
-.bookings-table__title {
+.bookings__title {
     margin-bottom: 4px;
     font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
     font-size: 22px;
@@ -49,7 +52,7 @@
     letter-spacing: 0;
     color: #0b192c;
 }
-.bookings-table__find {
+.bookings__find {
     font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
     font-size: 14px;
     font-style: normal;
@@ -58,10 +61,11 @@
     letter-spacing: 0;
     color: #1785ed;
 }
-.bookings-table__info {
+.bookings__info {
+    margin-left: 8px;
     margin-bottom: 24px;
 }
-.bookings-table__item-name {
+.bookings__item-name {
     margin-bottom: 2px;
     font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
     font-size: 14px;
@@ -71,20 +75,17 @@
     letter-spacing: -0.3px;
     color: #0b192c;
 }
-.bookings-table__content {
+.bookings__content {
     margin-bottom: 24px;
 }
-.bookings-table {
-    padding: 28px 0;
-}
-.bookings-table__item-date,
-.bookings-table__item-price {
+.bookings__item-date,
+.bookings__item-price {
     color: #858d97;
     margin-bottom: 2px;
 }
-.bookings-table__item-date,
-.bookings-table__item-price,
-.bookings-table__item-status {
+.bookings__item-date,
+.bookings__item-price,
+.bookings__item-status {
     display: inline-block;
     font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
     font-size: 12px;
@@ -93,7 +94,7 @@
     line-height: 18px;
     letter-spacing: 0;
 }
-.bookings-table__item-img {
+.bookings__item-img {
     position: absolute;
     top: 0;
     left: 0;
@@ -101,37 +102,35 @@
     width: 89px;
     object-fit: cover;
 }
-.bookings-table__item-content {
+.bookings__item-content {
     width: 100%;
 }
-.bookings-table__item-more {
+.bookings__item-more {
     top: 11px;
     right: 8px;
 }
-.bookings-table__item-info {
+.bookings__item-info {
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 12px;
-    padding-top: 20px;
+    padding: 20px 12px 12px;
 }
-.bookings-table__class {
+.bookings__class {
     position: relative;
-    padding: 6px 0;
-    padding-left: 12px;
+    padding: 6px 0 6px 12px;
     border-top: 1px solid #ececec;
 }
-.bookings-table__show {
+.bookings__show {
     width: 100%;
     padding: 15px;
 }
-.bookings-table__class-close {
+.bookings__class-close {
     top: 50%;
     right: 15px;
     transform: translateY(-50%);
 }
-.bookings-table__class-desc {
+.bookings__class-desc {
     display: inline-block;
     font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
     font-size: 12px;
@@ -141,6 +140,15 @@
     letter-spacing: 0;
     color: #1785ed;
 }
+
+/* Модальное окно удаления брони */
+
+/* Показываем модальное окно */
+.bookings-delete.show {
+    opacity: 1;
+    visibility: visible;
+}
+
 .bookings-delete {
     position: fixed;
     top: 50%;
@@ -148,7 +156,7 @@
     transform: translate(-50%, -50%);
     z-index: 991;
     border-radius: 2px;
-    width: 100%;
+    width: 95%;
     max-width: 343px;
     padding: 16px 12px;
     opacity: 0;
@@ -194,6 +202,15 @@
 .bookings-delete__btn:last-child {
     margin-right: 0;
 }
+
+/* Модальное окно опций брони */
+
+/* Показываем модальное окно */
+.bookings-more.show {
+    transform: translateY(0);
+    visibility: visible;
+}
+
 .bookings-more {
     position: fixed;
     bottom: 0;
@@ -253,19 +270,8 @@
     right: 5px;
 }
 
-/* Состояния */
-
-.bookings-delete.show {
-    opacity: 1;
-    visibility: visible;
-}
-.bookings-more.show {
-    transform: translateY(0);
-    visibility: visible;
-}
-
 @media (max-width: 330px) {
-    .bookings-table__show {
+    .bookings__show {
         padding: 15px 5px;
     }
 }

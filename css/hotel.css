@@ -739,8 +739,7 @@
 }
 
 .hotel__rooms {
-    margin: 0 -6px;
-    margin-bottom: 30px;
+    margin: 0 -6px 30px;
 }
 .hotel__rooms-header {
     display: flex;
@@ -1081,8 +1080,7 @@
 }
 
 .hotel__recommendation {
-    margin: 0 -9px;
-    margin-bottom: 12px;
+    margin: 0 -9px 12px;
 }
 .hotel__recommendation-item {
     border: 1px solid #007aff;
@@ -1129,10 +1127,8 @@
     margin-bottom: 0;
 }
 .hotel__recommendation-rooms {
-    margin: 0 -10px;
-    padding: 0 10px;
-    margin-bottom: 14px;
-    padding-bottom: 14px;
+    margin: 0 -10px 14px;
+    padding: 0 10px 14px;
     border-bottom: 1px solid #d8d8d8;
 }
 .hotel__recommendation-group {
@@ -1169,9 +1165,7 @@
     background: #007aff;
 }
 .hotel__recommendation-body {
-    padding: 0 10px;
-    padding-top: 24px;
-    padding-bottom: 16px;
+    padding: 24px 10px 16px;
 }
 .hotel__recommendation-total {
     display: flex;
@@ -1504,8 +1498,7 @@
 }
 .hotel__rooms-selecting {
     padding-bottom: 32px;
-    margin: 0 -17px;
-    margin-bottom: 17px;
+    margin: 0 -17px 17px;
     border-bottom: 1px solid #dadada;
 }
 
@@ -1663,8 +1656,7 @@
 .hotel-recommendation__option-header {
     position: relative;
     width: 100%;
-    padding: 13px 16px;
-    padding-right: 45px;
+    padding: 13px 45px 13px 16px;
     font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
     font-size: 14px;
     font-style: normal;
@@ -1675,8 +1667,7 @@
 }
 .hotel-recommendation__option-body {
     display: none;
-    padding: 0 13px;
-    padding-bottom: 20px;
+    padding: 0 13px 20px;
 }
 .hotel-recommendation__option-header.active .hotel-recommendation__option-arrow {
     transform: rotate(180deg);
@@ -1691,8 +1682,7 @@
 }
 .hotel-recommendation__header {
     position: relative;
-    padding: 12px 17px;
-    padding-right: 42px;
+    padding: 12px 42px 12px 17px;
 }
 .hotel-recommendation__close {
     top: 50%;
@@ -1730,6 +1720,12 @@
     display: inline-block;
     padding: 3px 4px;
     border: 1px solid #000000;
+}
+.hotel-recommendation__benefits-item {
+    margin-bottom: 6px;
+}
+.hotel-recommendation__benefits-item:last-child {
+    margin-bottom: 0;
 }
 .hotel-recommendation__total {
     margin-bottom: 24px;
@@ -1791,6 +1787,10 @@
 }
 .hotel-recommendation__choose {
     display: flex;
+    align-items: center;
+}
+.hotel-recommendation__choose-count {
+    margin: 0 8px;
 }
 .hotel-recommendation__row {
     display: flex;
@@ -1809,6 +1809,17 @@
 }
 .hotel-recommendation__nights {
     margin-bottom: 3px;
+}
+.hotel-recommendation__selecting {
+    margin-bottom: 30px;
+    padding: 0 6px;
+}
+
+.hotel-recommendation__selecting-block {
+    padding: 12px 10px;
+    border-radius: 2px;
+    border: 1px solid #dadada;
+    background: #ffffff;
 }
 
 .hotel-complete {
@@ -1891,8 +1902,7 @@
     z-index: 901;
     transform: translate(-50%, -50%);
     width: 95%;
-    padding: 16px 12px;
-    padding-bottom: 24px;
+    padding: 16px 12px 24px;
     border-radius: 2px;
     opacity: 0;
     visibility: hidden;
@@ -1945,8 +1955,7 @@
 }
 .hotel-search__input {
     width: 100%;
-    padding: 9px 12px;
-    padding-top: 23px;
+    padding: 23px 12px 9px;
     border-radius: 2px;
     font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
     font-size: 13px;
@@ -2014,6 +2023,38 @@
     height: 100%;
     object-fit: cover;
 }
+
+.hotel-gallery__menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 15px;
+    position: fixed;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    height: auto;
+}
+.hotel-gallery__side {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.hotel-gallery__option {
+    margin-right: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 2px;
+    background: rgba(255, 255, 255, 0.8);
+}
+.hotel-gallery__option:last-child {
+    margin-right: 0;
+}
+
 
 .fslightbox-container,
 .fslightbox-toolbar {
