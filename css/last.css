@@ -15,3 +15,288 @@
     letter-spacing: 0;
     color: #000000;
 }
+
+.choosed {
+    padding: 16px 0;
+}
+.choosed__title {
+    margin-bottom: 4px;
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0;
+    color: #333333;
+}
+.choosed__item {
+    display: inline-block;
+    margin-bottom: 4px;
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 16px;
+    letter-spacing: 0;
+    color: #333333;
+}
+.choosed__item:last-child {
+    margin-bottom: 0;
+}
+
+.info {
+    border-bottom: 1px solid #dadada;
+}
+.info__location {
+    display: block;
+    margin-bottom: 4px;
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: -0.3px;
+    color: #000000;
+}
+.info__title {
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 19px;
+    letter-spacing: 0;
+    color: #282828;
+}
+.info__about {
+    margin-bottom: 12px;
+}
+.info__guests {
+    display: block;
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 14px;
+    letter-spacing: -0.3px;
+    color: #0fa30c;
+}
+.info__reviews-row {
+    display: flex;
+    align-items: center;
+}
+.info__reviews {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+.info__reviews-short,
+.info__reviews-total {
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: -0.3px;
+}
+.info__reviews-short {
+    position: relative;
+    margin-right: 5px;
+    padding-right: 10px;
+    color: #0b192c;
+}
+.info__reviews-short::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 6px;
+    height: 4px;
+    width: 4px;
+    border-radius: 50%;
+    background: rgba(11, 25, 44, 0.4);
+}
+.info__reviews-total {
+    color: rgba(11, 25, 44, 0.4);
+}
+.info__reviews-rate {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 6px;
+    width: 24px;
+    height: 24px;
+    background: #0b192c;
+    border-radius: 2px 0 2px 2px;
+}
+.info__reviews-mark {
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 14px;
+    letter-spacing: -0.3px;
+    color: #ffffff;
+}
+.info__tags-tag {
+    display: inline-block;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    padding: 3px 4px;
+    border: 1px solid #000000;
+}
+.info__tags-tag:last-child {
+    margin-right: 0;
+}
+
+.total {
+    background: #ffffff;
+    margin-bottom: 10px;
+}
+.total__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+    border-bottom: 1px solid #dadada;
+}
+.total__now {
+    background: #0fa30c;
+}
+.total__value {
+    width: 58%;
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0;
+    color: #333333;
+}
+.total__price {
+    width: 38%;
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 14px;
+    letter-spacing: 0;
+    text-align: right;
+    color: #333333;
+}
+.total__now-price,
+.total__now-value {
+    color: #ffffff;
+}
+.total__more {
+    padding: 16px 15px;
+    text-align: center;
+    background: #0fa30c;
+}
+.total__more-desc {
+    margin-bottom: 5px;
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0;
+    color: #ffffff;
+}
+.total__more-show {
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 17px;
+    letter-spacing: 0;
+    text-decoration-line: underline;
+    color: #ffffff;
+}
+
+.benefits {
+    padding: 24px 0;
+    background: #ffffff;
+    border: 1px solid #dadada;
+    margin-bottom: 10px;
+}
+.benefits__item {
+    width: 100%;
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 16px;
+}
+.benefits__item:last-child {
+    margin-bottom: 0;
+}
+.benefits__desc {
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0;
+    color: #333333;
+}
+.benefits__desc-span {
+    font-weight: 600;
+}
+.benefits__icon {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    flex-shrink: 0;
+}
+
+.data {
+    padding: 17px 0;
+    background: #ffffff;
+    border: 1px solid #dadada;
+    border-left: none;
+    border-right: none;
+    margin-bottom: 10px;
+}
+.data__title {
+    margin-bottom: 10px;
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 17px;
+    letter-spacing: 0;
+    color: #00203e;
+}
+.data__item {
+    display: block;
+    margin-bottom: 2px;
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0;
+    color: #333333;
+}
+.data__item:last-child {
+    margin-bottom: 0;
+}
+
+.promocode__header {
+    position: relative;
+    padding: 13px 16px;
+    width: 100%;
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0px;
+    text-align: left;
+    background: #ffffff;
+    border: 1px solid #dadada;
+    border-radius: 2px;
+}
+.promocode__arrow {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
