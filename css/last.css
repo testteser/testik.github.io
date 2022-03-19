@@ -45,6 +45,11 @@
 }
 
 .info {
+    background: #ffffff;
+    border-bottom: 1px solid #dadada;
+}
+.info__header {
+    padding: 12px 13px;
     border-bottom: 1px solid #dadada;
 }
 .info__location {
@@ -66,6 +71,9 @@
     line-height: 19px;
     letter-spacing: 0;
     color: #282828;
+}
+.info__body {
+    padding: 15px 0 20px;
 }
 .info__about {
     margin-bottom: 12px;
@@ -244,6 +252,72 @@
     top: 2px;
     left: 0;
     flex-shrink: 0;
+}
+
+.calendar {
+    padding: 16px 0;
+    background: #ffffff;
+    border-bottom: 1px solid #dadada;
+}
+.calendar__row-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+}
+.calendar__row-item:first-child::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    height: 20px;
+    width: 1px;
+    background: #dadada;
+}
+.calendar__type {
+    margin-bottom: 8px;
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0;
+    color: #333333;
+}
+.calendar__date {
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 17px;
+    letter-spacing: 0;
+    color: #00203e;
+}
+.calendar__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+.calendar__info {
+    margin-bottom: 4px;
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0;
+    color: #333333;
+}
+.calendar__nights {
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 16px;
+    letter-spacing: 0;
+    color: #333333;
 }
 
 .data {
