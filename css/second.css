@@ -251,6 +251,14 @@
     width: 59%;
 }
 
+.calendar__choose-row {
+    margin-bottom: 16px;
+}
+.calendar__choose-update {
+    width: 100%;
+    padding: 10px;
+}
+
 .success {
     display: none;
     width: 100%;

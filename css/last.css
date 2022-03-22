@@ -50,7 +50,6 @@
 }
 .info__header {
     padding: 12px 13px;
-    border-bottom: 1px solid #dadada;
 }
 .info__location {
     display: block;
@@ -73,7 +72,8 @@
     color: #282828;
 }
 .info__body {
-    padding: 15px 0 20px;
+    border-top: 1px solid #dadada;
+    padding: 15px 15px 20px;
 }
 .info__about {
     margin-bottom: 12px;
