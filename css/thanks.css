@@ -258,6 +258,7 @@
     color: #282828;
 }
 .info__title {
+    max-width: 80%;
     margin-bottom: 16px;
     font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
     font-style: normal;
@@ -325,4 +326,146 @@
     font-size: 14px;
     line-height: 17px;
     color: #00203e;
+}
+
+.data {
+    margin-bottom: 32px;
+    padding-bottom: 28px;
+    border-bottom: 1px solid #dadada;
+}
+.data__top {
+    margin-bottom: 12px;
+}
+.data__body {
+    margin-bottom: 16px;
+    padding: 16px 15px;
+    padding-bottom: 28px;
+    border-bottom: 1px solid #dadada;
+    background: #ffffff;
+}
+.data__item {
+    margin-bottom: 16px;
+}
+.data__item:last-child {
+    margin-bottom: 0;
+}
+.data__title {
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0;
+    color: #0b192c;
+}
+.data__table {
+    margin-bottom: 16px;
+}
+.data__item-title {
+    margin-bottom: 5px;
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 17px;
+    letter-spacing: 0;
+    color: #0b192c;
+}
+.data__item-desc {
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0;
+    color: #0b192c;
+}
+.data__map {
+    margin: 0 15px;
+}
+.data__route {
+    display: block;
+    margin: 0 auto;
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0;
+    color: #1785ed;
+}
+.data__options {
+    padding: 0 15px;
+    margin-bottom: 28px;
+}
+.data__option {
+    display: block;
+    width: 100%;
+    margin-bottom: 12px;
+    padding: 14px;
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 17px;
+    letter-spacing: 0;
+    text-align: center;
+}
+.data__option--message {
+    background: transparent;
+}
+.data__option--cancel {
+    padding: 0;
+    color: #de2b21;
+}
+.data__option:last-child {
+    margin-bottom: 0;
+}
+
+.price {
+    background: #0fa30c;
+    margin-bottom: 19px;
+}
+.price__table {
+    border-bottom: 1px solid #dadada;
+}
+.price__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+    border-bottom: 1px solid #dadada;
+}
+.price__value {
+    width: 60%;
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 14px;
+    letter-spacing: 0;
+    color: #ffffff;
+}
+.price__cost {
+    width: 35%;
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 14px;
+    letter-spacing: 0;
+    text-align: right;
+    color: #ffffff;
+}
+.price__item:last-child {
+    border-bottom: none;
+}
+.price__total {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+}
+.price__total .price__cost {
+    font-weight: 600;
 }
