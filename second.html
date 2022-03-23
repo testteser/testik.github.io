@@ -124,7 +124,16 @@
                     </button>
                     <div class="calendar__choose-row">
                         <div class="calendar__choose-item">
-
+                            <span class="calendar__choose-label">
+                                Дата заезда
+                            </span>
+                            <input class="calendar__choose-input calendar__choose-input--active" type="text" value="сб. 22 янв. 2022" readonly>
+                        </div>
+                        <div class="calendar__choose-item">
+                            <span class="calendar__choose-label">
+                                Дата выезда
+                            </span>
+                            <input class="calendar__choose-input" type="text" value="сб. 22 янв. 2022" readonly>
                         </div>
                     </div>
                     <button class="calendar__choose-update site-btn">
@@ -279,7 +288,7 @@
                             <label for="email" class="data__label data-option">
                               Электронный адрес *
                             </label>
-                            <input type="text" id="email" class="data__input" placeholder="sanya@gmail.com">
+                            <input type="text" id="email" class="data__input email" placeholder="sanya@gmail.com">
                         </div>
                     </div>
                     <div class="data__choose">
@@ -389,7 +398,7 @@
                         </span>
                     </label>
                     <label class="travel__label">
-                        <input type="radio" name="travel" style="display: none">
+                        <input type="radio" checked name="travel" style="display: none">
                         <span class="travel__label-radio"></span>
                         <span class="travel__label-desc">
                             No
@@ -456,6 +465,30 @@
                         </div>
                     </div>
                 </div>
+                <div class="arrival__time">
+                    <label for="time" class="arrival__time-label">
+                        Укажите примерное время прибытия *
+                    </label>
+                    <div class="arrival__time-field">
+                        <input value="Выберите" id="time" type="text" readonly class="arrival__time-input">
+                        <svg class="arrival__time-arrow" width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5.19643 6L0.00027318 -4.51502e-08L10.3926 -9.53674e-07L5.19643 6Z" fill="#0B192C"></path>
+                        </svg>
+                    </div>
+                    <span class="arrival__time-info">
+                        Местное время города Бухара
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="next">
+            <div class="container">
+                <button class="next__btn site-btn">
+                    Next: Final details
+                </button>
+                <span class="next__desc">
+                    Don't worry — you won't be charged yet
+                </span>
             </div>
         </div>
         <div class="success">

@@ -533,7 +533,7 @@ body {
     line-height: 12px;
     letter-spacing: 0;
     text-align: center;
-    color: #000000;
+    color: rgba(0, 0, 0, 0.5);
 }
 
 /*  */
