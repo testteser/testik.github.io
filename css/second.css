@@ -382,6 +382,18 @@
     width: 59%;
 }
 
+.calendar__choose {
+    position: relative;
+    margin: 10px -15px 0;
+    background: #ffffff;
+    padding: 45px 12px 27px;
+    box-shadow: 0 3px 8px rgb(0 0 0 / 15%), 0 3px 1px rgb(0 0 0 / 6%);
+}
+.calendar__choose-close {
+    position: absolute;
+    top: 13px;
+    right: 13px;
+}
 .calendar__choose-row {
     display: flex;
     align-items: center;
@@ -1164,4 +1176,61 @@
     line-height: 14px;
     letter-spacing: 0;
     color: #00203e;
+}
+
+.rooms {
+   margin-bottom: 10px;
+   background: #ffffff;
+   border: 1px solid #dadada;
+}
+
+.rooms__item {
+    padding: 24px 18px;
+    margin-bottom: 10px;
+}
+.rooms__item-title {
+    margin-bottom: 16px;
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #282828;
+}
+.rooms__item-tag {
+    display: inline-block;
+    margin-bottom: 4px;
+    margin-right: 4px;
+    padding: 3px 4px;
+    border: 1px solid #000000;
+    border-radius: 2px;
+}
+.rooms__item-tag:last-child {
+    margin-right: 0;
+}
+.rooms__item-list {
+    margin-bottom: 13px;
+}
+.rooms__item-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.rooms__item-option {
+    padding-left: 20px;
+    position: relative;
+    margin-bottom: 12px;
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: -0.253235px;
+    color: #0fa30c;
+}
+.rooms__item-option:last-child {
+    margin-bottom: 0;
+}
+.rooms__item:last-child {
+    margin-bottom: 0;
 }
